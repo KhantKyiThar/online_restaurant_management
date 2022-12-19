@@ -1,6 +1,7 @@
 package com.javaclass.restaurant.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 public class Staff {
@@ -19,27 +22,32 @@ public class Staff {
 
 	@Column(length = 100, nullable = false)
 	private String name;
-	
-	
+
 	@Column(length = 100, nullable = false)
 	private String loginId;
-	
+
 	@Column(length = 100, nullable = false)
 	private String password;
-	
+
 	@Column(length = 30, nullable = false)
 	private String phone;
-	
+
 	@Column(columnDefinition = "ENUM('Male', 'Female')")
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
-	
+
 	@Column(columnDefinition = "ENUM('Admin', 'Manager', 'Staff')")
 	@Enumerated(EnumType.STRING)
 	private StaffType StaffType;
-	
+
 	@Column(nullable = true)
 	private LocalDate joinedDate;
+
+	@Column(nullable = false)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime createdAt;
+
+	private LocalDateTime updatedAt;
 
 	public int getId() {
 		return id;
@@ -105,12 +113,27 @@ public class Staff {
 		this.joinedDate = joinedDate;
 	}
 
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public LocalDateTime getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(LocalDateTime updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
 	@Override
 	public String toString() {
 		return "Staff [id=" + id + ", name=" + name + ", loginId=" + loginId + ", password=" + password + ", phone="
-				+ phone + ", gender=" + gender + ", StaffType=" + StaffType + ", joinedDate=" + joinedDate + "]";
+				+ phone + ", gender=" + gender + ", StaffType=" + StaffType + ", joinedDate=" + joinedDate
+				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
-	
-	
 
 }
