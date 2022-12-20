@@ -20,7 +20,7 @@ public class FoodOrder {
 	private int id;
 
 	@Column(nullable = false)
-	private int itemCount;
+	private int foodCount;
 
 	@Column(nullable = true)
 	private int totalPrice;
@@ -51,12 +51,12 @@ public class FoodOrder {
 		this.id = id;
 	}
 
-	public int getItemCount() {
-		return itemCount;
+	public int getFoodCount() {
+		return foodCount;
 	}
 
-	public void setItemCount(int itemCount) {
-		this.itemCount = itemCount;
+	public void setFoodCount(int foodCount) {
+		this.foodCount = foodCount;
 	}
 
 	public int getTotalPrice() {
@@ -109,7 +109,7 @@ public class FoodOrder {
 
 	@Override
 	public String toString() {
-		return "FoodOrder [id=" + id + ", itemCount=" + itemCount + ", totalPrice=" + totalPrice + ", food=" + food
+		return "FoodOrder [id=" + id + ", foodCount=" + foodCount + ", totalPrice=" + totalPrice + ", food=" + food
 				+ ", staff=" + staff + ", orderDate=" + orderDate + ", createdAt=" + createdAt + ", updatedAt="
 				+ updatedAt + "]";
 	}
