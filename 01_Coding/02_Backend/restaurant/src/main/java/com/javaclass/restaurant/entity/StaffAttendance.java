@@ -1,6 +1,7 @@
 package com.javaclass.restaurant.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 public class StaffAttendance {
@@ -20,14 +23,18 @@ public class StaffAttendance {
 	@ManyToOne
 	@JoinColumn(name = "staff_id", referencedColumnName = "id")
 	private Staff staff;
-	
+
 	@Column(nullable = false)
 	private LocalDate startTime;
-	
-	@Override
-	public String toString() {
-		return "StaffAttendance [id=" + id + ", startTime=" + startTime + ", endTime=" + endTime + "]";
-	}
+
+	@Column(nullable = false)
+	private LocalDate endTime;
+
+	@Column(nullable = false)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime createdAt;
+
+	private LocalDateTime updatedAt;
 
 	public int getId() {
 		return id;
@@ -35,6 +42,14 @@ public class StaffAttendance {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public Staff getStaff() {
+		return staff;
+	}
+
+	public void setStaff(Staff staff) {
+		this.staff = staff;
 	}
 
 	public LocalDate getStartTime() {
@@ -53,7 +68,26 @@ public class StaffAttendance {
 		this.endTime = endTime;
 	}
 
-	@Column(nullable = false)
-	private LocalDate endTime;
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public LocalDateTime getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(LocalDateTime updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
+	@Override
+	public String toString() {
+		return "StaffAttendance [id=" + id + ", staff=" + staff + ", startTime=" + startTime + ", endTime=" + endTime
+				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
+	}
 
 }

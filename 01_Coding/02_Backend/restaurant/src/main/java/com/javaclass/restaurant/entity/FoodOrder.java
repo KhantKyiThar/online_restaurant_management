@@ -1,6 +1,6 @@
 package com.javaclass.restaurant.entity;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 public class FoodOrder {
@@ -19,14 +21,28 @@ public class FoodOrder {
 
 	@Column(nullable = false)
 	private int itemCount;
-	
+
 	@Column(nullable = true)
 	private int totalPrice;
-	
+
 	@ManyToOne
-	@JoinColumn(name = "item_id", referencedColumnName = "id")
-	private Item item;
-	
+	@JoinColumn(name = "food_id", referencedColumnName = "id")
+	private Food food;
+
+	@ManyToOne
+	@JoinColumn(name = "staff_id", referencedColumnName = "id")
+	private Staff staff;
+
+	@Column(nullable = true)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime orderDate;
+
+	@Column(nullable = false)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime createdAt;
+
+	private LocalDateTime updatedAt;
+
 	public int getId() {
 		return id;
 	}
@@ -51,12 +67,12 @@ public class FoodOrder {
 		this.totalPrice = totalPrice;
 	}
 
-	public Item getItem() {
-		return item;
+	public Food getFood() {
+		return food;
 	}
 
-	public void setItem(Item item) {
-		this.item = item;
+	public void setFood(Food food) {
+		this.food = food;
 	}
 
 	public Staff getStaff() {
@@ -67,25 +83,35 @@ public class FoodOrder {
 		this.staff = staff;
 	}
 
-	public LocalDate getJoinedDate() {
-		return joinedDate;
+	public LocalDateTime getOrderDate() {
+		return orderDate;
 	}
 
-	public void setJoinedDate(LocalDate joinedDate) {
-		this.joinedDate = joinedDate;
+	public void setOrderDate(LocalDateTime orderDate) {
+		this.orderDate = orderDate;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "staff_id", referencedColumnName = "id")
-	private Staff staff;
-	
-	@Column(nullable = true)
-	private LocalDate joinedDate;
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public LocalDateTime getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(LocalDateTime updatedAt) {
+		this.updatedAt = updatedAt;
+	}
 
 	@Override
 	public String toString() {
-		return "FoodOrder [id=" + id + ", itemCount=" + itemCount + ", totalPrice=" + totalPrice + ", item=" + item
-				+ ", staff=" + staff + ", joinedDate=" + joinedDate + "]";
+		return "FoodOrder [id=" + id + ", itemCount=" + itemCount + ", totalPrice=" + totalPrice + ", food=" + food
+				+ ", staff=" + staff + ", orderDate=" + orderDate + ", createdAt=" + createdAt + ", updatedAt="
+				+ updatedAt + "]";
 	}
 
 }

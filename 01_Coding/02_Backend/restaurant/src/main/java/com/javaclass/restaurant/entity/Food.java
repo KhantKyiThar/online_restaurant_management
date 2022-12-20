@@ -1,6 +1,7 @@
 package com.javaclass.restaurant.entity;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,18 +10,20 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.ColumnDefault;
+
 @Entity
-public class Item {
+public class Food {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	@Column(length = 100, nullable = false)
-	private String item;
+	private String foodItem;
 
 	@Column(length = 255, nullable = false)
-	private String posterPath;
+	private String image;
 
 	@Column(nullable = false)
 	private int price;
@@ -32,11 +35,11 @@ public class Item {
 	@JoinColumn(name = "category_id", referencedColumnName = "id")
 	private Category category;
 
-	@Column(nullable = true)
-	private LocalDate createdAt;
-	
-	@Column(nullable = true)
-	private LocalDate updatedAt;
+	@Column(nullable = false)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime createdAt;
+
+	private LocalDateTime updatedAt;
 
 	public int getId() {
 		return id;
@@ -46,20 +49,20 @@ public class Item {
 		this.id = id;
 	}
 
-	public String getItem() {
-		return item;
+	public String getFoodItem() {
+		return foodItem;
 	}
 
-	public void setItem(String item) {
-		this.item = item;
+	public void setFoodItem(String foodItem) {
+		this.foodItem = foodItem;
 	}
 
-	public String getPosterPath() {
-		return posterPath;
+	public String getImage() {
+		return image;
 	}
 
-	public void setPosterPath(String posterPath) {
-		this.posterPath = posterPath;
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public int getPrice() {
@@ -86,20 +89,26 @@ public class Item {
 		this.category = category;
 	}
 
-	public LocalDate getCreatedAt() {
+	public LocalDateTime getCreatedAt() {
 		return createdAt;
 	}
 
-	public void setCreatedAt(LocalDate createdAt) {
+	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
 
-	public LocalDate getUpdatedAt() {
+	public LocalDateTime getUpdatedAt() {
 		return updatedAt;
 	}
 
-	public void setUpdatedAt(LocalDate updatedAt) {
+	public void setUpdatedAt(LocalDateTime updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	@Override
+	public String toString() {
+		return "Food [id=" + id + ", foodItem=" + foodItem + ", image=" + image + ", price=" + price + ", stock="
+				+ stock + ", category=" + category + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
 
 }
