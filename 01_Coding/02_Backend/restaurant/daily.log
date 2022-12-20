@@ -275,3 +275,278 @@
 2022-12-20 00:10:48.266  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-12-20 00:10:48.268  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown initiated...
 2022-12-20 00:10:48.274  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown completed.
+2022-12-21 01:45:21.380  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 1.8.0_181 on Khant-Kyi-Thar with PID 14524 (C:\Users\Khant Kyi Thar\eclipse-workspace\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by Khant Kyi Thar in C:\Users\Khant Kyi Thar\eclipse-workspace\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-21 01:45:21.380  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-21 01:45:21.558  INFO 14524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-21 01:45:21.558  INFO 14524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-21 01:45:23.879  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-21 01:45:23.892  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-21 01:45:24.026  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-21 01:45:24.026  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-21 01:45:24.044  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-21 01:45:24.048  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-21 01:45:24.048  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 0 JDBC repository interfaces.
+2022-12-21 01:45:24.079  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-21 01:45:24.079  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-21 01:45:24.280  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 4 JPA repository interfaces.
+2022-12-21 01:45:26.664  INFO 14524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-21 01:45:26.702  INFO 14524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-21 01:45:26.702  INFO 14524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-21 01:45:26.965  INFO 14524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-21 01:45:26.965  INFO 14524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5391 ms
+2022-12-21 01:45:27.588 DEBUG 14524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2022-12-21 01:45:27.666  INFO 14524 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-21 01:45:27.867  INFO 14524 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-21 01:45:28.468  INFO 14524 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-21 01:45:28.838  INFO 14524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-21 01:45:30.696  INFO 14524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-21 01:45:30.760  INFO 14524 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-21 01:45:34.252  INFO 14524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-21 01:45:34.296  INFO 14524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-21 01:45:34.684 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:34.906 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:35.144 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:35.407 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:35.655 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:35.692 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:35.940  WARN 14524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-21 01:45:37.338 DEBUG 14524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-21 01:45:37.739 DEBUG 14524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-12-21 01:45:37.870 DEBUG 14524 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-21 01:45:37.924 DEBUG 14524 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-21 01:45:38.726 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:38.733 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:38.826 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:38.858 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-12-21 01:45:39.274  INFO 14524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-21 01:45:39.506  INFO 14524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-12-21 01:45:39.559  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 20.554 seconds (JVM running for 23.878)
+2022-12-21 01:46:27.206  INFO 14524 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-21 01:46:27.207  INFO 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-21 01:46:27.208 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-21 01:46:27.208 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-21 01:46:27.209 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-21 01:46:27.214 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7bd310de
+2022-12-21 01:46:27.216 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4567d2b3
+2022-12-21 01:46:27.217 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-21 01:46:27.218  INFO 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-12-21 01:46:27.264 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2022-12-21 01:46:27.284 DEBUG 14524 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2022-12-21 01:46:27.291 DEBUG 14524 --- [http-nio-8085-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:27.418 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1767231267<open>)] for JPA transaction
+2022-12-21 01:46:27.419 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:46:27.434 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@10496586]
+2022-12-21 01:46:27.436 TRACE 14524 --- [http-nio-8085-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:46:27.865 DEBUG 14524 --- [http-nio-8085-exec-1] org.hibernate.SQL                        : select food0_.id as id1_1_, food0_.category_id as category8_1_, food0_.created_at as created_2_1_, food0_.food_item as food_ite3_1_, food0_.image as image4_1_, food0_.price as price5_1_, food0_.stock as stock6_1_, food0_.updated_at as updated_7_1_ from food food0_
+2022-12-21 01:46:27.916 TRACE 14524 --- [http-nio-8085-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:46:27.917 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:46:27.917 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1767231267<open>)]
+2022-12-21 01:46:27.920 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:46:27.962 DEBUG 14524 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:46:27.964 DEBUG 14524 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=2, foodItem=Menu2, image=, price=1000, stock=100, category=null, createdAt=2022-12-20T23:5 (truncated)...]
+2022-12-21 01:46:28.125 DEBUG 14524 --- [http-nio-8085-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:28.131 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:46:37.181 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
+2022-12-21 01:46:37.184 DEBUG 14524 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2022-12-21 01:46:37.185 DEBUG 14524 --- [http-nio-8085-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:37.188 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1269220417<open>)] for JPA transaction
+2022-12-21 01:46:37.189 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:46:37.192 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@45612345]
+2022-12-21 01:46:37.198 TRACE 14524 --- [http-nio-8085-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:46:37.205 DEBUG 14524 --- [http-nio-8085-exec-3] org.hibernate.SQL                        : select staff0_.id as id1_3_, staff0_.staff_type as staff_ty2_3_, staff0_.created_at as created_3_3_, staff0_.gender as gender4_3_, staff0_.joined_date as joined_d5_3_, staff0_.login_id as login_id6_3_, staff0_.name as name7_3_, staff0_.password as password8_3_, staff0_.phone as phone9_3_, staff0_.updated_at as updated10_3_ from staff staff0_
+2022-12-21 01:46:37.225 TRACE 14524 --- [http-nio-8085-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:46:37.226 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:46:37.226 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1269220417<open>)]
+2022-12-21 01:46:37.234 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:46:37.236 DEBUG 14524 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:46:37.237 DEBUG 14524 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=3, name=Staff6, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Sta (truncated)...]
+2022-12-21 01:46:37.277 DEBUG 14524 --- [http-nio-8085-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:37.282 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:46:47.823 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/staff/create", parameters={}
+2022-12-21 01:46:47.826 DEBUG 14524 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
+2022-12-21 01:46:47.826 DEBUG 14524 --- [http-nio-8085-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:48.121 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
+2022-12-21 01:46:48.179 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1701933671<open>)] for JPA transaction
+2022-12-21 01:46:48.182 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-12-21 01:46:48.187 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@771c1292]
+2022-12-21 01:46:48.187 TRACE 14524 --- [http-nio-8085-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-12-21 01:46:48.243 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-12-21 01:46:48.258 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-12-21 01:46:48.334 TRACE 14524 --- [http-nio-8085-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-12-21 01:46:48.335 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:46:48.336 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1701933671<open>)]
+2022-12-21 01:46:48.392 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : insert into staff (staff_type, created_at, gender, joined_date, login_id, name, password, phone, updated_at, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-21 01:46:48.406 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Staff]
+2022-12-21 01:46:48.409 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2022-12-21T01:46:48.177]
+2022-12-21 01:46:48.411 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Male]
+2022-12-21 01:46:48.415 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DATE] - [2022-12-21]
+2022-12-21 01:46:48.417 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [25-00186]
+2022-12-21 01:46:48.418 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [Staff1]
+2022-12-21 01:46:48.419 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [staff@123]
+2022-12-21 01:46:48.420 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [09796567966]
+2022-12-21 01:46:48.420 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [TIMESTAMP] - [null]
+2022-12-21 01:46:48.423 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [10] as [INTEGER] - [9]
+2022-12-21 01:46:48.466 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:46:48.477 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:46:48.479 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Staff [id=9, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
+2022-12-21 01:46:48.486 DEBUG 14524 --- [http-nio-8085-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:48.488 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:46:56.786 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/api/admin/staff/update/1", parameters={}
+2022-12-21 01:46:56.790 DEBUG 14524 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#updateStaff(int, Staff)
+2022-12-21 01:46:56.791 DEBUG 14524 --- [http-nio-8085-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:56.809 DEBUG 14524 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff6, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
+2022-12-21 01:46:56.811 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1120802207<open>)] for JPA transaction
+2022-12-21 01:46:56.814 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:46:56.820 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5f53bb4b]
+2022-12-21 01:46:56.821 TRACE 14524 --- [http-nio-8085-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:46:56.870 DEBUG 14524 --- [http-nio-8085-exec-5] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:46:56.872 TRACE 14524 --- [http-nio-8085-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2022-12-21 01:46:56.893 TRACE 14524 --- [http-nio-8085-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:46:56.895 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:46:56.900 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1120802207<open>)]
+2022-12-21 01:46:56.904 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:46:56.927 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:46:56.933 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-21 01:46:56.935 DEBUG 14524 --- [http-nio-8085-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:46:56.936 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-21 01:47:06.909 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/api/admin/staff/update/9", parameters={}
+2022-12-21 01:47:06.910 DEBUG 14524 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#updateStaff(int, Staff)
+2022-12-21 01:47:06.911 DEBUG 14524 --- [http-nio-8085-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:06.918 DEBUG 14524 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff9, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
+2022-12-21 01:47:06.919 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1919858311<open>)] for JPA transaction
+2022-12-21 01:47:06.920 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:06.923 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@76513c12]
+2022-12-21 01:47:06.924 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:06.925 DEBUG 14524 --- [http-nio-8085-exec-6] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:47:06.926 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [9]
+2022-12-21 01:47:06.938 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:06.939 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:06.939 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1919858311<open>)]
+2022-12-21 01:47:06.942 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:06.943 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1919858311<open>)] for JPA transaction
+2022-12-21 01:47:06.943 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-12-21 01:47:06.944 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4b506ebe]
+2022-12-21 01:47:06.944 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-12-21 01:47:06.959 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-12-21 01:47:06.960 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:06.960 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1919858311<open>)]
+2022-12-21 01:47:06.969 DEBUG 14524 --- [http-nio-8085-exec-6] org.hibernate.SQL                        : update staff set staff_type=?, created_at=?, gender=?, joined_date=?, login_id=?, name=?, password=?, phone=?, updated_at=? where id=?
+2022-12-21 01:47:06.971 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-12-21 01:47:06.971 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2022-12-21T01:46:48]
+2022-12-21 01:47:06.972 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Male]
+2022-12-21 01:47:06.973 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DATE] - [2022-12-21]
+2022-12-21 01:47:06.974 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [25-00186]
+2022-12-21 01:47:06.975 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [Staff9]
+2022-12-21 01:47:06.976 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [staff@123]
+2022-12-21 01:47:06.976 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [09796567966]
+2022-12-21 01:47:06.977 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [TIMESTAMP] - [2022-12-21T01:47:06.942]
+2022-12-21 01:47:06.978 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [10] as [INTEGER] - [9]
+2022-12-21 01:47:07.006 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:07.008 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:47:07.008 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=9, name=Staff9, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
+2022-12-21 01:47:07.010 DEBUG 14524 --- [http-nio-8085-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:07.011 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:47:26.757 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/6", parameters={}
+2022-12-21 01:47:26.759 DEBUG 14524 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
+2022-12-21 01:47:26.759 DEBUG 14524 --- [http-nio-8085-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:26.762 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1493227925<open>)] for JPA transaction
+2022-12-21 01:47:26.762 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:26.771 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@57c72cc5]
+2022-12-21 01:47:26.771 TRACE 14524 --- [http-nio-8085-exec-7] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:26.772 DEBUG 14524 --- [http-nio-8085-exec-7] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:47:26.774 TRACE 14524 --- [http-nio-8085-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [6]
+2022-12-21 01:47:26.777 TRACE 14524 --- [http-nio-8085-exec-7] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:26.778 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:26.778 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1493227925<open>)]
+2022-12-21 01:47:26.779 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:26.786 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-21 01:47:26.787 DEBUG 14524 --- [http-nio-8085-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:26.788 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-21 01:47:31.694 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/8", parameters={}
+2022-12-21 01:47:31.696 DEBUG 14524 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
+2022-12-21 01:47:31.696 DEBUG 14524 --- [http-nio-8085-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:31.697 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2010120357<open>)] for JPA transaction
+2022-12-21 01:47:31.698 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:31.705 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7d286bd5]
+2022-12-21 01:47:31.706 TRACE 14524 --- [http-nio-8085-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:31.707 DEBUG 14524 --- [http-nio-8085-exec-8] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:47:31.708 TRACE 14524 --- [http-nio-8085-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [8]
+2022-12-21 01:47:31.711 TRACE 14524 --- [http-nio-8085-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:31.712 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:31.712 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2010120357<open>)]
+2022-12-21 01:47:31.717 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:31.718 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-21 01:47:31.719 DEBUG 14524 --- [http-nio-8085-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:31.720 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-21 01:47:40.937 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/3", parameters={}
+2022-12-21 01:47:40.940 DEBUG 14524 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
+2022-12-21 01:47:40.940 DEBUG 14524 --- [http-nio-8085-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:40.941 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
+2022-12-21 01:47:40.942 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:40.946 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3530206f]
+2022-12-21 01:47:40.946 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:40.948 DEBUG 14524 --- [http-nio-8085-exec-9] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:47:40.948 TRACE 14524 --- [http-nio-8085-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
+2022-12-21 01:47:40.954 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:40.955 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:40.955 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
+2022-12-21 01:47:40.958 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:40.959 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
+2022-12-21 01:47:40.959 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:40.961 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@96011e9]
+2022-12-21 01:47:40.961 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:40.962 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:40.962 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:40.963 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
+2022-12-21 01:47:40.963 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:40.971 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
+2022-12-21 01:47:40.972 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-12-21 01:47:40.973 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1422d51b]
+2022-12-21 01:47:40.974 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
+2022-12-21 01:47:40.986 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
+2022-12-21 01:47:40.987 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:40.987 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
+2022-12-21 01:47:40.989 DEBUG 14524 --- [http-nio-8085-exec-9] org.hibernate.SQL                        : delete from staff where id=?
+2022-12-21 01:47:40.990 TRACE 14524 --- [http-nio-8085-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
+2022-12-21 01:47:41.005 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:41.006 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-21 01:47:41.007 DEBUG 14524 --- [http-nio-8085-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:41.008 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:47:43.272 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/3", parameters={}
+2022-12-21 01:47:43.273 DEBUG 14524 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
+2022-12-21 01:47:43.274 DEBUG 14524 --- [http-nio-8085-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:43.275 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(790979080<open>)] for JPA transaction
+2022-12-21 01:47:43.276 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:43.279 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@21e2899c]
+2022-12-21 01:47:43.279 TRACE 14524 --- [http-nio-8085-exec-10] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:43.280 DEBUG 14524 --- [http-nio-8085-exec-10] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
+2022-12-21 01:47:43.280 TRACE 14524 --- [http-nio-8085-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
+2022-12-21 01:47:43.287 TRACE 14524 --- [http-nio-8085-exec-10] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-12-21 01:47:43.287 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:43.287 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(790979080<open>)]
+2022-12-21 01:47:43.291 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:43.291 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-21 01:47:43.292 DEBUG 14524 --- [http-nio-8085-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:43.292 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-21 01:47:48.671 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
+2022-12-21 01:47:48.672 DEBUG 14524 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2022-12-21 01:47:48.673 DEBUG 14524 --- [http-nio-8085-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:48.675 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1150561681<open>)] for JPA transaction
+2022-12-21 01:47:48.675 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-12-21 01:47:48.679 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@423cd2a2]
+2022-12-21 01:47:48.679 TRACE 14524 --- [http-nio-8085-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:47:48.681 DEBUG 14524 --- [http-nio-8085-exec-2] org.hibernate.SQL                        : select staff0_.id as id1_3_, staff0_.staff_type as staff_ty2_3_, staff0_.created_at as created_3_3_, staff0_.gender as gender4_3_, staff0_.joined_date as joined_d5_3_, staff0_.login_id as login_id6_3_, staff0_.name as name7_3_, staff0_.password as password8_3_, staff0_.phone as phone9_3_, staff0_.updated_at as updated10_3_ from staff staff0_
+2022-12-21 01:47:48.693 TRACE 14524 --- [http-nio-8085-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-12-21 01:47:48.694 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-12-21 01:47:48.694 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1150561681<open>)]
+2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=4, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Sta (truncated)...]
+2022-12-21 01:47:48.705 DEBUG 14524 --- [http-nio-8085-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-12-21 01:47:48.706 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-21 01:47:55.874  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-21 01:47:57.267  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-21 01:47:57.277  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-21 01:47:57.317  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-21 01:47:57.336  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-21 01:47:57.366  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -22,6 +22,16 @@ public class FoodServiceImpl implements FoodService {
 	}
 
 	@Override
+	public List<Food> getAllByCategory(Category category) {
+		return foodRepo.findByCategory(category);
+	}
+
+	@Override
+	public Food get(int id) {
+		return foodRepo.findById(id).orElse(null);
+	}
+
+	@Override
 	public Food create(Food food) {
 		food.setCreatedAt(LocalDateTime.now());
 		return foodRepo.save(food);
@@ -37,7 +47,7 @@ public class FoodServiceImpl implements FoodService {
 			toUpdateFood.setStock(food.getStock());
 			toUpdateFood.setCategory(food.getCategory());
 			toUpdateFood.setUpdatedAt(LocalDateTime.now());
-			foodRepo.save(toUpdateFood);
+			return foodRepo.save(toUpdateFood);
 		}
 		return null;
 	}
@@ -50,16 +60,6 @@ public class FoodServiceImpl implements FoodService {
 			return true;
 		}
 		return false;
-	}
-
-	@Override
-	public List<Food> getAllByCategory(Category category) {
-		return foodRepo.findByCategory(category);
-	}
-
-	@Override
-	public Food get(int id) {
-		return foodRepo.findById(id).orElse(null);
 	}
 
 }
