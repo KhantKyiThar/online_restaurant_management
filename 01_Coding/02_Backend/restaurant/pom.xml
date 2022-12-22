@@ -12,7 +12,7 @@
 	<artifactId>restaurant</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restaurant</name>
-	<description>Restaurant Management System</description>
+	<description>Restaurant System</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -46,7 +46,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		<!-- Validate -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
