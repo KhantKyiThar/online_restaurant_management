@@ -21,12 +21,20 @@ import com.javaclass.restaurant.entity.Staff;
 import com.javaclass.restaurant.service.FoodService;
 import com.javaclass.restaurant.service.StaffService;
 
+import com.javaclass.restaurant.service.StorageService;
+
+
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {
 
 	@Autowired
 	FoodService foodService;
+
+	
+	@Autowired
+	StorageService storageService;
+
 
 	@Autowired
 	StaffService staffService;
@@ -56,12 +64,16 @@ public class AdminController {
 		if (food == null) {
 			return ResponseEntity.notFound().build();
 		}
+		// Delete food
 		// String image=food.getImage();
+
 		boolean isDeleted = foodService.delete(id);
 		if (!isDeleted) {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
-
+		
+		//Delete image
+		storageService.delete(food.getImage());
 		return ResponseEntity.ok().build();
 	}
 

@@ -49,7 +49,7 @@ public class FoodServiceImpl implements FoodService {
 			toUpdateFood.setUpdatedAt(LocalDateTime.now());
 			return foodRepo.save(toUpdateFood);
 		}
-		return null;
+		return toUpdateFood;
 	}
 
 	@Override
