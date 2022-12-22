@@ -1,552 +1,253 @@
-2022-12-20 00:00:09.336  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:00:09.456  INFO 7976 --- [Thread-114] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:00:09.761  INFO 7976 --- [Thread-114] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:00:09.764  INFO 7976 --- [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
-2022-12-20 00:00:09.770  INFO 7976 --- [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
-2022-12-20 00:00:09.826  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:00:09.826  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:00:10.211  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:00:10.211  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:00:10.215  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:00:10.235  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:00:10.235  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:00:10.239  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:00:10.505  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:00:10.508  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:00:10.508  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:00:10.571  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:00:10.573  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
-2022-12-20 00:00:10.687 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:00:10.693  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:00:10.707  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
-2022-12-20 00:00:10.732  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
-2022-12-20 00:00:10.732  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:00:10.984  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:00:10.985  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:00:11.029  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:00:11.091 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:00:11.105 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:00:11.119 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:00:11.132 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:00:11.190  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:00:11.208  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:00:11.214  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.425 seconds (JVM running for 2298.689)
-2022-12-20 00:00:11.216  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:01:12.200  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:01:12.259  INFO 7976 --- [Thread-118] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:01:12.267  INFO 7976 --- [Thread-118] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:12.269  INFO 7976 --- [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
-2022-12-20 00:01:12.272  INFO 7976 --- [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
-2022-12-20 00:01:12.412  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:01:12.413  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:01:12.715  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:12.715  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:01:12.718  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:01:12.722  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:12.722  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:01:12.724  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:01:12.811  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:01:12.811  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:01:12.812  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:01:12.830  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:01:12.830  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
-2022-12-20 00:01:12.869 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:12.869  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:01:12.875  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
-2022-12-20 00:01:12.890  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
-2022-12-20 00:01:12.891  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:01:12.995  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:01:12.996  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:13.019  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:01:13.069 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:01:13.097 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:01:13.118 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:01:13.130 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:01:13.190  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:01:13.206  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:01:13.212  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.829 seconds (JVM running for 2360.687)
-2022-12-20 00:01:13.214  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:01:41.223  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:01:41.300  INFO 7976 --- [Thread-122] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:01:41.308  INFO 7976 --- [Thread-122] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:41.310  INFO 7976 --- [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
-2022-12-20 00:01:41.317  INFO 7976 --- [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
-2022-12-20 00:01:41.452  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:01:41.453  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:01:41.680  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:41.680  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:01:41.683  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:01:41.687  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:41.687  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:01:41.690  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:01:41.785  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:01:41.786  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:01:41.786  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:01:41.807  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:01:41.807  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 351 ms
-2022-12-20 00:01:41.846 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:41.847  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:01:41.854  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
-2022-12-20 00:01:41.873  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
-2022-12-20 00:01:41.873  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:01:41.985  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:01:41.985  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:42.008  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:01:42.057 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:01:42.084 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:01:42.094 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:01:42.105 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:01:42.151  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:01:42.165  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:01:42.170  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.757 seconds (JVM running for 2389.645)
-2022-12-20 00:01:42.172  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:01:56.762  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:01:56.811  INFO 7976 --- [Thread-126] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:01:56.818  INFO 7976 --- [Thread-126] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:56.819  INFO 7976 --- [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown initiated...
-2022-12-20 00:01:56.825  INFO 7976 --- [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown completed.
-2022-12-20 00:01:56.941  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:01:56.941  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:01:57.128  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:57.128  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:01:57.131  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:01:57.135  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:01:57.135  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:01:57.137  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:01:57.221  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:01:57.222  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:01:57.222  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:01:57.241  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:01:57.242  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 298 ms
-2022-12-20 00:01:57.280 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:57.280  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:01:57.286  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Starting...
-2022-12-20 00:01:57.301  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Start completed.
-2022-12-20 00:01:57.301  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:01:57.409  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:01:57.410  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:01:57.435  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:01:57.501 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:01:57.518 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:01:57.530 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:01:57.552 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:01:57.611  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:01:57.632  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:01:57.639  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.727 seconds (JVM running for 2405.114)
-2022-12-20 00:01:57.641  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:02:08.168  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:02:08.244  INFO 7976 --- [Thread-130] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:02:08.257  INFO 7976 --- [Thread-130] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:08.258  INFO 7976 --- [Thread-130] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown initiated...
-2022-12-20 00:02:08.267  INFO 7976 --- [Thread-130] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown completed.
-2022-12-20 00:02:08.404  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:02:08.404  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:02:08.597  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:08.597  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:02:08.600  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:02:08.606  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:08.606  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:02:08.608  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:02:08.692  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:02:08.693  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:02:08.694  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:02:08.712  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:02:08.712  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 305 ms
-2022-12-20 00:02:08.747 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:08.748  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:02:08.754  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Starting...
-2022-12-20 00:02:08.768  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Start completed.
-2022-12-20 00:02:08.769  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:02:08.877  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:02:08.877  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:08.901  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:02:08.949 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:02:08.969 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:02:08.987 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:02:08.994 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:02:09.042  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:02:09.055  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:02:09.061  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.687 seconds (JVM running for 2416.537)
-2022-12-20 00:02:09.063  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:02:18.540  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:02:18.585  INFO 7976 --- [Thread-134] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:02:18.593  INFO 7976 --- [Thread-134] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:18.594  INFO 7976 --- [Thread-134] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown initiated...
-2022-12-20 00:02:18.598  INFO 7976 --- [Thread-134] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown completed.
-2022-12-20 00:02:18.708  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:02:18.708  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:02:18.921  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:18.922  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:02:18.924  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:02:18.929  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:18.929  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:02:18.931  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:02:19.037  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:02:19.038  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:02:19.038  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:02:19.081  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:02:19.081  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
-2022-12-20 00:02:19.118 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:19.118  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:02:19.125  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Starting...
-2022-12-20 00:02:19.141  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Start completed.
-2022-12-20 00:02:19.141  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:02:19.377  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:02:19.378  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:19.420  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:02:19.516 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:02:19.534 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:02:19.544 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:02:19.553 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:02:19.605  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:02:19.621  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:02:19.626  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.947 seconds (JVM running for 2427.101)
-2022-12-20 00:02:19.629  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:02:38.121  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:02:38.168  INFO 7976 --- [Thread-138] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:02:38.175  INFO 7976 --- [Thread-138] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:38.176  INFO 7976 --- [Thread-138] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Shutdown initiated...
-2022-12-20 00:02:38.179  INFO 7976 --- [Thread-138] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Shutdown completed.
-2022-12-20 00:02:38.311  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:02:38.312  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:02:38.545  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:38.546  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:02:38.549  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:02:38.554  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:38.554  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:02:38.557  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:02:38.678  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:02:38.679  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:02:38.680  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:02:38.700  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:02:38.700  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 386 ms
-2022-12-20 00:02:38.740 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:38.740  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:02:38.749  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Starting...
-2022-12-20 00:02:38.775  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Start completed.
-2022-12-20 00:02:38.776  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:02:38.903  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:02:38.904  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:38.930  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:02:38.987 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:02:39.003 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:02:39.030 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:02:39.039 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:02:39.085  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:02:39.099  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:02:39.105  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.837 seconds (JVM running for 2446.58)
-2022-12-20 00:02:39.106  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:02:54.588  INFO 7976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2022-12-20 00:02:54.648  INFO 7976 --- [Thread-142] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:02:54.657  INFO 7976 --- [Thread-142] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:54.658  INFO 7976 --- [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown initiated...
-2022-12-20 00:02:54.668  INFO 7976 --- [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown completed.
-2022-12-20 00:02:54.813  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7976 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-20 00:02:54.813  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 00:02:55.028  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:55.028  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-20 00:02:55.032  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
-2022-12-20 00:02:55.037  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-20 00:02:55.037  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 00:02:55.040  INFO 7976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2022-12-20 00:02:55.134  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-20 00:02:55.135  INFO 7976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 00:02:55.135  INFO 7976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-20 00:02:55.155  INFO 7976 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-12-20 00:02:55.155  INFO 7976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
-2022-12-20 00:02:55.196 DEBUG 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:55.196  INFO 7976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 00:02:55.203  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Starting...
-2022-12-20 00:02:55.218  INFO 7976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Start completed.
-2022-12-20 00:02:55.219  INFO 7976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-20 00:02:55.342  INFO 7976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 00:02:55.342  INFO 7976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:02:55.367  WARN 7976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 00:02:55.424 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-20 00:02:55.439 DEBUG 7976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2022-12-20 00:02:55.457 DEBUG 7976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-20 00:02:55.465 DEBUG 7976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-20 00:02:55.513  INFO 7976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-20 00:02:55.527  INFO 7976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-20 00:02:55.532  INFO 7976 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 0.757 seconds (JVM running for 2463.008)
-2022-12-20 00:02:55.534  INFO 7976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-12-20 00:10:48.202  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-12-20 00:10:48.256  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-20 00:10:48.266  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 00:10:48.268  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown initiated...
-2022-12-20 00:10:48.274  INFO 7976 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown completed.
-2022-12-21 01:45:21.380  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 1.8.0_181 on Khant-Kyi-Thar with PID 14524 (C:\Users\Khant Kyi Thar\eclipse-workspace\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by Khant Kyi Thar in C:\Users\Khant Kyi Thar\eclipse-workspace\online_restaurant_management\01_Coding\02_Backend\restaurant)
-2022-12-21 01:45:21.380  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-12-21 01:45:21.558  INFO 14524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-12-21 01:45:21.558  INFO 14524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-12-21 01:45:23.879  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-21 01:45:23.892  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-12-21 01:45:24.026  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2022-12-21 01:45:24.026  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2022-12-21 01:45:24.044  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2022-12-21 01:45:24.048  INFO 14524 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2022-12-21 01:45:24.048  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 0 JDBC repository interfaces.
-2022-12-21 01:45:24.079  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2022-12-21 01:45:24.079  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-21 01:45:24.280  INFO 14524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 4 JPA repository interfaces.
-2022-12-21 01:45:26.664  INFO 14524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-12-21 01:45:26.702  INFO 14524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-21 01:45:26.702  INFO 14524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-21 01:45:26.965  INFO 14524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-12-21 01:45:26.965  INFO 14524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5391 ms
-2022-12-21 01:45:27.588 DEBUG 14524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2022-12-21 01:45:27.666  INFO 14524 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-21 01:45:27.867  INFO 14524 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2022-12-21 01:45:28.468  INFO 14524 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-12-21 01:45:28.838  INFO 14524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-12-21 01:45:30.696  INFO 14524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-12-21 01:45:30.760  INFO 14524 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-12-21 01:45:34.252  INFO 14524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-21 01:45:34.296  INFO 14524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-21 01:45:34.684 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:34.906 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:35.144 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:35.407 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:35.655 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:35.692 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:35.940  WARN 14524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-21 01:45:37.338 DEBUG 14524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-12-21 01:45:37.739 DEBUG 14524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
-2022-12-21 01:45:37.870 DEBUG 14524 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-12-21 01:45:37.924 DEBUG 14524 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-12-21 01:45:38.726 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:38.733 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:38.826 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:38.858 DEBUG 14524 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2022-12-21 01:45:39.274  INFO 14524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-12-21 01:45:39.506  INFO 14524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-12-21 01:45:39.559  INFO 14524 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 20.554 seconds (JVM running for 23.878)
-2022-12-21 01:46:27.206  INFO 14524 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-21 01:46:27.207  INFO 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-12-21 01:46:27.208 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2022-12-21 01:46:27.208 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2022-12-21 01:46:27.209 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2022-12-21 01:46:27.214 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7bd310de
-2022-12-21 01:46:27.216 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4567d2b3
-2022-12-21 01:46:27.217 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-12-21 01:46:27.218  INFO 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2022-12-21 01:46:27.264 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
-2022-12-21 01:46:27.284 DEBUG 14524 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
-2022-12-21 01:46:27.291 DEBUG 14524 --- [http-nio-8085-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:27.418 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1767231267<open>)] for JPA transaction
-2022-12-21 01:46:27.419 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:46:27.434 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@10496586]
-2022-12-21 01:46:27.436 TRACE 14524 --- [http-nio-8085-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:46:27.865 DEBUG 14524 --- [http-nio-8085-exec-1] org.hibernate.SQL                        : select food0_.id as id1_1_, food0_.category_id as category8_1_, food0_.created_at as created_2_1_, food0_.food_item as food_ite3_1_, food0_.image as image4_1_, food0_.price as price5_1_, food0_.stock as stock6_1_, food0_.updated_at as updated_7_1_ from food food0_
-2022-12-21 01:46:27.916 TRACE 14524 --- [http-nio-8085-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:46:27.917 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:46:27.917 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1767231267<open>)]
-2022-12-21 01:46:27.920 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:46:27.962 DEBUG 14524 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:46:27.964 DEBUG 14524 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=2, foodItem=Menu2, image=, price=1000, stock=100, category=null, createdAt=2022-12-20T23:5 (truncated)...]
-2022-12-21 01:46:28.125 DEBUG 14524 --- [http-nio-8085-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:28.131 DEBUG 14524 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:46:37.181 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
-2022-12-21 01:46:37.184 DEBUG 14524 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
-2022-12-21 01:46:37.185 DEBUG 14524 --- [http-nio-8085-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:37.188 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1269220417<open>)] for JPA transaction
-2022-12-21 01:46:37.189 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:46:37.192 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@45612345]
-2022-12-21 01:46:37.198 TRACE 14524 --- [http-nio-8085-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:46:37.205 DEBUG 14524 --- [http-nio-8085-exec-3] org.hibernate.SQL                        : select staff0_.id as id1_3_, staff0_.staff_type as staff_ty2_3_, staff0_.created_at as created_3_3_, staff0_.gender as gender4_3_, staff0_.joined_date as joined_d5_3_, staff0_.login_id as login_id6_3_, staff0_.name as name7_3_, staff0_.password as password8_3_, staff0_.phone as phone9_3_, staff0_.updated_at as updated10_3_ from staff staff0_
-2022-12-21 01:46:37.225 TRACE 14524 --- [http-nio-8085-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:46:37.226 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:46:37.226 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1269220417<open>)]
-2022-12-21 01:46:37.234 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:46:37.236 DEBUG 14524 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:46:37.237 DEBUG 14524 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=3, name=Staff6, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Sta (truncated)...]
-2022-12-21 01:46:37.277 DEBUG 14524 --- [http-nio-8085-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:37.282 DEBUG 14524 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:46:47.823 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/staff/create", parameters={}
-2022-12-21 01:46:47.826 DEBUG 14524 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
-2022-12-21 01:46:47.826 DEBUG 14524 --- [http-nio-8085-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:48.121 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
-2022-12-21 01:46:48.179 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1701933671<open>)] for JPA transaction
-2022-12-21 01:46:48.182 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2022-12-21 01:46:48.187 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@771c1292]
-2022-12-21 01:46:48.187 TRACE 14524 --- [http-nio-8085-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
-2022-12-21 01:46:48.243 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
-2022-12-21 01:46:48.258 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
-2022-12-21 01:46:48.334 TRACE 14524 --- [http-nio-8085-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
-2022-12-21 01:46:48.335 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:46:48.336 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1701933671<open>)]
-2022-12-21 01:46:48.392 DEBUG 14524 --- [http-nio-8085-exec-4] org.hibernate.SQL                        : insert into staff (staff_type, created_at, gender, joined_date, login_id, name, password, phone, updated_at, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2022-12-21 01:46:48.406 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Staff]
-2022-12-21 01:46:48.409 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2022-12-21T01:46:48.177]
-2022-12-21 01:46:48.411 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Male]
-2022-12-21 01:46:48.415 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DATE] - [2022-12-21]
-2022-12-21 01:46:48.417 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [25-00186]
-2022-12-21 01:46:48.418 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [Staff1]
-2022-12-21 01:46:48.419 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [staff@123]
-2022-12-21 01:46:48.420 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [09796567966]
-2022-12-21 01:46:48.420 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [TIMESTAMP] - [null]
-2022-12-21 01:46:48.423 TRACE 14524 --- [http-nio-8085-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [10] as [INTEGER] - [9]
-2022-12-21 01:46:48.466 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:46:48.477 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:46:48.479 DEBUG 14524 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Staff [id=9, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
-2022-12-21 01:46:48.486 DEBUG 14524 --- [http-nio-8085-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:48.488 DEBUG 14524 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:46:56.786 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/api/admin/staff/update/1", parameters={}
-2022-12-21 01:46:56.790 DEBUG 14524 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#updateStaff(int, Staff)
-2022-12-21 01:46:56.791 DEBUG 14524 --- [http-nio-8085-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:56.809 DEBUG 14524 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff6, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
-2022-12-21 01:46:56.811 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1120802207<open>)] for JPA transaction
-2022-12-21 01:46:56.814 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:46:56.820 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5f53bb4b]
-2022-12-21 01:46:56.821 TRACE 14524 --- [http-nio-8085-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:46:56.870 DEBUG 14524 --- [http-nio-8085-exec-5] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:46:56.872 TRACE 14524 --- [http-nio-8085-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
-2022-12-21 01:46:56.893 TRACE 14524 --- [http-nio-8085-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:46:56.895 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:46:56.900 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1120802207<open>)]
-2022-12-21 01:46:56.904 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:46:56.927 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:46:56.933 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2022-12-21 01:46:56.935 DEBUG 14524 --- [http-nio-8085-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:46:56.936 DEBUG 14524 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-12-21 01:47:06.909 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/api/admin/staff/update/9", parameters={}
-2022-12-21 01:47:06.910 DEBUG 14524 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#updateStaff(int, Staff)
-2022-12-21 01:47:06.911 DEBUG 14524 --- [http-nio-8085-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:06.918 DEBUG 14524 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=Staff9, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
-2022-12-21 01:47:06.919 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1919858311<open>)] for JPA transaction
-2022-12-21 01:47:06.920 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:06.923 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@76513c12]
-2022-12-21 01:47:06.924 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:06.925 DEBUG 14524 --- [http-nio-8085-exec-6] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:47:06.926 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [9]
-2022-12-21 01:47:06.938 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:06.939 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:06.939 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1919858311<open>)]
-2022-12-21 01:47:06.942 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:06.943 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1919858311<open>)] for JPA transaction
-2022-12-21 01:47:06.943 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2022-12-21 01:47:06.944 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4b506ebe]
-2022-12-21 01:47:06.944 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
-2022-12-21 01:47:06.959 TRACE 14524 --- [http-nio-8085-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
-2022-12-21 01:47:06.960 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:06.960 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1919858311<open>)]
-2022-12-21 01:47:06.969 DEBUG 14524 --- [http-nio-8085-exec-6] org.hibernate.SQL                        : update staff set staff_type=?, created_at=?, gender=?, joined_date=?, login_id=?, name=?, password=?, phone=?, updated_at=? where id=?
-2022-12-21 01:47:06.971 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
-2022-12-21 01:47:06.971 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2022-12-21T01:46:48]
-2022-12-21 01:47:06.972 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Male]
-2022-12-21 01:47:06.973 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DATE] - [2022-12-21]
-2022-12-21 01:47:06.974 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [25-00186]
-2022-12-21 01:47:06.975 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [Staff9]
-2022-12-21 01:47:06.976 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [staff@123]
-2022-12-21 01:47:06.976 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [09796567966]
-2022-12-21 01:47:06.977 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [TIMESTAMP] - [2022-12-21T01:47:06.942]
-2022-12-21 01:47:06.978 TRACE 14524 --- [http-nio-8085-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [10] as [INTEGER] - [9]
-2022-12-21 01:47:07.006 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:07.008 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:47:07.008 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=9, name=Staff9, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Staf (truncated)...]
-2022-12-21 01:47:07.010 DEBUG 14524 --- [http-nio-8085-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:07.011 DEBUG 14524 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:47:26.757 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/6", parameters={}
-2022-12-21 01:47:26.759 DEBUG 14524 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
-2022-12-21 01:47:26.759 DEBUG 14524 --- [http-nio-8085-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:26.762 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1493227925<open>)] for JPA transaction
-2022-12-21 01:47:26.762 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:26.771 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@57c72cc5]
-2022-12-21 01:47:26.771 TRACE 14524 --- [http-nio-8085-exec-7] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:26.772 DEBUG 14524 --- [http-nio-8085-exec-7] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:47:26.774 TRACE 14524 --- [http-nio-8085-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [6]
-2022-12-21 01:47:26.777 TRACE 14524 --- [http-nio-8085-exec-7] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:26.778 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:26.778 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1493227925<open>)]
-2022-12-21 01:47:26.779 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:26.786 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
-2022-12-21 01:47:26.787 DEBUG 14524 --- [http-nio-8085-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:26.788 DEBUG 14524 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-12-21 01:47:31.694 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/8", parameters={}
-2022-12-21 01:47:31.696 DEBUG 14524 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
-2022-12-21 01:47:31.696 DEBUG 14524 --- [http-nio-8085-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:31.697 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2010120357<open>)] for JPA transaction
-2022-12-21 01:47:31.698 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:31.705 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7d286bd5]
-2022-12-21 01:47:31.706 TRACE 14524 --- [http-nio-8085-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:31.707 DEBUG 14524 --- [http-nio-8085-exec-8] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:47:31.708 TRACE 14524 --- [http-nio-8085-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [8]
-2022-12-21 01:47:31.711 TRACE 14524 --- [http-nio-8085-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:31.712 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:31.712 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2010120357<open>)]
-2022-12-21 01:47:31.717 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:31.718 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
-2022-12-21 01:47:31.719 DEBUG 14524 --- [http-nio-8085-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:31.720 DEBUG 14524 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-12-21 01:47:40.937 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/3", parameters={}
-2022-12-21 01:47:40.940 DEBUG 14524 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
-2022-12-21 01:47:40.940 DEBUG 14524 --- [http-nio-8085-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:40.941 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
-2022-12-21 01:47:40.942 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:40.946 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3530206f]
-2022-12-21 01:47:40.946 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:40.948 DEBUG 14524 --- [http-nio-8085-exec-9] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:47:40.948 TRACE 14524 --- [http-nio-8085-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
-2022-12-21 01:47:40.954 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:40.955 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:40.955 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
-2022-12-21 01:47:40.958 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:40.959 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
-2022-12-21 01:47:40.959 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:40.961 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@96011e9]
-2022-12-21 01:47:40.961 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:40.962 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:40.962 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:40.963 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
-2022-12-21 01:47:40.963 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:40.971 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1006094689<open>)] for JPA transaction
-2022-12-21 01:47:40.972 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2022-12-21 01:47:40.973 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1422d51b]
-2022-12-21 01:47:40.974 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
-2022-12-21 01:47:40.986 TRACE 14524 --- [http-nio-8085-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
-2022-12-21 01:47:40.987 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:40.987 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1006094689<open>)]
-2022-12-21 01:47:40.989 DEBUG 14524 --- [http-nio-8085-exec-9] org.hibernate.SQL                        : delete from staff where id=?
-2022-12-21 01:47:40.990 TRACE 14524 --- [http-nio-8085-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
-2022-12-21 01:47:41.005 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:41.006 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
-2022-12-21 01:47:41.007 DEBUG 14524 --- [http-nio-8085-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:41.008 DEBUG 14524 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:47:43.272 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/staff/delete/3", parameters={}
-2022-12-21 01:47:43.273 DEBUG 14524 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#deleteStaff(int)
-2022-12-21 01:47:43.274 DEBUG 14524 --- [http-nio-8085-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:43.275 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(790979080<open>)] for JPA transaction
-2022-12-21 01:47:43.276 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:43.279 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@21e2899c]
-2022-12-21 01:47:43.279 TRACE 14524 --- [http-nio-8085-exec-10] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:43.280 DEBUG 14524 --- [http-nio-8085-exec-10] org.hibernate.SQL                        : select staff0_.id as id1_3_0_, staff0_.staff_type as staff_ty2_3_0_, staff0_.created_at as created_3_3_0_, staff0_.gender as gender4_3_0_, staff0_.joined_date as joined_d5_3_0_, staff0_.login_id as login_id6_3_0_, staff0_.name as name7_3_0_, staff0_.password as password8_3_0_, staff0_.phone as phone9_3_0_, staff0_.updated_at as updated10_3_0_ from staff staff0_ where staff0_.id=?
-2022-12-21 01:47:43.280 TRACE 14524 --- [http-nio-8085-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
-2022-12-21 01:47:43.287 TRACE 14524 --- [http-nio-8085-exec-10] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
-2022-12-21 01:47:43.287 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:43.287 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(790979080<open>)]
-2022-12-21 01:47:43.291 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:43.291 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
-2022-12-21 01:47:43.292 DEBUG 14524 --- [http-nio-8085-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:43.292 DEBUG 14524 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-12-21 01:47:48.671 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
-2022-12-21 01:47:48.672 DEBUG 14524 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
-2022-12-21 01:47:48.673 DEBUG 14524 --- [http-nio-8085-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:48.675 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1150561681<open>)] for JPA transaction
-2022-12-21 01:47:48.675 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-2022-12-21 01:47:48.679 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@423cd2a2]
-2022-12-21 01:47:48.679 TRACE 14524 --- [http-nio-8085-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:47:48.681 DEBUG 14524 --- [http-nio-8085-exec-2] org.hibernate.SQL                        : select staff0_.id as id1_3_, staff0_.staff_type as staff_ty2_3_, staff0_.created_at as created_3_3_, staff0_.gender as gender4_3_, staff0_.joined_date as joined_d5_3_, staff0_.login_id as login_id6_3_, staff0_.name as name7_3_, staff0_.password as password8_3_, staff0_.phone as phone9_3_, staff0_.updated_at as updated10_3_ from staff staff0_
-2022-12-21 01:47:48.693 TRACE 14524 --- [http-nio-8085-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
-2022-12-21 01:47:48.694 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2022-12-21 01:47:48.694 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1150561681<open>)]
-2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-12-21 01:47:48.697 DEBUG 14524 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=4, name=Staff1, loginId=25-00186, password=staff@123, phone=09796567966, gender=Male, Sta (truncated)...]
-2022-12-21 01:47:48.705 DEBUG 14524 --- [http-nio-8085-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2022-12-21 01:47:48.706 DEBUG 14524 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-12-21 01:47:55.874  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-12-21 01:47:57.267  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-12-21 01:47:57.277  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-12-21 01:47:57.317  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-21 01:47:57.336  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-12-21 01:47:57.366  INFO 14524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-22 11:35:51.376  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.3 on DESKTOP-RURG6GE with PID 9304 (D:\java_file\restaurant\backend\restaurant\target\classes started by Aceraspire in D:\java_file\restaurant\backend\restaurant)
+2022-12-22 11:35:51.382  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 11:35:51.665  INFO 9304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-22 11:35:51.666  INFO 9304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-22 11:35:53.769  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 11:35:53.771  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-22 11:35:53.819  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 11:35:53.822  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 11:35:53.827  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 11:35:53.830  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 11:35:53.832  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 0 JDBC repository interfaces.
+2022-12-22 11:35:53.843  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 11:35:53.844  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 11:35:53.910  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2022-12-22 11:35:55.007  INFO 9304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-22 11:35:55.026  INFO 9304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 11:35:55.026  INFO 9304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 11:35:55.155  INFO 9304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 11:35:55.155  INFO 9304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3486 ms
+2022-12-22 11:35:55.353  INFO 9304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 11:35:55.474  INFO 9304 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 11:35:55.788  INFO 9304 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 11:35:55.962  INFO 9304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 11:35:56.565  INFO 9304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 11:35:56.678  INFO 9304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 11:35:58.451  INFO 9304 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 11:35:58.468  INFO 9304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 11:35:59.666  WARN 9304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 11:35:59.821 DEBUG 9304 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 11:35:59.933 DEBUG 9304 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-12-22 11:35:59.967 DEBUG 9304 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 11:35:59.980 DEBUG 9304 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 11:36:00.243  INFO 9304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-22 11:36:00.303  INFO 9304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-22 11:36:00.321  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 9.665 seconds (JVM running for 11.234)
+2022-12-22 11:37:33.508  INFO 9304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 11:37:33.508  INFO 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 11:37:33.509 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 11:37:33.509 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 11:37:33.509 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 11:37:33.511 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6bec9427
+2022-12-22 11:37:33.511 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@409df295
+2022-12-22 11:37:33.511 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 11:37:33.512  INFO 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-22 11:37:33.527 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-12-22 11:37:33.537 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 11:37:33.542 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 11:37:33.542 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 11:37:33.549 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 11:37:33.552 DEBUG 9304 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-12-22 11:37:33.684 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-12-22 11:37:33.700 DEBUG 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 11:37:33.866 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-12-22 11:37:33.871 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 11:37:33.877 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 11:37:33.878 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 11:37:33.878 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 11:37:33.879 DEBUG 9304 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 11:37:33.910 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 11:37:33.911 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 11:37:33 MMT 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-12-22 11:37:33.975 DEBUG 9304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:12:47.342  INFO 9304 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-22 12:12:47.363  INFO 9304 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-22 12:12:47.367  INFO 9304 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-22 12:12:47.378  INFO 9304 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 12:12:47.384  INFO 9304 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-22 12:12:47.395  INFO 9304 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-22 12:12:47.543  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.3 on DESKTOP-RURG6GE with PID 9304 (D:\java_file\restaurant\backend\restaurant\target\classes started by Aceraspire in D:\java_file\restaurant\backend\restaurant)
+2022-12-22 12:12:47.544  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 12:12:47.964  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 12:12:47.964  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-22 12:12:47.972  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 12:12:47.974  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 12:12:47.978  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 12:12:47.984  INFO 9304 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 12:12:47.985  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2022-12-22 12:12:47.992  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 12:12:47.992  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 12:12:48.007  INFO 9304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2022-12-22 12:12:48.215  INFO 9304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-22 12:12:48.216  INFO 9304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 12:12:48.216  INFO 9304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 12:12:48.247  INFO 9304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 12:12:48.248  INFO 9304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 698 ms
+2022-12-22 12:12:48.307  INFO 9304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 12:12:48.319  INFO 9304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-22 12:12:48.342  INFO 9304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-22 12:12:48.343  INFO 9304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 12:12:48.595  INFO 9304 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 12:12:48.595  INFO 9304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 12:12:48.806  WARN 9304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 12:12:48.884 DEBUG 9304 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 12:12:48.907 DEBUG 9304 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-12-22 12:12:48.928 DEBUG 9304 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 12:12:48.939 DEBUG 9304 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 12:12:49.038  INFO 9304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-22 12:12:49.060  INFO 9304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-22 12:12:49.067  INFO 9304 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.582 seconds (JVM running for 2219.98)
+2022-12-22 12:12:49.069  INFO 9304 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-22 12:51:52.585  INFO 9304 --- [RMI TCP Connection(79)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-22 12:51:52.601  INFO 9304 --- [RMI TCP Connection(79)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-22 12:51:52.611  INFO 9304 --- [RMI TCP Connection(79)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 12:51:52.612  INFO 9304 --- [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-22 12:51:52.624  INFO 9304 --- [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-22 20:35:12.200  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.3 on DESKTOP-RURG6GE with PID 10316 (D:\java_file\restaurant\backend\restaurant\target\classes started by Aceraspire in D:\java_file\restaurant\backend\restaurant)
+2022-12-22 20:35:12.206  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 20:35:12.352  INFO 10316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-22 20:35:12.352  INFO 10316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-22 20:35:13.879  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:35:13.883  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-22 20:35:13.943  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:35:13.949  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:35:13.955  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:35:13.960  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:35:13.962  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 0 JDBC repository interfaces.
+2022-12-22 20:35:13.983  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:35:13.990  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 20:35:14.088  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 4 JPA repository interfaces.
+2022-12-22 20:35:15.800  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-22 20:35:15.825  INFO 10316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 20:35:15.833  INFO 10316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 20:35:16.065  INFO 10316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 20:35:16.066  INFO 10316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3711 ms
+2022-12-22 20:35:16.389  INFO 10316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 20:35:16.523  INFO 10316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 20:35:16.838  INFO 10316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 20:35:17.033  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 20:35:17.531  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 20:35:17.563  INFO 10316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 20:35:18.958  INFO 10316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 20:35:18.977  INFO 10316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 20:35:19.596  WARN 10316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 20:35:19.770 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 20:35:19.895 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-12-22 20:35:19.938 DEBUG 10316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 20:35:19.958 DEBUG 10316 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 20:35:20.232  INFO 10316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-22 20:35:20.297  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-22 20:35:20.311  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 8.921 seconds (JVM running for 11.117)
+2022-12-22 20:39:05.428  INFO 10316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-22 20:39:05.451  INFO 10316 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-22 20:39:05.474  INFO 10316 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 20:39:05.478  INFO 10316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-22 20:39:05.492  INFO 10316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-22 20:39:05.653  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.3 on DESKTOP-RURG6GE with PID 10316 (D:\java_file\restaurant\backend\restaurant\target\classes started by Aceraspire in D:\java_file\restaurant\backend\restaurant)
+2022-12-22 20:39:05.653  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 20:39:06.003  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:39:06.004  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-22 20:39:06.020  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:06.028  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:06.032  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:06.036  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:06.037  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2022-12-22 20:39:06.042  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:39:06.043  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 20:39:06.071  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2022-12-22 20:39:06.253  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-22 20:39:06.255  INFO 10316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 20:39:06.258  INFO 10316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 20:39:06.308  INFO 10316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 20:39:06.308  INFO 10316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
+2022-12-22 20:39:06.380  INFO 10316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 20:39:06.387  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-22 20:39:06.407  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-22 20:39:06.407  INFO 10316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 20:39:06.754  INFO 10316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 20:39:06.755  INFO 10316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 20:39:06.923  WARN 10316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 20:39:06.985 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 20:39:07.017 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2022-12-22 20:39:07.039 DEBUG 10316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 20:39:07.047 DEBUG 10316 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 20:39:07.163  INFO 10316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-22 20:39:07.191  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-22 20:39:07.198  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.617 seconds (JVM running for 238.003)
+2022-12-22 20:39:07.207  INFO 10316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-22 20:39:13.762  INFO 10316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-22 20:39:13.783  INFO 10316 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-22 20:39:13.793  INFO 10316 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 20:39:13.797  INFO 10316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-22 20:39:13.811  INFO 10316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-22 20:39:13.996  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.3 on DESKTOP-RURG6GE with PID 10316 (D:\java_file\restaurant\backend\restaurant\target\classes started by Aceraspire in D:\java_file\restaurant\backend\restaurant)
+2022-12-22 20:39:13.997  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 20:39:14.356  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:39:14.357  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-22 20:39:14.367  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:14.374  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:14.379  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:14.382  INFO 10316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-22 20:39:14.391  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2022-12-22 20:39:14.402  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-22 20:39:14.403  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 20:39:14.433  INFO 10316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2022-12-22 20:39:14.594  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-22 20:39:14.596  INFO 10316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 20:39:14.596  INFO 10316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 20:39:14.640  INFO 10316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 20:39:14.641  INFO 10316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 642 ms
+2022-12-22 20:39:14.707  INFO 10316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 20:39:14.721  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-12-22 20:39:14.743  INFO 10316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-12-22 20:39:14.743  INFO 10316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 20:39:15.046  INFO 10316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 20:39:15.046  INFO 10316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 20:39:15.273  WARN 10316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 20:39:15.344 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 20:39:15.365 DEBUG 10316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2022-12-22 20:39:15.381 DEBUG 10316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 20:39:15.398 DEBUG 10316 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 20:39:15.509  INFO 10316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-22 20:39:15.528  INFO 10316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-22 20:39:15.533  INFO 10316 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.621 seconds (JVM running for 246.338)
+2022-12-22 20:39:15.540  INFO 10316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-22 20:39:54.292  INFO 10316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 20:39:54.292  INFO 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 20:39:54.293 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 20:39:54.293 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 20:39:54.293 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 20:39:54.294 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@640f4faa
+2022-12-22 20:39:54.296 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@361e6aec
+2022-12-22 20:39:54.297 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 20:39:54.298  INFO 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-12-22 20:39:54.318 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-12-22 20:39:54.328 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 20:39:54.335 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 20:39:54.336 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 20:39:54.344 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 20:39:54.352 DEBUG 10316 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-12-22 20:39:54.407 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-12-22 20:39:54.412 DEBUG 10316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 20:39:54.621 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-12-22 20:39:54.627 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 20:39:54.635 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 20:39:54.635 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 20:39:54.636 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 20:39:54.637 DEBUG 10316 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 20:39:54.672 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 20:39:54.673 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 20:39:54 MMT 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-12-22 20:39:54.744 DEBUG 10316 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 20:49:10.843 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin", parameters={}
+2022-12-22 20:49:10.845 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 20:49:10.851 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 20:49:10.853 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 20:49:10.855 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 20:49:10.857 DEBUG 10316 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-12-22 20:49:10.890 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-12-22 20:49:10.891 DEBUG 10316 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 22:00:33.893  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-22 22:00:33.909  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-22 22:00:33.910  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-22 22:00:33.918  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 22:00:33.919  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-12-22 22:00:33.925  INFO 10316 --- [RMI TCP Connection(87)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.

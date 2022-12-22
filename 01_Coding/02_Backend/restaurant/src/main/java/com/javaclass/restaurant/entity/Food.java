@@ -14,7 +14,6 @@ import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 public class Food {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -110,5 +109,4 @@ public class Food {
 		return "Food [id=" + id + ", foodItem=" + foodItem + ", image=" + image + ", price=" + price + ", stock="
 				+ stock + ", category=" + category + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
-
 }
