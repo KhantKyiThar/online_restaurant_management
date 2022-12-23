@@ -62,4 +62,9 @@ public class FoodServiceImpl implements FoodService {
 		return false;
 	}
 
+	@Override
+	public Food getByFoodItem(String foodItem) {
+		return foodRepo.findByFoodItem(foodItem);
+	}
+
 }

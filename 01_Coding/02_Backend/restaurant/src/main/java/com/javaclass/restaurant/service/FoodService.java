@@ -9,8 +9,6 @@ public interface FoodService {
 
 	public List<Food> getAll();	
 	
-	public List<Food> getAllByCategory(Category category);
-
 	public Food get(int id);
 	
 	public Food create(Food food);
@@ -18,5 +16,11 @@ public interface FoodService {
 	public Food update(int id,Food food);
 	
 	public boolean delete(int id);
+	
+	public List<Food> getAllByCategory(Category category);
+	
+	public Food getByFoodItem(String foodItem);
+
+	
 
 }
