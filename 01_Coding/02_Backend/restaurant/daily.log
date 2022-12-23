@@ -1142,3 +1142,17 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2022-12-24 00:50:19.145 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
 2022-12-24 00:50:19.147 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@21a61ddb
 2022-12-24 00:50:19.148 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@45e5b112
+2022-12-24 00:50:19.148 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-24 00:50:19.148  INFO 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-12-24 00:50:19.151 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/staff/order/add", parameters={}
+2022-12-24 00:50:19.153 DEBUG 14728 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.StaffController#createOrder(FoodOrder)
+2022-12-24 00:50:19.193 DEBUG 14728 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [FoodOrder [id=0, foodCount=8, totalPrice=1000, food=null, staff=null, orderDate=null, createdAt=null (truncated)...]
+2022-12-24 00:50:19.291 DEBUG 14728 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-24 00:50:19.291 DEBUG 14728 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [FoodOrder [id=6, foodCount=8, totalPrice=1000, food=null, staff=null, orderDate=null, createdAt=2022 (truncated)...]
+2022-12-24 00:50:19.295 DEBUG 14728 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-24 00:53:33.470  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-24 00:53:34.667  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-24 00:53:34.674  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-24 00:53:34.708  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-24 00:53:34.710  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-12-24 00:53:34.745  INFO 14728 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
