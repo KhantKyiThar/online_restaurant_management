@@ -3,6 +3,7 @@ package com.javaclass.restaurant.service;
 import java.util.List;
 
 import com.javaclass.restaurant.entity.FoodOrder;
+import com.javaclass.restaurant.entity.Staff;
 
 public interface OrderService {
 	
@@ -18,5 +19,5 @@ public interface OrderService {
 	
 	public List<FoodOrder> getAllByFoodID(int foodId);
 	
-	public List<FoodOrder> getAllByStaffID(int staffId);
+	public List<FoodOrder> getAllByStaff(Staff staff);
 }
