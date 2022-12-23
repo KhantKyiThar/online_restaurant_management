@@ -22,7 +22,7 @@ public class FoodOrder {
 	@Column(nullable = false)
 	private int foodCount;
 
-	@Column(nullable = true)
+	@Column(nullable = false)
 	private int totalPrice;
 
 	@ManyToOne
@@ -30,14 +30,14 @@ public class FoodOrder {
 	private Food food;
 
 	@ManyToOne
-	@JoinColumn(name = "staff_id", referencedColumnName = "id")
+	@JoinColumn(name = "staff_id", referencedColumnName = "id", nullable = false)
 	private Staff staff;
 
-	@Column(nullable = true)
+	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime orderDate;
 
-	@Column(nullable = false)
+	@Column(nullable = true)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 
