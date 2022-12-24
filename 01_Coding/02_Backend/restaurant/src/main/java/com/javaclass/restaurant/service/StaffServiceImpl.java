@@ -42,9 +42,9 @@ public class StaffServiceImpl implements StaffService {
 			toUpdateStaff.setGender(staff.getGender());
 			toUpdateStaff.setStaffType(staff.getStaffType());
 			toUpdateStaff.setUpdatedAt(LocalDateTime.now());
-			staffRepo.save(toUpdateStaff);
+			return staffRepo.save(toUpdateStaff);
 		}
-		return toUpdateStaff;
+		return null;
 	}
 
 	@Override
