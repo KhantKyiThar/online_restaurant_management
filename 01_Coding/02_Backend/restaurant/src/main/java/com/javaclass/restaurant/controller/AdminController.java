@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javaclass.restaurant.entity.Category;
 import com.javaclass.restaurant.entity.Food;
 import com.javaclass.restaurant.entity.Staff;
+import com.javaclass.restaurant.service.CategoryService;
 import com.javaclass.restaurant.service.FoodService;
+import com.javaclass.restaurant.service.OrderService;
 import com.javaclass.restaurant.service.StaffService;
-
-import com.javaclass.restaurant.service.StorageService;
-
 
 @RestController
 @RequestMapping("/api/admin")
@@ -31,13 +31,14 @@ public class AdminController {
 	@Autowired
 	FoodService foodService;
 
-	
-	@Autowired
-	StorageService storageService;
-
-
 	@Autowired
 	StaffService staffService;
+	
+	@Autowired
+	CategoryService categoryService;
+	
+	@Autowired
+	OrderService orderService;
 
 	@GetMapping("/food")
 	List<Food> getFoodAll() {
@@ -64,16 +65,12 @@ public class AdminController {
 		if (food == null) {
 			return ResponseEntity.notFound().build();
 		}
-		// Delete food
 		// String image=food.getImage();
-
 		boolean isDeleted = foodService.delete(id);
 		if (!isDeleted) {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
-		
-		//Delete image
-		storageService.delete(food.getImage());
+
 		return ResponseEntity.ok().build();
 	}
 
@@ -109,4 +106,40 @@ public class AdminController {
 
 		return ResponseEntity.ok().build();
 	}
+	
+	//Category
+	@GetMapping("/category")
+	List<Category> getAll() {
+		return categoryService.getAll();
+	}
+
+	@PostMapping("/category/create")
+	public Category create(@Valid @RequestBody Category category) {
+		return categoryService.create(category);
+	}
+	
+	@PutMapping("/category/update/{id}")
+	public ResponseEntity<Category> update(@PathVariable int id, @Valid @RequestBody Category category) {
+		Category updateCategory = categoryService.update(id, category);
+		if(updateCategory == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().body(updateCategory);
+	}
+	
+	@DeleteMapping(value ="/category/delete/{id}")
+	public ResponseEntity<?> delete(@PathVariable int id) {
+		Category delCategory = categoryService.get(id);
+		if(delCategory == null) {
+			return ResponseEntity.notFound().build();
+		}
+		boolean isDeleted = categoryService.delete(id);
+		if (!isDeleted) {
+			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+		}
+
+		return ResponseEntity.ok().build();
+	}
+	
+	
 }

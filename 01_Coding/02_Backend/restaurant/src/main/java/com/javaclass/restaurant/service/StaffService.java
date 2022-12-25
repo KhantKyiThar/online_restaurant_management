@@ -16,6 +16,4 @@ public interface StaffService {
 
 	public boolean delete(int id);
 	
-	public Staff checkLoginStaff(String loginId, String password);
-	
 }

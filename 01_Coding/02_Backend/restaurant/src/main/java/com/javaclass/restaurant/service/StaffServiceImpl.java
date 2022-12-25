@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.javaclass.restaurant.entity.Staff;
@@ -15,9 +14,6 @@ public class StaffServiceImpl implements StaffService {
 
 	@Autowired
 	StaffRepo staffRepo;
-	
-	@Autowired
-	PasswordEncoder pwEncoder;
 
 	@Override
 	public List<Staff> getAll() {
@@ -46,9 +42,9 @@ public class StaffServiceImpl implements StaffService {
 			toUpdateStaff.setGender(staff.getGender());
 			toUpdateStaff.setStaffType(staff.getStaffType());
 			toUpdateStaff.setUpdatedAt(LocalDateTime.now());
-			staffRepo.save(toUpdateStaff);
+			return staffRepo.save(toUpdateStaff);
 		}
-		return toUpdateStaff;
+		return null;
 	}
 
 	@Override
@@ -60,19 +56,5 @@ public class StaffServiceImpl implements StaffService {
 		}
 		return false;
 	}
-
-	@Override
-	public Staff checkLoginStaff(String loginId, String password) {
-		Staff staff=staffRepo.findByLoginID(loginId);
-		if(staff==null) {
-			return null;
-		}
-		if(!pwEncoder.matches(password, staff.getPassword())) {
-			return staff;
-		}
-		return null;
-	}
-
-	
 
 }

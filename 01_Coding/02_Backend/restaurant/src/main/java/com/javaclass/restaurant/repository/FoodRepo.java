@@ -12,6 +12,4 @@ import com.javaclass.restaurant.entity.Food;
 public interface FoodRepo extends JpaRepository<Food, Integer>{
 	
 	public List<Food> findByCategory(Category category);
-	
-	public Food findByFoodItem(String foodItem);
 }
