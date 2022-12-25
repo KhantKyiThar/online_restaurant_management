@@ -1342,3 +1342,709 @@ Action:
 
 Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
 
+2022-12-25 21:05:23.477  INFO 9740 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 9740 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:05:23.481  INFO 9740 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:05:23.557  INFO 9740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-25 21:05:23.557  INFO 9740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-25 21:05:24.592  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:05:24.595  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:05:24.632  INFO 9740 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:05:24.635  INFO 9740 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:05:24.638  INFO 9740 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:05:24.641  INFO 9740 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:05:24.643  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:05:24.660  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:05:24.662  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:05:24.715  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:05:25.573  INFO 9740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:05:25.588  INFO 9740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:05:25.589  INFO 9740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:05:25.690  INFO 9740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:05:25.691  INFO 9740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2133 ms
+2022-12-25 21:05:25.930  INFO 9740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:05:25.997  INFO 9740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-25 21:05:26.213  INFO 9740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-25 21:05:26.352  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-25 21:05:26.795  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-25 21:05:26.822  INFO 9740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:05:27.903  INFO 9740 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:05:27.917  INFO 9740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:05:28.433  WARN 9740 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:05:28.435  INFO 9740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:05:28.442  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-25 21:05:28.458  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-25 21:05:28.462  INFO 9740 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:05:28.480  INFO 9740 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:05:28.513 ERROR 9740 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:08:48.940  INFO 7440 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7440 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:08:48.943  INFO 7440 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:08:49.028  INFO 7440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-25 21:08:49.029  INFO 7440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-25 21:08:50.032  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:08:50.034  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:08:50.070  INFO 7440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:08:50.073  INFO 7440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:08:50.075  INFO 7440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:08:50.078  INFO 7440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:08:50.079  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:08:50.091  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:08:50.104  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:08:50.157  INFO 7440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:08:51.009  INFO 7440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:08:51.026  INFO 7440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:08:51.027  INFO 7440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:08:51.131  INFO 7440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:08:51.132  INFO 7440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2102 ms
+2022-12-25 21:08:51.364  INFO 7440 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:08:51.430  INFO 7440 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-25 21:08:51.647  INFO 7440 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-25 21:08:51.791  INFO 7440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-25 21:08:52.344  INFO 7440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-25 21:08:52.368  INFO 7440 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:08:53.455  INFO 7440 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:08:53.468  INFO 7440 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:08:54.026  WARN 7440 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:08:54.027  INFO 7440 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:08:54.033  INFO 7440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-25 21:08:54.048  INFO 7440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-25 21:08:54.051  INFO 7440 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:08:54.068  INFO 7440 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:08:54.102 ERROR 7440 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:09:22.730  INFO 7264 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7264 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:09:22.733  INFO 7264 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:09:22.810  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-25 21:09:22.810  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-25 21:09:23.834  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:09:23.836  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:09:23.879  INFO 7264 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:09:23.882  INFO 7264 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:09:23.886  INFO 7264 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:09:23.891  INFO 7264 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:09:23.892  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:09:23.904  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:09:23.906  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:09:23.965  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:09:24.896  INFO 7264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:09:24.910  INFO 7264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:09:24.910  INFO 7264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:09:25.020  INFO 7264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:09:25.020  INFO 7264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2209 ms
+2022-12-25 21:09:25.245  INFO 7264 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:09:25.312  INFO 7264 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-25 21:09:25.577  INFO 7264 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-25 21:09:25.746  INFO 7264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-25 21:09:26.193  INFO 7264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-25 21:09:26.217  INFO 7264 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:09:27.315  INFO 7264 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:09:27.327  INFO 7264 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:09:27.827  WARN 7264 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:09:27.829  INFO 7264 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:09:27.834  INFO 7264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-25 21:09:27.849  INFO 7264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-25 21:09:27.852  INFO 7264 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:09:27.870  INFO 7264 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:09:27.905 ERROR 7264 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:13:38.357  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:13:38.360  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:13:38.436  INFO 4812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-25 21:13:38.437  INFO 4812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-25 21:13:39.481  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:13:39.483  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:13:39.520  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:13:39.523  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:13:39.525  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:13:39.528  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:13:39.530  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:13:39.543  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:13:39.545  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:13:39.597  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:13:40.442  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:13:40.458  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:13:40.459  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:13:40.565  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:13:40.565  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2127 ms
+2022-12-25 21:13:40.789  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:13:40.856  INFO 4812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-25 21:13:41.077  INFO 4812 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-25 21:13:41.212  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-25 21:13:41.685  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-25 21:13:41.710  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:13:42.824  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:13:42.841  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:13:43.507  WARN 4812 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef5b265c-b19b-43d3-810a-d1612da8e624
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-25 21:13:43.688  INFO 4812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11d10c97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10b0fa9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1004d353, org.springframework.security.web.header.HeaderWriterFilter@5af9ff5d, org.springframework.security.web.csrf.CsrfFilter@1f8759bf, org.springframework.security.web.authentication.logout.LogoutFilter@6fb9d10b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52329b65, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48627963, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27518fc1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3554b3cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62820b0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a29f34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d494268, org.springframework.security.web.session.SessionManagementFilter@8873d36, org.springframework.security.web.access.ExceptionTranslationFilter@49daa3cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@768e706c]
+2022-12-25 21:13:43.770  WARN 4812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-25 21:13:43.957 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-25 21:13:44.083 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2022-12-25 21:13:44.111 DEBUG 4812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-25 21:13:44.126 DEBUG 4812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-25 21:13:44.368  INFO 4812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-25 21:13:44.420  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-12-25 21:13:44.435  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 6.648 seconds (JVM running for 7.691)
+2022-12-25 21:14:10.065  INFO 4812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-25 21:14:10.136  INFO 4812 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:14:10.153  INFO 4812 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:10.159  INFO 4812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-25 21:14:10.174  INFO 4812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-25 21:14:10.302  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:14:10.302  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:14:10.570  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:10.570  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:14:10.578  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:10.581  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:10.583  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:10.585  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:10.585  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:14:10.592  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:10.592  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:14:10.608  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:14:10.744  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:14:10.745  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:14:10.746  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:14:10.771  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:14:10.772  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+2022-12-25 21:14:10.824  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:14:10.831  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-25 21:14:10.853  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-25 21:14:10.853  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:14:11.047  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:14:11.048  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:11.308  WARN 4812 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 416ebf12-2d7c-431c-9981-8792cd38570f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-25 21:14:11.324  INFO 4812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@673419a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2aacc8de, org.springframework.security.web.context.SecurityContextPersistenceFilter@4feb268a, org.springframework.security.web.header.HeaderWriterFilter@5b4d229a, org.springframework.security.web.csrf.CsrfFilter@22a66f99, org.springframework.security.web.authentication.logout.LogoutFilter@77d5c7aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e881af3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a85b4eb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@540d10fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@78ae2f20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5411fa7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@667a5b94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d53f274, org.springframework.security.web.session.SessionManagementFilter@5e204070, org.springframework.security.web.access.ExceptionTranslationFilter@3d04ccad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41119892]
+2022-12-25 21:14:11.349  WARN 4812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-25 21:14:11.402 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-25 21:14:11.432 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2022-12-25 21:14:11.443 DEBUG 4812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-25 21:14:11.453 DEBUG 4812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-25 21:14:11.505  INFO 4812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-25 21:14:11.526  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-12-25 21:14:11.535  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.273 seconds (JVM running for 34.79)
+2022-12-25 21:14:11.538  INFO 4812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-25 21:14:43.151  INFO 4812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-12-25 21:14:43.223  INFO 4812 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:14:43.237  INFO 4812 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:43.238  INFO 4812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-25 21:14:43.257  INFO 4812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-25 21:14:43.584  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:14:43.592  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:14:43.948  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:43.948  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:14:43.961  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:43.964  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:43.967  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:43.969  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:43.970  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:14:43.982  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:43.982  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:14:44.002  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:14:44.168  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:14:44.169  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:14:44.170  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:14:44.199  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:14:44.200  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2022-12-25 21:14:44.265  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:14:44.277  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-12-25 21:14:44.303  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-12-25 21:14:44.305  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:14:44.555  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:14:44.556  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:44.751  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:14:44.751  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:44.752  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-12-25 21:14:44.765  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-12-25 21:14:44.767  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:14:44.781  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:14:44.814 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:14:58.454  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:14:58.454  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:14:58.691  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:58.691  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:14:58.700  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:58.702  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:58.705  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:58.709  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:14:58.712  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:14:58.718  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:14:58.719  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:14:58.734  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:14:58.852  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:14:58.853  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:14:58.854  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:14:58.877  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:14:58.877  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
+2022-12-25 21:14:58.926  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:14:58.934  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-12-25 21:14:58.952  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-12-25 21:14:58.953  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:14:59.132  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:14:59.133  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:59.334  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:14:59.335  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:14:59.336  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-12-25 21:14:59.350  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-12-25 21:14:59.351  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:14:59.360  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:14:59.369 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:15:35.182  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:15:35.182  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:15:35.421  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:15:35.421  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:15:35.428  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:15:35.430  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:15:35.432  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:15:35.434  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:15:35.434  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:15:35.440  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:15:35.440  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:15:35.462  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:15:35.599  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:15:35.601  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:15:35.601  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:15:35.637  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:15:35.638  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 451 ms
+2022-12-25 21:15:35.739  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:15:35.749  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-12-25 21:15:35.769  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-12-25 21:15:35.770  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:15:35.917  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:15:35.917  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:15:36.081  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'staffServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-12-25 21:15:36.082  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:15:36.082  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-12-25 21:15:36.088  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-12-25 21:15:36.088  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:15:36.096  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:15:36.101 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   adminController (field com.javaclass.restaurant.service.StaffService com.javaclass.restaurant.controller.AdminController.staffService)
+┌─────┐
+|  staffServiceImpl (field org.springframework.security.crypto.password.PasswordEncoder com.javaclass.restaurant.service.StaffServiceImpl.pwEncoder)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-12-25 21:17:13.538  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:17:13.538  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:17:13.768  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:17:13.769  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:17:13.777  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:13.779  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:13.780  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:13.781  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:13.782  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:17:13.786  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:17:13.787  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:17:13.800  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:17:13.970  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:17:13.971  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:17:13.972  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:17:13.999  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:17:13.999  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
+2022-12-25 21:17:14.047  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:17:14.057  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-12-25 21:17:14.076  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-12-25 21:17:14.077  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:17:14.223  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:17:14.223  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:17:14.476  WARN 4812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-25 21:17:14.533 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-25 21:17:14.557 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2022-12-25 21:17:14.568 DEBUG 4812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-25 21:17:14.576 DEBUG 4812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-25 21:17:14.626  WARN 4812 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 35487020-783c-4bfe-94da-5950bf14cb02
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-25 21:17:14.643  INFO 4812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@712d989b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@98e23b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@217f07ae, org.springframework.security.web.header.HeaderWriterFilter@318bc2b1, org.springframework.security.web.csrf.CsrfFilter@5b7df61, org.springframework.security.web.authentication.logout.LogoutFilter@3688a9bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@224d586c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7176360b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@41c894d2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f91d824, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@402bda10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fda06ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@592437, org.springframework.security.web.session.SessionManagementFilter@1a088f59, org.springframework.security.web.access.ExceptionTranslationFilter@711214ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a685667]
+2022-12-25 21:17:14.798  INFO 4812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-25 21:17:14.826  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-12-25 21:17:14.833  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.331 seconds (JVM running for 218.089)
+2022-12-25 21:17:14.840  INFO 4812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-25 21:17:38.413  INFO 4812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-25 21:17:38.467  INFO 4812 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:17:38.475  INFO 4812 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:17:38.477  INFO 4812 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-12-25 21:17:38.482  INFO 4812 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-12-25 21:17:38.623  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:17:38.623  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:17:38.854  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:17:38.854  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:17:38.862  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:38.864  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:38.866  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:38.867  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:17:38.868  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:17:38.873  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:17:38.873  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:17:38.886  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:17:39.011  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:17:39.013  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:17:39.013  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:17:39.033  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:17:39.034  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 408 ms
+2022-12-25 21:17:39.081  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:17:39.089  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-12-25 21:17:39.106  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-12-25 21:17:39.107  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:17:39.247  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:17:39.248  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:17:39.399  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'staffServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-12-25 21:17:39.399  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:17:39.400  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-12-25 21:17:39.405  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-12-25 21:17:39.405  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:17:39.413  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:17:39.418 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   adminController (field com.javaclass.restaurant.service.StaffService com.javaclass.restaurant.controller.AdminController.staffService)
+┌─────┐
+|  staffServiceImpl (field org.springframework.security.crypto.password.PasswordEncoder com.javaclass.restaurant.service.StaffServiceImpl.pwEncoder)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-12-25 21:18:24.227  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:18:24.228  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:18:24.469  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:18:24.469  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:18:24.476  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:18:24.478  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:18:24.481  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:18:24.482  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:18:24.482  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:18:24.487  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:18:24.487  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:18:24.500  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:18:24.625  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:18:24.626  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:18:24.626  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:18:24.649  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:18:24.649  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 418 ms
+2022-12-25 21:18:24.713  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:18:24.728  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-12-25 21:18:24.748  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-12-25 21:18:24.749  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:18:24.893  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:18:24.894  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:18:25.055  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:18:25.056  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:18:25.056  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-12-25 21:18:25.063  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-12-25 21:18:25.064  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:18:25.071  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:18:25.078 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:22:13.503  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:22:13.504  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:22:13.755  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:22:13.755  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:22:13.762  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:13.764  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:13.766  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:13.767  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:13.768  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:22:13.772  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:22:13.772  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:22:13.786  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:22:13.905  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:22:13.906  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:22:13.907  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:22:13.927  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:22:13.927  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 417 ms
+2022-12-25 21:22:13.974  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:22:13.983  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-12-25 21:22:14.001  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-12-25 21:22:14.001  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:22:14.141  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:22:14.142  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:22:14.305  WARN 4812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'staffService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staffServiceImpl': Unsatisfied dependency expressed through field 'pwEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-25 21:22:14.305  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:22:14.306  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-12-25 21:22:14.312  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2022-12-25 21:22:14.313  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:22:14.321  INFO 4812 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-25 21:22:14.326 ERROR 4812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pwEncoder in com.javaclass.restaurant.service.StaffServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-12-25 21:22:53.171  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 4812 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2022-12-25 21:22:53.171  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-25 21:22:53.399  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:22:53.399  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-25 21:22:53.406  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:53.407  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:53.409  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:53.410  INFO 4812 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-25 21:22:53.410  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2022-12-25 21:22:53.415  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-25 21:22:53.415  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-25 21:22:53.428  INFO 4812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2022-12-25 21:22:53.550  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-12-25 21:22:53.551  INFO 4812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-25 21:22:53.551  INFO 4812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-25 21:22:53.572  INFO 4812 --- [restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-25 21:22:53.572  INFO 4812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
+2022-12-25 21:22:53.632  INFO 4812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-25 21:22:53.642  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2022-12-25 21:22:53.660  INFO 4812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2022-12-25 21:22:53.661  INFO 4812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-25 21:22:53.816  INFO 4812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-25 21:22:53.817  INFO 4812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:22:54.081  WARN 4812 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d2ac9e63-720f-4300-a35c-50570c8ed1ce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-25 21:22:54.098  INFO 4812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68ca544c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b570ca3, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c25e6d, org.springframework.security.web.header.HeaderWriterFilter@4d559f40, org.springframework.security.web.csrf.CsrfFilter@c04ede, org.springframework.security.web.authentication.logout.LogoutFilter@64a389fa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@290e7e1c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a7ebda8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21f3734b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@26c1ed22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@344fece, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@628ace79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@87232aa, org.springframework.security.web.session.SessionManagementFilter@6af64b53, org.springframework.security.web.access.ExceptionTranslationFilter@3f2a98fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a9333ad]
+2022-12-25 21:22:54.120  WARN 4812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-25 21:22:54.166 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-25 21:22:54.189 DEBUG 4812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2022-12-25 21:22:54.200 DEBUG 4812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-25 21:22:54.208 DEBUG 4812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-25 21:22:54.257  INFO 4812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-25 21:22:54.275  INFO 4812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-12-25 21:22:54.281  INFO 4812 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 1.177 seconds (JVM running for 557.536)
+2022-12-25 21:22:54.284  INFO 4812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-25 21:23:48.172  INFO 4812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-25 21:23:48.240  INFO 4812 --- [Thread-24] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-25 21:23:48.249  INFO 4812 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-25 21:23:48.250  INFO 4812 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2022-12-25 21:23:48.257  INFO 4812 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
