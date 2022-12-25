@@ -47,7 +47,7 @@ public class FoodServiceImpl implements FoodService {
 			toUpdateFood.setStock(food.getStock());
 			toUpdateFood.setCategory(food.getCategory());
 			toUpdateFood.setUpdatedAt(LocalDateTime.now());
-			return foodRepo.save(toUpdateFood);
+			foodRepo.save(toUpdateFood);
 		}
 		return toUpdateFood;
 	}
