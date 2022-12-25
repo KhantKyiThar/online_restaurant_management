@@ -15,7 +15,7 @@ public class StaffServiceImpl implements StaffService {
 
 	@Autowired
 	StaffRepo staffRepo;
-	
+
 	@Autowired
 	PasswordEncoder pwEncoder;
 
@@ -31,6 +31,7 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff create(Staff staff) {
+		staff.setPassword(pwEncoder.encode(staff.getPassword()));
 		staff.setCreatedAt(LocalDateTime.now());
 		return staffRepo.save(staff);
 	}
@@ -63,16 +64,14 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff checkLoginStaff(String loginId, String password) {
-		Staff staff=staffRepo.findByLoginId(loginId);
-		if(staff==null) {
+		Staff staff = staffRepo.findByLoginId(loginId);
+		if (staff == null) {
 			return null;
 		}
-		if(!pwEncoder.matches(password, staff.getPassword())) {
+		if (!pwEncoder.matches(password, staff.getPassword())) {
 			return staff;
 		}
 		return null;
 	}
-
-	
 
 }
