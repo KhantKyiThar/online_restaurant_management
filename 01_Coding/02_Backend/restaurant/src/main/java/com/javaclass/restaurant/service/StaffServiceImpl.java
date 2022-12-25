@@ -63,7 +63,7 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff checkLoginStaff(String loginId, String password) {
-		Staff staff=staffRepo.findByLoginID(loginId);
+		Staff staff=staffRepo.findByLoginId(loginId);
 		if(staff==null) {
 			return null;
 		}
