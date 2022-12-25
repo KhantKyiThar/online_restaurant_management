@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.javaclass.restaurant.entity.Food;
 import com.javaclass.restaurant.entity.FoodOrder;
 import com.javaclass.restaurant.entity.Staff;
 import com.javaclass.restaurant.repository.FoodRepo;
@@ -15,11 +16,11 @@ import com.javaclass.restaurant.repository.StaffRepo;
 @Service
 public class OrderServiceImpl implements OrderService {
 	@Autowired
-	private OrderRepo orderRepo;
-
+	OrderRepo orderRepo;
+	
 	@Autowired
 	FoodRepo foodRepo;
-
+	
 	@Autowired
 	StaffRepo staffRepo;
 
@@ -30,46 +31,48 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public FoodOrder get(int id) {
-		// TODO Auto-generated method stub
 		return orderRepo.findById(id).orElse(null);
 	}
 
 	@Override
 	public FoodOrder createOrder(FoodOrder foodOrder) {
-//		Food food = foodRepo.findById(foodOrder.getFood().getId()).orElse(null);
-//		if (food == null) {
-//			return null;
-//		}
-//
-//		Staff staff = staffRepo.findById(foodOrder.getStaff().getId()).orElse(null);
-//		if (staff == null) {
-//			return null;
-//		}
 		foodOrder.setCreatedAt(LocalDateTime.now());
 		return orderRepo.save(foodOrder);
 	}
 
 	@Override
 	public FoodOrder updateOrder(int id, FoodOrder foodOrder) {
-		// TODO Auto-generated method stub
-		return null;
+		FoodOrder updateOrder = get(id);
+		if(updateOrder != null) {
+			updateOrder.setFoodCount(foodOrder.getFoodCount());
+			updateOrder.setTotalPrice(foodOrder.getTotalPrice());
+			updateOrder.setFood(foodOrder.getFood());
+			updateOrder.setStaff(foodOrder.getStaff());
+			updateOrder.setOrderDate(foodOrder.getOrderDate());
+			updateOrder.setCreatedAt(foodOrder.getCreatedAt());
+			updateOrder.setUpdatedAt(foodOrder.getUpdatedAt());
+			//foodRepo.save(updateOrder);
+			//staffRepo.save(updateOrder);
+		}
+		return updateOrder;
 	}
 
 	@Override
 	public boolean deleteOrder(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		orderRepo.deleteById(id);
+		return true;
 	}
 
 	@Override
-	public List<FoodOrder> getAllByFoodID(int foodId) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Food> getAllByFoodID(int foodId) {
+		return foodRepo.findAll();
 	}
 
 	@Override
-	public List<FoodOrder> getAllByStaff(Staff staff) {
-		return orderRepo.findByStaff(staff);
+	public List<Staff> getAllByStaffID(int staffId) {
+		return staffRepo.findAll();
 	}
+	
+	
 
 }
