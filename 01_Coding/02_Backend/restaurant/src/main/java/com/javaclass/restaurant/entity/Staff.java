@@ -38,7 +38,7 @@ public class Staff {
 
 	@Column(columnDefinition = "ENUM('Admin', 'Manager', 'Staff')")
 	@Enumerated(EnumType.STRING)
-	private StaffType StaffType;
+	private StaffType staffType;
 
 	@Column(nullable = true)
 	private LocalDate joinedDate;
@@ -98,11 +98,11 @@ public class Staff {
 	}
 
 	public StaffType getStaffType() {
-		return StaffType;
+		return staffType;
 	}
 
 	public void setStaffType(StaffType staffType) {
-		StaffType = staffType;
+		this.staffType = staffType;
 	}
 
 	public LocalDate getJoinedDate() {
@@ -132,7 +132,7 @@ public class Staff {
 	@Override
 	public String toString() {
 		return "Staff [id=" + id + ", name=" + name + ", loginId=" + loginId + ", password=" + password + ", phone="
-				+ phone + ", gender=" + gender + ", StaffType=" + StaffType + ", joinedDate=" + joinedDate
+				+ phone + ", gender=" + gender + ", staffType=" + staffType + ", joinedDate=" + joinedDate
 				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
 
