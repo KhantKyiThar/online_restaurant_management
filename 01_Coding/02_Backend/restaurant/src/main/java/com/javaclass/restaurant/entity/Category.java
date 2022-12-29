@@ -9,6 +9,8 @@ import javax.persistence.Id;
 @Entity
 public class Category {
 
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -32,10 +34,13 @@ public class Category {
 		this.name = name;
 	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 	@Override
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + "]";
 	}
-	
-	
+
 }
