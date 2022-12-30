@@ -71,7 +71,7 @@ public class StaffServiceImpl implements StaffService {
 		if (!pwEncoder.matches(password, staff.getPassword())) {
 			return staff;
 		}
-		return null;
+		return staffRepo.save(staff);
 	}
 
 }
