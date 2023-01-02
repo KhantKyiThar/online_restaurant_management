@@ -47,5 +47,26 @@
         "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
         "price": 1000,
         "stock": 10
+    },
+    {
+        "id": 8,
+        "foodItem": "Menu8",
+        "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+        "price": 1000,
+        "stock": 10
+    },
+    {
+        "id": 9,
+        "foodItem": "Menu9",
+        "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+        "price": 1000,
+        "stock": 10
+    },
+    {
+        "id": 10,
+        "foodItem": "Menu10",
+        "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+        "price": 1000,
+        "stock": 10
     }
 ]
