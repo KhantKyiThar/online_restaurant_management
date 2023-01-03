@@ -15,7 +15,7 @@
           class="elevation-1"
         >
           <!-- Image -->
-          <template v-slot:item.imagePath="{ item }">
+          <template v-slot:[`item.imagePath`]="{ item }">
             <v-img
               :src="localDomain + item.imagePath"
               width="150"
@@ -25,7 +25,7 @@
           </template>
 
           <!-- Button -->
-          <template v-slot:item.actions="{ item }">
+          <template v-slot:[`item.actions`]="{ item }">
             <!-- Update Btn -->
             <v-btn
               class="mr-2"
