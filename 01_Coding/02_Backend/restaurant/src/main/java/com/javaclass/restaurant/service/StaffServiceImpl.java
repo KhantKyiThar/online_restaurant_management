@@ -42,7 +42,7 @@ public class StaffServiceImpl implements StaffService {
 		if (toUpdateStaff != null) {
 			toUpdateStaff.setName(staff.getName());
 			toUpdateStaff.setLoginId(staff.getLoginId());
-			toUpdateStaff.setPassword(staff.getPassword());
+			toUpdateStaff.setPassword(pwEncoder.encode(staff.getPassword()));
 			toUpdateStaff.setPhone(staff.getPhone());
 			toUpdateStaff.setGender(staff.getGender());
 			toUpdateStaff.setStaffType(staff.getStaffType());
@@ -69,7 +69,7 @@ public class StaffServiceImpl implements StaffService {
 			return null;
 		}
 		if (!pwEncoder.matches(password, staff.getPassword())) {
-			return staff;
+			return null;
 		}
 		return staffRepo.save(staff);
 	}
