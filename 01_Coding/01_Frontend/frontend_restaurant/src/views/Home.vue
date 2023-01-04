@@ -154,10 +154,8 @@ export default {
     async showByCat(cat) {
       this.toShowAllFood = false;
       this.catId = cat.id;
-      console.log(this.catId);
     },
     async addToCard(p) {
-      console.log(p.category.id);
       var cartList = this.cart;
       var productList = this.product;
 
@@ -242,6 +240,29 @@ export default {
       }
       this.cart.splice(0, length);
     },
+    async checkout() {
+      var length = this.cart.length;
+      for (var i = 0; i < length; i++) {
+        try {
+          var isInProduct = this.product.find((v) => {
+            return v.id == this.cart[i].id;
+          });
+          const resp = await utils.http.put(
+            "/admin/food/update/" + isInProduct.id,
+            {
+              foodItem: isInProduct.foodItem,
+              image: isInProduct.image,
+              price: isInProduct.price,
+              stock: isInProduct.stock,
+              category: isInProduct.category,
+            }
+          );
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      this.cart.splice(0, length);
+    },
   },
   computed: {
     calBill: function () {
@@ -257,6 +278,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
