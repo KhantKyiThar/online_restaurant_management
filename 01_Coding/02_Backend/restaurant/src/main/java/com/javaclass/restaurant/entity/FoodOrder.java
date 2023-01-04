@@ -16,18 +16,11 @@ import org.hibernate.annotations.ColumnDefault;
 public class FoodOrder {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	@Column(nullable = false)
-	private int foodCount;
-
-	@Column(nullable = false)
 	private int totalPrice;
-
-	@ManyToOne
-	@JoinColumn(name = "food_id", referencedColumnName = "id")
-	private Food food;
 
 	@ManyToOne
 	@JoinColumn(name = "staff_id", referencedColumnName = "id", nullable = false)
@@ -51,28 +44,12 @@ public class FoodOrder {
 		this.id = id;
 	}
 
-	public int getFoodCount() {
-		return foodCount;
-	}
-
-	public void setFoodCount(int foodCount) {
-		this.foodCount = foodCount;
-	}
-
 	public int getTotalPrice() {
 		return totalPrice;
 	}
 
 	public void setTotalPrice(int totalPrice) {
 		this.totalPrice = totalPrice;
-	}
-
-	public Food getFood() {
-		return food;
-	}
-
-	public void setFood(Food food) {
-		this.food = food;
 	}
 
 	public Staff getStaff() {
@@ -109,9 +86,8 @@ public class FoodOrder {
 
 	@Override
 	public String toString() {
-		return "FoodOrder [id=" + id + ", foodCount=" + foodCount + ", totalPrice=" + totalPrice + ", food=" + food
-				+ ", staff=" + staff + ", orderDate=" + orderDate + ", createdAt=" + createdAt + ", updatedAt="
-				+ updatedAt + "]";
+		return "FoodOrder [id=" + id + ", totalPrice=" + totalPrice + ", staff=" + staff + ", orderDate=" + orderDate
+				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
 
 }
