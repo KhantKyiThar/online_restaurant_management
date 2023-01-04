@@ -15,7 +15,7 @@ import org.hibernate.annotations.ColumnDefault;
 @Entity
 public class Food {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	@Column(length = 100, nullable = false)

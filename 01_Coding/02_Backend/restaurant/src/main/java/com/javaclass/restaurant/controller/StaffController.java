@@ -17,7 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.javaclass.restaurant.entity.Food;
 import com.javaclass.restaurant.entity.FoodOrder;
+import com.javaclass.restaurant.entity.OrderDetail;
 import com.javaclass.restaurant.entity.Staff;
+import com.javaclass.restaurant.service.OrderDetailService;
 import com.javaclass.restaurant.service.FoodService;
 import com.javaclass.restaurant.service.OrderService;
 import com.javaclass.restaurant.service.StaffService;
@@ -34,6 +36,9 @@ public class StaffController {
 
 	@Autowired
 	StaffService staffService;
+	
+	@Autowired
+	OrderDetailService orderDetailService;
 
 	@GetMapping("/profile")
 	public ResponseEntity<Staff> getProfile(@RequestParam int id){
@@ -58,21 +63,33 @@ public class StaffController {
 		return orderService.createOrder(foodOrder);
 	}
 
-	@GetMapping("/order/{order_id}")
-	public FoodOrder getByFoodID(@PathVariable int id) {
-		return orderService.get(id);
-	}
-
 	@GetMapping("/order/{staff_id}")
-	public ResponseEntity<?> getOrderByStaffId(@PathVariable int staffId) {
-
+	public ResponseEntity<?> getOrderByStaffId(@PathVariable("staff_id") int staffId) {
+		
 		Staff staff = staffService.get(staffId);
 		if (staff == null) {
-			return ResponseEntity.notFound().build();
+			return ResponseEntity.badRequest().body("Staff ID is invalid");
 		}
 
 		List<FoodOrder> orderList = orderService.getAllByStaff(staff);
 		return ResponseEntity.ok().body(orderList);
+	}
+	
+	@GetMapping("/order/detail/{order_id}")
+	public ResponseEntity<?> getOrderDetailByOrderId(@PathVariable("order_id") int orderId) {
+		
+		FoodOrder foodOrder = orderService.get(orderId);
+		if (foodOrder == null) {
+			return ResponseEntity.badRequest().body("Order ID is invalid");
+		}
+
+		List<OrderDetail> orderDetailList = orderDetailService.getAllByFoodOrder(foodOrder);
+		return ResponseEntity.ok().body(orderDetailList);
+	}
+	
+	@PostMapping("/order/detail")
+	public OrderDetail createOrderDetail(@Valid @RequestBody OrderDetail orderDetail) {
+		return orderDetailService.createOrderDetail(orderDetail);
 	}
 
 }

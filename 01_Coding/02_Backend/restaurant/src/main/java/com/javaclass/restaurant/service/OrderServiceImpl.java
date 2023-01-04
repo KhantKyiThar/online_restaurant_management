@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public FoodOrder createOrder(FoodOrder foodOrder) {
-		foodOrder.setCreatedAt(LocalDateTime.now());
+		foodOrder.setOrderDate(LocalDateTime.now());
 		return orderRepo.save(foodOrder);
 	}
 
@@ -35,9 +35,7 @@ public class OrderServiceImpl implements OrderService {
 	public FoodOrder updateOrder(int id, FoodOrder foodOrder) {
 		FoodOrder updateOrder = get(id);
 		if (updateOrder != null) {
-			updateOrder.setFoodCount(foodOrder.getFoodCount());
 			updateOrder.setTotalPrice(foodOrder.getTotalPrice());
-			updateOrder.setFood(foodOrder.getFood());
 			updateOrder.setStaff(foodOrder.getStaff());
 			updateOrder.setUpdatedAt(LocalDateTime.now());
 			orderRepo.save(updateOrder);
