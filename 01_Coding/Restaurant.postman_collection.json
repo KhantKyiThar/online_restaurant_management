@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "f3da05c5-66c4-4c05-ac25-f27487edd850",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23406491"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "File Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/noodle/image3.jpg"
+								},
+								{
+									"key": "fileType",
+									"value": "image/jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/file/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"file",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Khant\",\r\n    \"loginId\":\"staff3\",\r\n    \"password\":\"khant123\",\r\n    \"phone\":\"09925235243\",\r\n    \"gender\":\"Male\",\r\n    \"staffType\":\"Staff\",\r\n    \"joinedDate\":\"2018-08-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/staff/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"staff",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"foodItem\": \"Chicken Soup\",\r\n    \"image\": \"/images/jpg/1672674264_photo_2022-12-30_20-19-38.jpg\",\r\n    \"price\": 0,\r\n    \"stock\": 99,\r\n    \"category\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Malar Soup\",\r\n    \"image\": \"/images/jpg/1672674934_1.jpg\",\r\n    \"price\": 0,\r\n    \"stock\": 100,\r\n    \"category\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Chicken\",\r\n    \"image\": \"/images/jpg/1672675290_image1.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Black Chicken\",\r\n    \"image\": \"/images/jpg/1672675370_image2.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Beef\",\r\n    \"image\": \"/images/jpg/1672675400_image4.jpg\",\r\n    \"price\": 1500,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Pork\",\r\n    \"image\": \"/images/jpg/1672675434_image6.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 19,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Bacon\",\r\n    \"image\": \"/images/jpg/1672675471_image12.jpg\",\r\n    \"price\": 1200,\r\n    \"stock\": 20,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood1\",\r\n    \"image\": \"/images/jpg/1672675533_image1.jpg\",\r\n    \"price\": 1800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood2\",\r\n    \"image\": \"/images/jpg/1672675586_image2.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood3\",\r\n    \"image\": \"/images/jpg/1672675635_image10.jpg\",\r\n    \"price\": 1800,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood4\",\r\n    \"image\": \"/images/jpg/1672675665_image3.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood5\",\r\n    \"image\": \"/images/jpg/1672675705_image5.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable1\",\r\n    \"image\": \"/images/jpg/1672676157_image5.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable2\",\r\n    \"image\": \"/images/jpg/1672676208_image6.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable3\",\r\n    \"image\": \"/images/jpg/1672676226_image7.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle1\",\r\n    \"image\": \"/images/jpg/1672676488_image1.jpg\",\r\n    \"price\": 500,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle2\",\r\n    \"image\": \"/images/jpg/1672676536_image2.jpg\",\r\n    \"price\": 500,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle5\",\r\n    \"image\": \"/images/jpg/1672676560_image3.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/food/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"food",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/soup/1.jpg"
+								},
+								{
+									"key": "fileType",
+									"value": "image/jpg",
+									"type": "text"
+								},
+								{
+									"key": "filePath",
+									"value": "/images/jpg/1672674881_2.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/file/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"file",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/food",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"foodItem\":\"Seafood2\",\r\n    \"image\":\"/images/jpg/1672675586_image2.jpg\",\r\n    \"price\":2000,\r\n    \"stock\":10,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/food/update/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"food",
+								"update",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/food/delete/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"food",
+								"delete",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/staff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"staff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"GigaByte\",\r\n    \"loginId\":\"admin\",\r\n    \"password\":\"admin\",\r\n    \"phone\":\"09925235256\",\r\n    \"gender\":\"Male\",\r\n    \"staffType\":\"Admin\",\r\n    \"joinedDate\":\"2017-08-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/staff/update/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"staff",
+								"update",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Staff Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/staff/delete/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"staff",
+								"delete",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Soup\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"name\": \"Meat\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"name\": \"Seafood\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"name\": \"Vegetable\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"name\": \"Noodle\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/category/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"name\": \"Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/admin/category/update/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"category",
+								"update",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/category/delete/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"category",
+								"delete",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "Image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/images/jpg/1672674934_1.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"images",
+								"jpg",
+								"1672674934_1.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/food",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food List By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/food/category/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"food",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Category List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "Staff Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/staff/profile?id=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"profile"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"foodCount\":5,\r\n    \"totalPrice\":10000,\r\n    \"price\":500,\r\n    \"stock\":30,\r\n    \"category\":{\r\n        \"id\":5,\r\n        \"name\":\"Noodle\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/staff/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Update for Stock",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"foodItem\": \"Black Chicken\",\r\n    \"image\": \"/images/jpg/1672675370_image2.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/staff/food/update/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"food",
+								"update",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"admin2\",\r\n    \"password\": \"ammw123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
