@@ -9,15 +9,16 @@
               <v-list-item>
                 <v-list-item-content>
                   Category
-                  <v-list-item-title @click="showAllFood()"
-                    >All</v-list-item-title
-                  >
+                  <v-list-item-title class="cat" @click="showAllFood()">
+                    All
+                  </v-list-item-title>
                   <v-list-item-title
+                    class="cat"
                     v-for="(c, i) in category"
                     :key="i"
                     @click="showByCat(c)"
-                    >{{ c.name }}</v-list-item-title
-                  >
+                    >{{ c.name }}
+                  </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -114,7 +115,9 @@ export default {
       category: [],
       cart: [],
       toShowAllFood: true,
+      bill: 0,
       catId: 0,
+      loginUser: [],
       headers: [
         { text: "Food", value: "foodItem" },
         { text: "Price", value: "price" },
@@ -127,6 +130,18 @@ export default {
   async created() {
     await this.fetchCategory();
     await this.fetchFood();
+    this.loginUser = this.$store.state.loginUser;
+    this.$store.watch(
+      () => {
+        return this.$store.state.loginUser;
+      },
+      (newVal, oldVal) => {
+        this.loginUser = newVal;
+      },
+      {
+        deep: true,
+      }
+    );
   },
 
   methods: {
@@ -242,25 +257,44 @@ export default {
     },
     async checkout() {
       var length = this.cart.length;
+
+      //Create Order
+      const resp = await utils.http.post("/staff/order/add", {
+        totalPrice: this.bill,
+        staff: this.loginUser,
+      });
+      if (resp && resp.status === 200) {
+        var orderData = await resp.json();
+      }
+
+      //Update Food stock and Create Order Detail
       for (var i = 0; i < length; i++) {
         try {
           var isInProduct = this.product.find((v) => {
             return v.id == this.cart[i].id;
           });
-          const resp = await utils.http.put(
-            "/admin/food/update/" + isInProduct.id,
-            {
-              foodItem: isInProduct.foodItem,
-              image: isInProduct.image,
-              price: isInProduct.price,
-              stock: isInProduct.stock,
-              category: isInProduct.category,
-            }
-          );
+
+          //Update Food Stock
+          await utils.http.put("/admin/food/update/" + isInProduct.id, {
+            foodItem: isInProduct.foodItem,
+            image: isInProduct.image,
+            price: isInProduct.price,
+            stock: isInProduct.stock,
+            category: isInProduct.category,
+          });
+
+          //Create Order Detail
+          await utils.http.post("/staff/order/detail", {
+            food: isInProduct,
+            foodOrder: orderData,
+            foodCount: this.cart[i].qty,
+          });
         } catch (error) {
           console.log(error);
         }
       }
+
+      //   clear cart
       this.cart.splice(0, length);
     },
   },
@@ -273,8 +307,21 @@ export default {
       for (var i = 0; i < this.cart.length; i++) {
         bill = bill + this.cart[i].total;
       }
+      this.bill = bill;
       return bill;
     },
   },
 };
 </script>
+<style>
+.cat {
+  color: rgb(15, 15, 15) !important;
+  text-decoration: none;
+}
+
+.cat:hover {
+  cursor: pointer;
+  color: rgb(130, 29, 29) !important;
+  text-decoration: underline;
+}
+</style>

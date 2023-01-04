@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "foodCount": 1,
+        "totalPrice": 1000,
+        "food": {
+            "id": 12,
+            "foodItem": "Soup1",
+            "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+            "price": 1000,
+            "stock": 84,
+            "category": {
+                "id": 1,
+                "name": "Soup"
+            },
+            "createdAt": "2023-01-03T22:50:15",
+            "updatedAt": "2023-01-04T16:47:02"
+        },
+        "staff": {
+            "id": 1,
+            "name": "staff@123",
+            "loginId": "staff1",
+            "password": "$2a$10$AlQIQ000CPRP9A8HAj0QtOgVFTAvrP41unFkV2331tRb4VPpwOdmi",
+            "phone": "09796567966",
+            "gender": "Male",
+            "staffType": "Staff",
+            "joinedDate": "2022-12-21",
+            "createdAt": "2023-01-03T22:28:16",
+            "updatedAt": null
+        },
+        "orderDate": "2023-01-04T01:10:05",
+        "createdAt": "2023-01-04T01:10:05",
+        "updatedAt": null
+    },
+    {
+        "id": 2,
+        "foodCount": 1,
+        "totalPrice": 1000,
+        "food": {
+            "id": 12,
+            "foodItem": "Soup1",
+            "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+            "price": 1000,
+            "stock": 84,
+            "category": {
+                "id": 1,
+                "name": "Soup"
+            },
+            "createdAt": "2023-01-03T22:50:15",
+            "updatedAt": "2023-01-04T16:47:02"
+        },
+        "staff": {
+            "id": 1,
+            "name": "staff@123",
+            "loginId": "staff1",
+            "password": "$2a$10$AlQIQ000CPRP9A8HAj0QtOgVFTAvrP41unFkV2331tRb4VPpwOdmi",
+            "phone": "09796567966",
+            "gender": "Male",
+            "staffType": "Staff",
+            "joinedDate": "2022-12-21",
+            "createdAt": "2023-01-03T22:28:16",
+            "updatedAt": null
+        },
+        "orderDate": "2023-01-04T01:10:05",
+        "createdAt": "2023-01-04T01:10:05",
+        "updatedAt": null
+    },
+    {
+        "id": 3,
+        "foodCount": 1,
+        "totalPrice": 1000,
+        "food": {
+            "id": 12,
+            "foodItem": "Soup1",
+            "image": "https://thumbor.forbes.com/thumbor/fit-in/960x600/https://www.forbes.com/wheels/wp-content/uploads/2022/09/2023_Mercedes-Benz_Sclass_Gallery1.jpg",
+            "price": 1000,
+            "stock": 84,
+            "category": {
+                "id": 1,
+                "name": "Soup"
+            },
+            "createdAt": "2023-01-03T22:50:15",
+            "updatedAt": "2023-01-04T16:47:02"
+        },
+        "staff": {
+            "id": 1,
+            "name": "staff@123",
+            "loginId": "staff1",
+            "password": "$2a$10$AlQIQ000CPRP9A8HAj0QtOgVFTAvrP41unFkV2331tRb4VPpwOdmi",
+            "phone": "09796567966",
+            "gender": "Male",
+            "staffType": "Staff",
+            "joinedDate": "2022-12-21",
+            "createdAt": "2023-01-03T22:28:16",
+            "updatedAt": null
+        },
+        "orderDate": "2023-01-04T01:10:05",
+        "createdAt": "2023-01-04T01:10:05",
+        "updatedAt": null
+    }
+]
