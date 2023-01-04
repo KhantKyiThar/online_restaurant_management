@@ -18,9 +18,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.javaclass.restaurant.entity.Category;
 import com.javaclass.restaurant.entity.Food;
+import com.javaclass.restaurant.entity.FoodOrder;
 import com.javaclass.restaurant.entity.Staff;
+import com.javaclass.restaurant.service.CategoryService;
 import com.javaclass.restaurant.service.FoodService;
+import com.javaclass.restaurant.service.OrderService;
 import com.javaclass.restaurant.service.StaffService;
 
 import com.javaclass.restaurant.service.StorageService;
@@ -40,6 +44,12 @@ public class AdminController {
 
 	@Autowired
 	StaffService staffService;
+	
+	@Autowired
+	CategoryService categoryService;
+	
+	@Autowired
+	OrderService orderService;
 
 	@GetMapping("/food")
 	List<Food> getFoodAll() {
@@ -127,6 +137,44 @@ public class AdminController {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
 
+		return ResponseEntity.ok().build();
+	}
+	
+	@GetMapping("/order")	
+	List<FoodOrder> getFoodOrderList() {
+		return orderService.getAllFoodOrders();
+	}
+	
+	//Category
+	@GetMapping("/category")
+	List<Category> getAll() {
+		return categoryService.getAll(); 
+	}
+
+	@PostMapping("/category/create")
+	public Category create(@Valid @RequestBody Category category) {
+		return categoryService.create(category);
+	}
+			
+	@PutMapping("/category/update/{id}")
+	public ResponseEntity<Category> update(@PathVariable int id, @Valid @RequestBody Category category) {
+	Category updateCategory = categoryService.update(id, category);
+	if(updateCategory == null) {
+		return ResponseEntity.notFound().build();
+	}
+		return ResponseEntity.ok().body(updateCategory);
+	}
+			
+	@DeleteMapping(value ="/category/delete/{id}")
+	public ResponseEntity<?> delete(@PathVariable int id) {
+	Category delCategory = categoryService.get(id);
+	if(delCategory == null) {
+		return ResponseEntity.notFound().build();
+	}
+	boolean isDeleted = categoryService.delete(id);
+	if (!isDeleted) {
+		return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+	}
 		return ResponseEntity.ok().build();
 	}
 }
