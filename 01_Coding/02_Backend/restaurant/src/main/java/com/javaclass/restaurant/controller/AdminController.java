@@ -47,9 +47,11 @@ public class AdminController {
 	
 	@Autowired
 	CategoryService categoryService;
+
 	
 	@Autowired
 	OrderService orderService;
+
 
 	@GetMapping("/food")
 	List<Food> getFoodAll() {
@@ -140,6 +142,7 @@ public class AdminController {
 		return ResponseEntity.ok().build();
 	}
 	
+
 	@GetMapping("/order")	
 	List<FoodOrder> getFoodOrderList() {
 		return orderService.getAllFoodOrders();
@@ -177,4 +180,39 @@ public class AdminController {
 	}
 		return ResponseEntity.ok().build();
 	}
+
+	//Category
+		@GetMapping("/category")
+		List<Category> getAll() {
+			return categoryService.getAll();
+		}
+
+		@PostMapping("/category/create")
+		public Category create(@Valid @RequestBody Category category) {
+			return categoryService.create(category);
+		}
+		
+		@PutMapping("/category/update/{id}")
+		public ResponseEntity<Category> update(@PathVariable int id, @Valid @RequestBody Category category) {
+			Category updateCategory = categoryService.update(id, category);
+			if(updateCategory == null) {
+				return ResponseEntity.notFound().build();
+			}
+			return ResponseEntity.ok().body(updateCategory);
+		}
+		
+		@DeleteMapping(value ="/category/delete/{id}")
+		public ResponseEntity<?> delete(@PathVariable int id) {
+			Category delCategory = categoryService.get(id);
+			if(delCategory == null) {
+				return ResponseEntity.notFound().build();
+			}
+			boolean isDeleted = categoryService.delete(id);
+			if (!isDeleted) {
+				return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+			}
+
+			return ResponseEntity.ok().build();
+		}
+
 }

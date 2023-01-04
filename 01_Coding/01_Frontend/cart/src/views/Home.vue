@@ -9,15 +9,10 @@
               <v-list-item>
                 <v-list-item-content>
                   Category
-                  <v-list-item-title @click="showAllFood()"
-                    >All</v-list-item-title
-                  >
-                  <v-list-item-title
-                    v-for="(c, i) in category"
-                    :key="i"
-                    @click="showByCat(c)"
-                    >{{ c.name }}</v-list-item-title
-                  >
+                  <v-list-item-title>All</v-list-item-title>
+                  <v-list-item-title v-for="(c, i) in category" :key="i">{{
+                    c.name
+                  }}</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -26,32 +21,8 @@
       </v-col>
       <!-- Foot List -->
       <v-col cols="6">
-        <!-- Show All-->
-        <v-row v-if="toShowAllFood">
+        <v-row>
           <v-col cols="4" v-for="(p, i) in product" :key="i">
-            <v-card class="mx-auto">
-              <v-img :src="p.image" height="100" cover></v-img>
-              <v-card-text>
-                <div class="text-h5">{{ p.foodItem }}</div>
-                <div class="text-body-1">Price : {{ p.price }} Kyat</div>
-                <div class="text-body-1">Stock : {{ p.stock }} Unit</div>
-                <div class="text-body-1 mb-1">
-                  <v-btn @click="addToCard(p)" :disabled="p.stock <= 0">
-                    Add To Cart
-                  </v-btn>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-        <!-- Show By Category Id -->
-        <v-row v-else>
-          <v-col
-            cols="4"
-            v-for="(p, i) in product"
-            :key="i"
-            v-show="p.category.id == catId"
-          >
             <v-card class="mx-auto">
               <v-img :src="p.image" height="100" cover></v-img>
               <v-card-text>
@@ -70,6 +41,19 @@
       </v-col>
       <!-- Cart List-->
       <v-col cols="4">
+        <!-- <v-card class="mx-auto">
+          <v-navigation-drawer permanent>
+            <v-list dense nav>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title v-for="(p, i) in cart" :key="i"
+                    >{{ p.foodItem }} {{ p.qty }}
+                  </v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-navigation-drawer>
+        </v-card> -->
         <v-data-table
           :headers="headers"
           :items="cart"
@@ -87,7 +71,7 @@
           </template>
           <template slot="body.append">
             <tr v-show="this.cart.length > 0">
-              <td><span @click="checkout()">Checkout</span></td>
+              <td>CheckOut</td>
               <td></td>
               <td>Total Price</td>
               <td>
@@ -102,19 +86,18 @@
   </div>
 </template>
 
-
 <script>
-import utils from "../utils/utils";
+import product from "../mock/product.json";
+import category from "../mock/category.json";
+
 export default {
   name: "Home",
-  components: {},
+  components: { product, category },
   data() {
     return {
-      product: [],
-      category: [],
+      product: product,
+      category: category,
       cart: [],
-      toShowAllFood: true,
-      catId: 0,
       headers: [
         { text: "Food", value: "foodItem" },
         { text: "Price", value: "price" },
@@ -123,47 +106,16 @@ export default {
       ],
     };
   },
-
-  async created() {
-    await this.fetchCategory();
-    await this.fetchFood();
-  },
-
   methods: {
-    async fetchCategory() {
-      const resp = await utils.http.get("/category");
-      if (resp && resp.status === 200) {
-        const data = await resp.json();
-        if (data) {
-          this.category = data;
-        }
-      }
-    },
-    async fetchFood() {
-      const resp = await utils.http.get("/food");
-      if (resp && resp.status === 200) {
-        const data = await resp.json();
-        if (data) {
-          this.product = data;
-        }
-      }
-    },
-    async showAllFood() {
-      this.toShowAllFood = true;
-    },
-    async showByCat(cat) {
-      this.toShowAllFood = false;
-      this.catId = cat.id;
-    },
     async addToCard(p) {
       var cartList = this.cart;
       var productList = this.product;
 
       var isInProduct = productList.find((v) => {
-        return v.id == p.id;
+        return v.foodItem == p.foodItem;
       });
       var isInCart = cartList.find((v) => {
-        return v.id == p.id;
+        return v.foodItem == p.foodItem;
       });
 
       isInProduct.stock--;
@@ -184,10 +136,10 @@ export default {
       var productList = this.product;
 
       var isInProduct = productList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
       var isInCart = cartList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
 
       isInProduct.stock--;
@@ -200,10 +152,10 @@ export default {
       var productList = this.product;
 
       var isInProduct = productList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
       var isInCart = cartList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
 
       isInProduct.stock++;
@@ -220,10 +172,10 @@ export default {
       var productList = this.product;
 
       var isInProduct = productList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
       var isInCart = cartList.find((v) => {
-        return v.id == item.id;
+        return v.foodItem == item.foodItem;
       });
 
       isInProduct.stock = isInProduct.stock + isInCart.qty;
@@ -234,32 +186,9 @@ export default {
       var length = this.cart.length;
       for (var i = 0; i < length; i++) {
         var isInProduct = this.product.find((v) => {
-          return v.id == this.cart[i].id;
+          return v.foodItem == this.cart[i].foodItem;
         });
         isInProduct.stock = isInProduct.stock + this.cart[i].qty;
-      }
-      this.cart.splice(0, length);
-    },
-    async checkout() {
-      var length = this.cart.length;
-      for (var i = 0; i < length; i++) {
-        try {
-          var isInProduct = this.product.find((v) => {
-            return v.id == this.cart[i].id;
-          });
-          const resp = await utils.http.put(
-            "/admin/food/update/" + isInProduct.id,
-            {
-              foodItem: isInProduct.foodItem,
-              image: isInProduct.image,
-              price: isInProduct.price,
-              stock: isInProduct.stock,
-              category: isInProduct.category,
-            }
-          );
-        } catch (error) {
-          console.log(error);
-        }
       }
       this.cart.splice(0, length);
     },
