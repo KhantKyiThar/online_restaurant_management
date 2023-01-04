@@ -9,7 +9,7 @@
     <router-link
       v-show="isLogin && loginUser.staffType == 'Staff'"
       class="mx-2 navlink"
-      to="/login"
+      to="/order"
       >OrderList</router-link
     >
 
