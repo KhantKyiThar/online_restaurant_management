@@ -9,14 +9,13 @@
     >
       <template v-slot:[`item.details`]="{ item }">
         <v-btn
-          class="mr-2"
-          color="primary"
+          color="pink lighten-1"
           fab
+          text
           x-small
-          elevation="2"
           @click="detailDialog(item)"
         >
-          <v-icon>mdi-pencil</v-icon>
+          <v-icon>mdi-information</v-icon>
         </v-btn>
       </template>
     </v-data-table>
