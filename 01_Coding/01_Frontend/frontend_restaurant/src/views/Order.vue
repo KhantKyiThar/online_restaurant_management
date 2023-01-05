@@ -21,7 +21,7 @@
     </v-data-table>
     <v-dialog v-model="dialog" width="500">
       <v-card>
-        <v-card-title class="text-h5 grey lighten-2">
+        <v-card-title class="text-h5 pink lighten-1 white--text">
           Order Detail
         </v-card-title>
         <v-card-text>
