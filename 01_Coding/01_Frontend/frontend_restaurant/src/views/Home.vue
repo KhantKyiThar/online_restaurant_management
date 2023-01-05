@@ -84,13 +84,27 @@
           class="elevation-2"
         >
           <template v-slot:[`item.qty`]="{ item }">
-            <span class="cat" @click="increase(item)" v-show="item.stock > 0">
-              +
-            </span>
+            <v-icon
+              class="mr-1"
+              color="pink lighten-1"
+              fab
+              text
+              x-small
+              @click="increase(item)"
+              v-show="item.stock > 0"
+              >mdi-plus
+            </v-icon>
             {{ item.qty }}
-            <span class="cat" @click="reduce(item)" v-show="item.qty > 0">
-              -
-            </span>
+            <v-icon
+              class="ml-1"
+              color="pink lighten-1"
+              fab
+              text
+              x-small
+              @click="reduce(item)"
+              v-show="item.qty > 0"
+              >mdi-minus
+            </v-icon>
           </template>
           <template v-slot:[`item.total`]="{ item }">
             {{ item.total }}
