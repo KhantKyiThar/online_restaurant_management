@@ -119,7 +119,8 @@
           </template>
           <template slot="body.append">
             <tr v-show="this.cart.length > 0">
-              <td><span class="cat" @click="checkout()">Checkout</span></td>
+              <!-- <td><span class="cat" @click="checkout()">Checkout</span></td> -->
+              <td><span class="cat" @click="dialog = true">Checkout</span></td>
               <td></td>
               <td>Total Price</td>
               <td>
@@ -137,6 +138,36 @@
           </template>
         </v-data-table>
       </v-col>
+      <v-dialog v-model="dialog" width="500">
+        <v-card>
+          <v-card-title class="text-h5 pink lighten-1 white--text">
+            Do you want to Checkout?
+          </v-card-title>
+          <v-card-text>
+            <v-data-table
+              :headers="headers"
+              :items="cart"
+              hide-default-footer
+              class="elevation-2 mt-2"
+            >
+            </v-data-table>
+          </v-card-text>
+          <v-card-actions>
+            <v-card-text>Total Price : {{ bill }}</v-card-text>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="pink lighten-1"
+              text
+              @click="(dialog = false), checkout()"
+            >
+              Checkout
+            </v-btn>
+            <v-btn color="pink lighten-1" text @click="dialog = false">
+              Close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     </v-row>
   </div>
 </template>
@@ -149,6 +180,7 @@ export default {
   components: {},
   data() {
     return {
+      dialog: false,
       product: [],
       category: [],
       cart: [],
@@ -359,7 +391,7 @@ export default {
 
 .cat:hover {
   cursor: pointer;
-  color: rgb(27, 31, 174) !important;
+  color: rgb(68, 6, 143) !important;
   text-decoration: underline;
 }
 </style>
