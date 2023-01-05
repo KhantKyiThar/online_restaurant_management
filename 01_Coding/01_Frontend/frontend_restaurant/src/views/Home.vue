@@ -38,13 +38,10 @@
                 <div class="text-body-1">Stock : {{ p.stock }} Unit</div>
                 <div class="text-body-1 mb-1">
                   <v-btn @click="addToCard(p)" :disabled="p.stock <= 0">
-                    Add To Cart<v-icon
-                      color="pink lighten-1"
-                      small
-                      text
-                      class="ml-1"
-                      >mdi-cart</v-icon
-                    >
+                    Add To Cart
+                    <v-icon color="pink lighten-1" small class="ml-1">
+                      mdi-cart
+                    </v-icon>
                   </v-btn>
                 </div>
               </v-card-text>
@@ -67,9 +64,10 @@
                 <div class="text-body-1">Stock : {{ p.stock }} Unit</div>
                 <div class="text-body-1 mb-1">
                   <v-btn @click="addToCard(p)" :disabled="p.stock <= 0">
-                    Add To Cart<v-icon color="pink lighten-1" small class="ml-1"
-                      >mdi-cart</v-icon
-                    >
+                    Add To Cart
+                    <v-icon color="pink lighten-1" small class="ml-1">
+                      mdi-cart
+                    </v-icon>
                   </v-btn>
                 </div>
               </v-card-text>
