@@ -39,6 +39,9 @@
                 <div class="text-body-1 mb-1">
                   <v-btn @click="addToCard(p)" :disabled="p.stock <= 0">
                     Add To Cart
+                    <v-icon color="pink lighten-1" small class="ml-1">
+                      mdi-cart
+                    </v-icon>
                   </v-btn>
                 </div>
               </v-card-text>
@@ -62,6 +65,9 @@
                 <div class="text-body-1 mb-1">
                   <v-btn @click="addToCard(p)" :disabled="p.stock <= 0">
                     Add To Cart
+                    <v-icon color="pink lighten-1" small class="ml-1">
+                      mdi-cart
+                    </v-icon>
                   </v-btn>
                 </div>
               </v-card-text>
@@ -78,22 +84,40 @@
           class="elevation-2"
         >
           <template v-slot:[`item.qty`]="{ item }">
-            <span @click="increase(item)" v-show="item.stock > 0"> + </span>
+            <span class="cat" @click="increase(item)" v-show="item.stock > 0">
+              +
+            </span>
             {{ item.qty }}
-            <span @click="reduce(item)" v-show="item.qty > 0"> - </span>
+            <span class="cat" @click="reduce(item)" v-show="item.qty > 0">
+              -
+            </span>
           </template>
           <template v-slot:[`item.total`]="{ item }">
             {{ item.total }}
-            <span @click="remove(item)" class="ml-5">X</span>
+            <v-icon
+              color="pink lighten-1"
+              @click="remove(item)"
+              small
+              class="ml-5"
+            >
+              mdi-delete
+            </v-icon>
           </template>
           <template slot="body.append">
             <tr v-show="this.cart.length > 0">
-              <td><span @click="checkout()">Checkout</span></td>
+              <td><span class="cat" @click="checkout()">Checkout</span></td>
               <td></td>
               <td>Total Price</td>
               <td>
                 {{ calBill }}
-                <span @click="cancel()" class="ml-5">X</span>
+                <v-icon
+                  color="pink lighten-1"
+                  @click="cancel()"
+                  small
+                  class="ml-5"
+                >
+                  mdi-delete
+                </v-icon>
               </td>
             </tr>
           </template>
@@ -321,7 +345,7 @@ export default {
 
 .cat:hover {
   cursor: pointer;
-  color: rgb(130, 29, 29) !important;
+  color: rgb(27, 31, 174) !important;
   text-decoration: underline;
 }
 </style>
