@@ -102,7 +102,6 @@
               text
               x-small
               @click="reduce(item)"
-              v-show="item.qty > 0"
               >mdi-minus
             </v-icon>
           </template>
@@ -137,6 +136,14 @@
             </tr>
           </template>
         </v-data-table>
+        <v-row>
+          <div
+            class="pink--text lighten-2 mt-5 ml-5"
+            v-show="this.cart.length == 0 && orderSuccess"
+          >
+            Order Success !!!!
+          </div>
+        </v-row>
       </v-col>
       <v-dialog v-model="dialog" width="500">
         <v-card>
@@ -181,6 +188,7 @@ export default {
   data() {
     return {
       dialog: false,
+      orderSuccess: false,
       product: [],
       category: [],
       cart: [],
@@ -334,6 +342,7 @@ export default {
         staff: this.loginUser,
       });
       if (resp && resp.status === 200) {
+        this.orderSuccess = true;
         var orderData = await resp.json();
       }
 
