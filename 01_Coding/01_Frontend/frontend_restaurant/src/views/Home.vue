@@ -92,7 +92,7 @@
               -
             </span>
           </template>
-          <template v-slot:[`item.total`]="{ item }" style="justify">
+          <template v-slot:[`item.total`]="{ item }">
             {{ item.total }}
             <v-icon
               color="pink lighten-1"
