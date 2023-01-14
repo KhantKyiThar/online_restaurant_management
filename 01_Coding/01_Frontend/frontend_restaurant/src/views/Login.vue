@@ -6,7 +6,7 @@
         <v-text-field
           v-model="staffID"
           :rules="[
-            (v) => !!v || 'Staff ID is required',
+            (v) => !!v || 'Required',
             (v) =>
               (v && v.length <= 10) ||
               'Staff ID must be less than 10 characters',

@@ -12,19 +12,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
-	
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests().mvcMatchers("/**").permitAll();
 	}
-	
+
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.debug(false).ignoring()
-				.antMatchers("/images/**", "/js/**", "/css/**");
+		web.debug(false).ignoring().antMatchers("/images/**", "/js/**", "/css/**");
 	}
-	
+
 	@Bean
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();

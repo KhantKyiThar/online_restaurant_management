@@ -1,8 +1,7 @@
 <template>
   <v-footer color="pink lighten-1" padless>
     <v-row justify="center" no-gutters>
-      -->
-      <v-btn
+      <!-- <v-btn
         v-for="link in links"
         :key="link"
         color="white"
@@ -11,7 +10,7 @@
         class="my-2"
       >
         {{ link }}
-      </v-btn>
+      </v-btn> -->
       <v-col class="pink lighten-1 py-4 text-center white--text" cols="12">
         <strong>Copy right @ </strong>{{ new Date().getFullYear() }} —
         <strong>1 Gigabyte Team</strong>
@@ -25,7 +24,7 @@ export default {
   name: "footing",
 
   data: () => ({
-    links: ["Home", "About Us", "Category", "Contact Us"],
+    // links: ["Home", "About Us", "Category", "Contact Us"],
   }),
 };
 </script>

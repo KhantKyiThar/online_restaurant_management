@@ -21,9 +21,11 @@ import org.springframework.web.multipart.MultipartFile;
 import com.javaclass.restaurant.entity.Category;
 import com.javaclass.restaurant.entity.Food;
 import com.javaclass.restaurant.entity.FoodOrder;
+import com.javaclass.restaurant.entity.OrderDetail;
 import com.javaclass.restaurant.entity.Staff;
 import com.javaclass.restaurant.service.CategoryService;
 import com.javaclass.restaurant.service.FoodService;
+import com.javaclass.restaurant.service.OrderDetailService;
 import com.javaclass.restaurant.service.OrderService;
 import com.javaclass.restaurant.service.StaffService;
 
@@ -51,6 +53,9 @@ public class AdminController {
 	
 	@Autowired
 	OrderService orderService;
+	
+	@Autowired
+	OrderDetailService orderDetailService;
 
 
 	@GetMapping("/food")
@@ -59,9 +64,16 @@ public class AdminController {
 	}
 
 	@PostMapping("/food/create")
-	public Food foodCreate(@Valid @RequestBody Food food) {
-		return foodService.create(food);
+//	public Food foodCreate(@Valid @RequestBody Food food) {
+//	return foodService.create(food);
+//	}
+	public ResponseEntity<?> createFood(@Valid @RequestBody Food food){
+		if(!storageService.check(food.getImage())) {
+			return ResponseEntity.badRequest().body("Image is invalid");
+		}
+		return ResponseEntity.ok(foodService.create(food));
 	}
+	
 	
 	@PostMapping("/file/create")
 	public ResponseEntity<String> createFile(@RequestParam("file") MultipartFile file,@RequestParam("fileType") String fileType){
@@ -146,6 +158,16 @@ public class AdminController {
 	@GetMapping("/order")	
 	List<FoodOrder> getFoodOrderList() {
 		return orderService.getAllFoodOrders();
+	}
+	
+	@GetMapping("/order/detail/{order_id}")
+	public ResponseEntity<?> getOrderDetailByOrderId(@PathVariable("order_id") int orderId){
+		FoodOrder foodOrder=orderService.get(orderId);
+		if(foodOrder==null) {
+			return ResponseEntity.badRequest().body("Order Id is invalid");
+		}
+		List<OrderDetail> orderDetailList=orderDetailService.getAllByFoodOrder(foodOrder);
+		return ResponseEntity.ok().body(orderDetailList);
 	}
 	
 	//Category

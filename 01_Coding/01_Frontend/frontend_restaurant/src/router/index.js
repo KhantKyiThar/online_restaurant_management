@@ -1,18 +1,20 @@
 // import Vue, { onRenderTracked } from 'vue';
 import Vue from "vue";
-import VueRouter from 'vue-router';
+import VueRouter from "vue-router";
+import store from "../store";
+
 import login from "../views/Login.vue";
 import home from "../views/Home.vue";
 import order from "../views/Order.vue";
+import profile from "../views/Profile.vue";
 import checkout from "../views/Checkout.vue";
 import about from "../views/About.vue";
-import admin from "../views/Admin.vue";
 import contact from "../views/Contact.vue";
 
-import admin_food_list from "../views/Admin_food_list.vue";
+import admin from "../views/Admin.vue";
+import admin_food_create from "../views/Admin_food_create.vue";
 import admin_staff_list from "../views/Admin_staff_list.vue";
 import admin_order_list from "../views/Admin_order_list.vue";
-
 
 Vue.use(VueRouter)
 
@@ -34,6 +36,14 @@ const routes = [
     path: "/order",
     name: "order",
     component: order,
+    meta: {
+      requiresAuth: true,
+    },
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    component: profile,
     meta: {
       requiresAuth: true,
     },
@@ -68,9 +78,9 @@ const routes = [
     },
   },
   {
-    path: "/admin/food_list",
-    name: "admin_food_list",
-    component: admin_food_list,
+    path: "/admin/food_create",
+    name: "admin_food_create",
+    component: admin_food_create,
     meta: {
       requiresAuth: true,
       requiresAdmin: true,
@@ -94,38 +104,38 @@ const routes = [
       requiresAdmin: true,
     },
   },
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes,
 });
 
-// router.beforeEach((to, from, next) => {
-//   let loginUser = router.app.$store.getters.loginUser;
-//   let isLogin = router.app.$store.getters.isLogin;
+router.beforeEach((to, from, next) => {
+  let loginUser = router.app.$store.getters.loginUser;
+  let isLogin = router.app.$store.getters.isLogin;
 
-// from - login
-// to - Home
-// Need to be login, But is not login
-// if (to.meta.requiresAuth == true && !isLogin) {
-//   next({ path: "/" });
-// }
+  // from - login
+  // to - Home
+  // Need to be login, But is not login
+  if (to.meta.requiresAuth == true && !isLogin) {
+    next({ path: "/" });
+  }
 
-// Need to be login, Need to be admin
-// else if (
-//   to.meta.requiresAuth == true &&
-//   to.meta.requiresAdmin == true &&
-//   loginUser.staffType != "admin"
-// ) {
-//   next({ path: "/food" });
-// }
+  // Need to be login, Need to be admin
+  else if (
+    to.meta.requiresAuth == true &&
+    to.meta.requiresAdmin == true &&
+    loginUser.staffType != "Admin"
+  ) {
+    next({ path: "/home" });
+  }
 
-// If All Okay
-//   else {
-//     next();
-//   }
-// });
+  // If All Okay
+  else {
+    next();
+  }
+});
 
-export default router
+export default router;

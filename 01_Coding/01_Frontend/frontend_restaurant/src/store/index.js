@@ -7,12 +7,13 @@ export default new Vuex.Store({
   state: {
     loginUser: {},
     isLogin: false,
-    isStaff: false,
+    // isStaff: false,
   },
 
   getters: {
     loginUser: (state) => {
       let loginUser = sessionStorage.getItem("loginUser");
+      // console.log("loginUser", loginUser);
       if (loginUser != null) {
         state.loginUser = JSON.parse(loginUser);
         return JSON.parse(loginUser);
@@ -29,15 +30,15 @@ export default new Vuex.Store({
         return state.isLogin;
       }
     },
-    isStaff: (state) => {
-      let isStaff = sessionStorage.getItem("isStaff");
-      if (isStaff != null) {
-        state.isStaff = isStaff;
-        return isStaff;
-      } else {
-        return state.isStaff;
-      }
-    },
+    // isStaff: (state) => {
+    //   let isStaff = sessionStorage.getItem("isStaff");
+    //   if (isStaff != null) {
+    //     state.isStaff = isStaff;
+    //     return isStaff;
+    //   } else {
+    //     return state.isStaff;
+    //   }
+    // },
   },
 
   mutations: {
@@ -51,7 +52,7 @@ export default new Vuex.Store({
     logout(state) {
       sessionStorage.removeItem("loginUser");
       sessionStorage.removeItem("isLogin");
-      sessionStorage.removeItem("isStaff");
+      // sessionStorage.removeItem("isStaff");
       state.loginUser = {};
       state.isLogin = false;
     },
