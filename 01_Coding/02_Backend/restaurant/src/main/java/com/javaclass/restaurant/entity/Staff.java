@@ -34,11 +34,14 @@ public class Staff {
 
 	@Column(columnDefinition = "ENUM('Male', 'Female')")
 	@Enumerated(EnumType.STRING)
-	private Gender gender;
+	private Gender gender; 
 
 	@Column(columnDefinition = "ENUM('Admin', 'Manager', 'Staff')")
 	@Enumerated(EnumType.STRING)
 	private StaffType staffType;
+
+	@Column(nullable = true)
+	private boolean deleteable = true;
 
 	@Column(nullable = true)
 	private LocalDate joinedDate;
@@ -62,7 +65,7 @@ public class Staff {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.name = name; 
 	}
 
 	public String getLoginId() {
@@ -105,6 +108,14 @@ public class Staff {
 		this.staffType = staffType;
 	}
 
+	public boolean isDeleteable() {
+		return deleteable;
+	}
+
+	public void setDeleteable(boolean deleteable) {
+		this.deleteable = deleteable;
+	}
+
 	public LocalDate getJoinedDate() {
 		return joinedDate;
 	}
@@ -132,8 +143,8 @@ public class Staff {
 	@Override
 	public String toString() {
 		return "Staff [id=" + id + ", name=" + name + ", loginId=" + loginId + ", password=" + password + ", phone="
-				+ phone + ", gender=" + gender + ", staffType=" + staffType + ", joinedDate=" + joinedDate
-				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
+				+ phone + ", gender=" + gender + ", staffType=" + staffType + ", deleteable=" + deleteable
+				+ ", joinedDate=" + joinedDate + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
 	}
 
 }

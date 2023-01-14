@@ -15,6 +15,8 @@ public interface FoodService {
 	
 	public Food update(int id,Food food);
 	
+	public Food updateStock(int id,Food food);
+	
 	public boolean delete(int id);
 	
 	public List<Food> getAllByCategory(Category category);
