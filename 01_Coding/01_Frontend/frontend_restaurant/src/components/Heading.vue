@@ -1,6 +1,21 @@
 <template>
   <v-app-bar app color="pink lighten-1" dense dark>
-    <a class="logoTitle" href="/">Restaurant Management</a>
+    <!-- <a
+      v-if="isLogin && loginUser.staffType == 'Staff'"
+      class="logoTitle"
+      href="/home"
+      >Restaurant Management</a
+    >
+    <a v-else class="logoTitle" href="/admin">Restaurant Management</a> -->
+    <router-link
+      v-if="isLogin && loginUser.staffType == 'Staff'"
+      class="logoTitle"
+      to="/home"
+      >Restaurant Management</router-link
+    >
+    <router-link v-else class="logoTitle" to="/admin"
+      >Restaurant Management</router-link
+    >
 
     <v-spacer></v-spacer>
 
@@ -18,7 +33,7 @@
     <router-link
       v-if="isLogin && loginUser.staffType == 'Staff'"
       class="mx-2 navlink"
-      to="/login"
+      to="/profile"
       >Profile</router-link
     >
 
@@ -35,7 +50,7 @@ export default {
   data: () => ({
     loginUser: {},
     isLogin: false,
-    isStaff: false,
+    // isStaff: false,
   }),
 
   created() {
@@ -67,18 +82,18 @@ export default {
     );
 
     //isAdmin
-    this.isStaff = this.$store.state.isStaff;
-    this.$store.watch(
-      () => {
-        return this.$store.state.isStaff;
-      },
-      (newVal, oldVal) => {
-        this.isStaff = newVal;
-      },
-      {
-        deep: true,
-      }
-    );
+    // this.isStaff = this.$store.state.isStaff;
+    // this.$store.watch(
+    //   () => {
+    //     return this.$store.state.isStaff;
+    //   },
+    //   (newVal, oldVal) => {
+    //     this.isStaff = newVal;
+    //   },
+    //   {
+    //     deep: true,
+    //   }
+    // );
   },
 
   methods: {

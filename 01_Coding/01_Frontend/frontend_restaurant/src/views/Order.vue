@@ -46,10 +46,10 @@
     </v-dialog>
   </div>
 </template>
-
-<script>
+  
+  <script>
 import utils from "../utils/utils";
-import order from "../mock/order.json";
+// import order from "../mock/order.json";
 
 export default {
   name: "Order",
@@ -119,6 +119,7 @@ export default {
   },
 };
 </script>
-
-<style>
+  
+  <style>
 </style>
+  

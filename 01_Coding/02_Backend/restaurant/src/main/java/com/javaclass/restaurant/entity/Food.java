@@ -31,7 +31,7 @@ public class Food {
 	private int stock;
 
 	@ManyToOne
-	@JoinColumn(name = "category_id", referencedColumnName = "id")
+	@JoinColumn(name = "category_id", referencedColumnName = "id", nullable = false)
 	private Category category;
 
 	@Column(nullable = false)

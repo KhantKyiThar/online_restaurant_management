@@ -6,7 +6,7 @@
         <v-card class="mx-auto">
           <v-navigation-drawer permanent>
             <v-list dense nav>
-              <v-list-item>
+              <!-- <v-list-item>
                 <v-list-item-content>
                   Category
                   <v-list-item-title class="cat" @click="showAllFood()">
@@ -20,6 +20,23 @@
                     >{{ c.name }}
                   </v-list-item-title>
                 </v-list-item-content>
+              </v-list-item> -->
+              <v-list-item-title> Category </v-list-item-title>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title class="cat" @click="showAllFood()">
+                    All
+                  </v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+              <v-list-item
+                v-for="(c, i) in category"
+                :key="i"
+                @click="showByCat(c)"
+              >
+                <v-list-item-content>
+                  <v-list-item-title>{{ c.name }}</v-list-item-title>
+                </v-list-item-content>
               </v-list-item>
             </v-list>
           </v-navigation-drawer>
@@ -31,7 +48,7 @@
         <v-row v-if="toShowAllFood">
           <v-col cols="4" v-for="(p, i) in product" :key="i">
             <v-card class="mx-auto">
-              <v-img :src="p.image" height="100" cover></v-img>
+              <v-img :src="localDomain + p.image" height="100" cover></v-img>
               <v-card-text>
                 <div class="text-h5">{{ p.foodItem }}</div>
                 <div class="text-body-1">Price : {{ p.price }} Kyat</div>
@@ -57,7 +74,7 @@
             v-show="p.category.id == catId"
           >
             <v-card class="mx-auto">
-              <v-img :src="p.image" height="100" cover></v-img>
+              <v-img :src="localDomain + p.image" height="100" cover></v-img>
               <v-card-text>
                 <div class="text-h5">{{ p.foodItem }}</div>
                 <div class="text-body-1">Price : {{ p.price }} Kyat</div>
@@ -182,11 +199,14 @@
 
 <script>
 import utils from "../utils/utils";
+
 export default {
   name: "Home",
   components: {},
   data() {
     return {
+      localDomain: utils.constant.localDomain,
+
       dialog: false,
       orderSuccess: false,
       product: [],
@@ -354,7 +374,7 @@ export default {
           });
 
           //Update Food Stock
-          await utils.http.put("/admin/food/update/" + isInProduct.id, {
+          await utils.http.put("/staff/food/update/" + isInProduct.id, {
             foodItem: isInProduct.foodItem,
             image: isInProduct.image,
             price: isInProduct.price,
