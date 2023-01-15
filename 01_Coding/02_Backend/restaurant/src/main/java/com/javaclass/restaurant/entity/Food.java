@@ -30,6 +30,9 @@ public class Food {
 	@Column(nullable = false)
 	private int stock;
 
+	@Column(nullable = false)
+	private boolean deleteable = true;
+
 	@ManyToOne
 	@JoinColumn(name = "category_id", referencedColumnName = "id", nullable = false)
 	private Category category;
@@ -80,6 +83,14 @@ public class Food {
 		this.stock = stock;
 	}
 
+	public boolean isDeleteable() {
+		return deleteable;
+	}
+
+	public void setDeleteable(boolean deleteable) {
+		this.deleteable = deleteable;
+	}
+
 	public Category getCategory() {
 		return category;
 	}
@@ -107,6 +118,8 @@ public class Food {
 	@Override
 	public String toString() {
 		return "Food [id=" + id + ", foodItem=" + foodItem + ", image=" + image + ", price=" + price + ", stock="
-				+ stock + ", category=" + category + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
+				+ stock + ", deleteable=" + deleteable + ", category=" + category + ", createdAt=" + createdAt
+				+ ", updatedAt=" + updatedAt + "]";
 	}
+
 }

@@ -46,7 +46,18 @@ public class StaffServiceImpl implements StaffService {
 			toUpdateStaff.setPhone(staff.getPhone());
 			toUpdateStaff.setGender(staff.getGender());
 			toUpdateStaff.setStaffType(staff.getStaffType());
+			toUpdateStaff.setDeleteable(staff.isDeleteable());
 			toUpdateStaff.setUpdatedAt(LocalDateTime.now());
+			staffRepo.save(toUpdateStaff);
+		}
+		return toUpdateStaff;
+	}
+
+	@Override
+	public Staff updateDeleteable(int id, Staff staff) {
+		Staff toUpdateStaff = get(id);
+		if (toUpdateStaff != null) {
+			toUpdateStaff.setDeleteable(false);
 			staffRepo.save(toUpdateStaff);
 		}
 		return toUpdateStaff;

@@ -30,28 +30,28 @@ public class StaffController {
 
 	@Autowired
 	FoodService foodService;
-	
+
 	@Autowired
 	OrderService orderService;
 
 	@Autowired
 	StaffService staffService;
-	
+
 	@Autowired
 	OrderDetailService orderDetailService;
 
 	@GetMapping("/profile")
-	public ResponseEntity<Staff> getProfile(@RequestParam int id){
-		Staff staff=staffService.get(id);
-		if(staff==null) {
+	public ResponseEntity<Staff> getProfile(@RequestParam int id) {
+		Staff staff = staffService.get(id);
+		if (staff == null) {
 			return ResponseEntity.notFound().build();
 		}
 		return ResponseEntity.ok().body(staff);
 	}
-	
+
 	@PutMapping("/food/update/{id}")
 	public ResponseEntity<Food> updateFood(@PathVariable int id, @Valid @RequestBody Food food) {
-		Food updatedFood = foodService.update(id, food);
+		Food updatedFood = foodService.updateStock(id, food);
 		if (updatedFood == null) {
 			return ResponseEntity.notFound().build();
 		}
@@ -60,12 +60,16 @@ public class StaffController {
 
 	@PostMapping("/order/add")
 	public FoodOrder createOrder(@Valid @RequestBody FoodOrder foodOrder) {
+		
+		Staff updateStaff = foodOrder.getStaff();
+		staffService.updateDeleteable(updateStaff.getId(), updateStaff);
 		return orderService.createOrder(foodOrder);
+		
 	}
 
 	@GetMapping("/order/{staff_id}")
 	public ResponseEntity<?> getOrderByStaffId(@PathVariable("staff_id") int staffId) {
-		
+
 		Staff staff = staffService.get(staffId);
 		if (staff == null) {
 			return ResponseEntity.badRequest().body("Staff ID is invalid");
@@ -74,10 +78,10 @@ public class StaffController {
 		List<FoodOrder> orderList = orderService.getAllByStaff(staff);
 		return ResponseEntity.ok().body(orderList);
 	}
-	
+
 	@GetMapping("/order/detail/{order_id}")
 	public ResponseEntity<?> getOrderDetailByOrderId(@PathVariable("order_id") int orderId) {
-		
+
 		FoodOrder foodOrder = orderService.get(orderId);
 		if (foodOrder == null) {
 			return ResponseEntity.badRequest().body("Order ID is invalid");
@@ -86,7 +90,7 @@ public class StaffController {
 		List<OrderDetail> orderDetailList = orderDetailService.getAllByFoodOrder(foodOrder);
 		return ResponseEntity.ok().body(orderDetailList);
 	}
-	
+
 	@PostMapping("/order/detail")
 	public OrderDetail createOrderDetail(@Valid @RequestBody OrderDetail orderDetail) {
 		return orderDetailService.createOrderDetail(orderDetail);

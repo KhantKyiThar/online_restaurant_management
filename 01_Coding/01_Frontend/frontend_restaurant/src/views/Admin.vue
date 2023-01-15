@@ -48,9 +48,10 @@
 
             <!-- Delete Btn -->
             <v-btn
-              color="red"
+              class="delBtn"
+              :disabled="!item.deleteable"
+              color="error"
               fab
-              dark
               x-small
               elevation="2"
               @click="
@@ -58,7 +59,7 @@
                 deleteDialog = true;
               "
             >
-              <v-icon>mdi-delete</v-icon>
+              <v-icon dark>mdi-delete</v-icon>
             </v-btn>
           </template>
         </v-data-table>
@@ -378,4 +379,10 @@ export default {
 </script>
 
 <style>
+.delBtn {
+  background: dark;
+}
+.delBtn:disabled {
+  background: darkgray;
+}
 </style>
