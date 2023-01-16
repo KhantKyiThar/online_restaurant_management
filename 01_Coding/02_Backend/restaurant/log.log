@@ -6513,3 +6513,387 @@ This generated password is for development use only. Your security configuration
 2023-01-16 21:36:15.105  INFO 3056 --- [RMI TCP Connection(125)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-01-16 21:36:15.408  INFO 3056 --- [RMI TCP Connection(125)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-01-16 21:36:15.490  INFO 3056 --- [RMI TCP Connection(125)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-16 21:37:04.866  INFO 7864 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 11.0.15 on HP with PID 7864 (D:\online_restaurant_management\01_Coding\02_Backend\restaurant\target\classes started by HL in D:\online_restaurant_management\01_Coding\02_Backend\restaurant)
+2023-01-16 21:37:04.868  INFO 7864 --- [restartedMain] c.j.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-16 21:37:04.961  INFO 7864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-16 21:37:04.961  INFO 7864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-16 21:37:06.318  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:37:06.321  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-01-16 21:37:06.367  INFO 7864 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.CategoryRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-16 21:37:06.370  INFO 7864 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.FoodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-16 21:37:06.373  INFO 7864 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderDetailRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-16 21:37:06.377  INFO 7864 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.OrderRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-16 21:37:06.380  INFO 7864 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.javaclass.restaurant.repository.StaffRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-16 21:37:06.381  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 JDBC repository interfaces.
+2023-01-16 21:37:06.393  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-16 21:37:06.395  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-16 21:37:06.464  INFO 7864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2023-01-16 21:37:07.619  INFO 7864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-16 21:37:07.642  INFO 7864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 21:37:07.643  INFO 7864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-16 21:37:07.866  INFO 7864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 21:37:07.866  INFO 7864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2904 ms
+2023-01-16 21:37:08.133  INFO 7864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-16 21:37:08.230  INFO 7864 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-16 21:37:08.507  INFO 7864 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-16 21:37:08.679  INFO 7864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 21:37:09.315  INFO 7864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 21:37:09.350  INFO 7864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-16 21:37:10.714  INFO 7864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-16 21:37:10.726  INFO 7864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-16 21:37:11.372  WARN 7864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-16 21:37:11.604  WARN 7864 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 30503854-688b-4151-8ca7-b8ec9b9cc0ad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-16 21:37:11.855 DEBUG 7864 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 31 mappings in 'requestMappingHandlerMapping'
+2023-01-16 21:37:12.001 DEBUG 7864 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-16 21:37:12.013  WARN 7864 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-16 21:37:12.014  INFO 7864 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-16 21:37:12.015  WARN 7864 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-16 21:37:12.016  INFO 7864 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-16 21:37:12.016  WARN 7864 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-16 21:37:12.016  INFO 7864 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-16 21:37:12.092  INFO 7864 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5af7c356, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a227a58, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b64ec64, org.springframework.security.web.header.HeaderWriterFilter@5e901a04, org.springframework.security.web.authentication.logout.LogoutFilter@1d5828ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@191f8c20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5baf369e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e567969, org.springframework.security.web.session.SessionManagementFilter@6c6b04a6, org.springframework.security.web.access.ExceptionTranslationFilter@1d8c78f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@330b350a]
+2023-01-16 21:37:12.187 DEBUG 7864 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-16 21:37:12.271 DEBUG 7864 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-16 21:37:12.540  INFO 7864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-16 21:37:12.615  INFO 7864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-16 21:37:12.632  INFO 7864 --- [restartedMain] c.j.restaurant.RestaurantApplication     : Started RestaurantApplication in 8.506 seconds (JVM running for 10.699)
+2023-01-16 21:37:32.542  INFO 7864 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 21:37:32.543  INFO 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 21:37:32.544 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-16 21:37:32.544 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-16 21:37:32.545 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-16 21:37:32.552 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78bde6b3
+2023-01-16 21:37:32.554 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@409bc6f0
+2023-01-16 21:37:32.554 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-16 21:37:32.554  INFO 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2023-01-16 21:37:32.610 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:37:32.636 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2023-01-16 21:37:32.640 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:37:32.851 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.javaclass.restaurant.entity.LoginRequest@3fcf8d05]
+2023-01-16 21:37:33.456 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:37:33.458 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG.G (truncated)...]
+2023-01-16 21:37:33.496 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:39:53.860 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:39:53.862 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2023-01-16 21:39:53.862 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:39:53.866 DEBUG 7864 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.javaclass.restaurant.entity.LoginRequest@53b6c2f]
+2023-01-16 21:39:54.046 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:39:54.047 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG.G (truncated)...]
+2023-01-16 21:39:54.049 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:39:54.090 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:39:54.093 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:39:54.095 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:39:54.130 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:39:54.131 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:39:54.139 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:39:54.303 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:39:54.305 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:39:54.305 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:39:54.352 DEBUG 7864 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:39:54.352 DEBUG 7864 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:39:54.365 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:39:54.527 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:39:54.528 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:39:54.532 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:39:54.533 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:39:54.533 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:39:54.535 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:39:54.558 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:39:54.558 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:39:54.559 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:39:54.559 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:40:18.198 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:40:18.199 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:40:18.200 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:40:18.213 DEBUG 7864 --- [http-nio-8085-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:40:18.213 DEBUG 7864 --- [http-nio-8085-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:40:18.216 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:40:18.700 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:40:18.710 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:40:18.711 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:40:18.756 DEBUG 7864 --- [http-nio-8085-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:40:18.757 DEBUG 7864 --- [http-nio-8085-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:40:18.766 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:40:19.013 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:40:19.015 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:40:19.017 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:40:19.023 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:40:19.023 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:40:19.026 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:40:19.027 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:40:19.030 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:40:19.032 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:40:19.034 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:41:04.684 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:41:04.685 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:41:04.686 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:41:04.698 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:41:04.699 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:41:04.701 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:41:05.318 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:41:05.319 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:41:05.320 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:41:05.342 DEBUG 7864 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:41:05.342 DEBUG 7864 --- [http-nio-8085-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:41:05.345 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:41:07.031 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:07.033 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:41:07.036 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:07.038 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:07.039 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:41:07.039 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:41:07.040 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:41:07.040 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:07.046 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:41:07.047 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:41:22.258 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:41:22.262 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:41:22.263 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:41:22.277 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:41:22.278 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:41:22.281 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:41:22.926 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:41:22.930 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:41:22.931 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:41:22.960 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:41:22.961 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:41:22.990 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:41:23.218 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:23.219 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:41:23.219 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:23.220 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:41:23.220 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:23.221 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:41:23.229 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:41:23.229 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:41:23.230 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:41:23.230 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:42:23.054 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:42:23.077 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:42:23.077 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:42:23.099 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:42:23.120 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:42:23.123 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:42:24.743 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:42:24.756 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:42:24.760 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:42:24.932 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:42:24.934 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:42:24.939 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:42:25.152 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:42:25.156 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:42:25.156 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:42:25.157 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:42:25.158 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:42:25.159 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:42:25.160 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:42:25.161 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:42:25.169 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:42:25.171 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:03.580 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:03.583 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2023-01-16 21:44:03.584 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:03.681 DEBUG 7864 --- [http-nio-8085-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.javaclass.restaurant.entity.LoginRequest@6c0de807]
+2023-01-16 21:44:04.191 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:04.192 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG.G (truncated)...]
+2023-01-16 21:44:04.202 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:04.253 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:44:04.254 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:44:04.258 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:44:04.276 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:04.279 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:44:04.285 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:04.589 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:44:04.592 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:44:04.600 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:44:04.634 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:04.635 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:44:04.637 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:04.861 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:04.863 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:44:04.865 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:04.866 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:04.867 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:44:04.867 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:04.868 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:04.869 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:04.871 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:04.871 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:06.656 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.657 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800495_image1.jpg", parameters={}
+2023-01-16 21:44:06.658 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.663 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:06.664 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:06.672 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.673 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800516_image2.jpg", parameters={}
+2023-01-16 21:44:06.674 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.677 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:06.678 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:06.680 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.681 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673879667_image2.jpg", parameters={}
+2023-01-16 21:44:06.687 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:06.890 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-16 21:44:06.900 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -30, 2, 40, 73, 67, 67 (truncated)...]
+2023-01-16 21:44:06.921 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:16.152 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:16.154 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2023-01-16 21:44:16.160 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:16.167 DEBUG 7864 --- [http-nio-8085-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.javaclass.restaurant.entity.LoginRequest@72abb042]
+2023-01-16 21:44:16.502 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:16.503 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=2, name=Aung Aung, loginId=staff1, password=$2a$10$qAFAydGzjQcdEuzVi9WZJu57nbSEh.ux1.6Ht3j (truncated)...]
+2023-01-16 21:44:16.517 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:16.578 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.CategoryController#getAll()
+2023-01-16 21:44:16.579 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/category", parameters={}
+2023-01-16 21:44:16.579 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.CategoryController#getAll()
+2023-01-16 21:44:16.636 DEBUG 7864 --- [http-nio-8085-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:16.637 DEBUG 7864 --- [http-nio-8085-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:44:16.643 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:16.838 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getAll()
+2023-01-16 21:44:16.838 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/food", parameters={}
+2023-01-16 21:44:16.840 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getAll()
+2023-01-16 21:44:16.866 DEBUG 7864 --- [http-nio-8085-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:16.867 DEBUG 7864 --- [http-nio-8085-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:44:16.868 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:17.044 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.045 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:44:17.046 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.053 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.063 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800516_image2.jpg", parameters={}
+2023-01-16 21:44:17.064 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.103 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.105 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.105 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:44:17.106 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.133 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800495_image1.jpg", parameters={}
+2023-01-16 21:44:17.134 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:17.135 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:17.136 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:17.136 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:17.139 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:17.154 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:17.155 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:17.189 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:17.190 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:31.457 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:31.458 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2023-01-16 21:44:31.459 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.LoginController#login(LoginRequest)
+2023-01-16 21:44:31.462 DEBUG 7864 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.javaclass.restaurant.entity.LoginRequest@2c9eba91]
+2023-01-16 21:44:31.773 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:31.773 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG.G (truncated)...]
+2023-01-16 21:44:31.775 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:31.825 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:44:31.825 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:44:31.827 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:44:31.856 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:31.857 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:44:31.858 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:32.073 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:44:32.074 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:44:32.075 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:44:32.118 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:44:32.118 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:44:32.121 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:44:32.263 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:32.264 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:44:32.264 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:32.290 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:32.292 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:44:32.293 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:32.294 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:44:32.294 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:44:32.297 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:44:32.298 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:14.809 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:14.810 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:46:14.810 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:14.829 DEBUG 7864 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:14.829 DEBUG 7864 --- [http-nio-8085-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:46:14.832 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:15.196 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:15.199 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:46:15.199 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:15.218 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:15.218 DEBUG 7864 --- [http-nio-8085-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:46:15.221 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:15.245 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:15.246 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:46:15.247 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:15.265 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:15.266 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:46:15.268 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:15.658 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:15.659 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:46:15.659 DEBUG 7864 --- [http-nio-8085-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:15.675 DEBUG 7864 --- [http-nio-8085-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:15.675 DEBUG 7864 --- [http-nio-8085-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:46:15.679 DEBUG 7864 --- [http-nio-8085-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:16.103 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:16.104 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:46:16.104 DEBUG 7864 --- [http-nio-8085-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:16.107 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:16.108 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:16.108 DEBUG 7864 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:16.108 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:46:16.110 DEBUG 7864 --- [http-nio-8085-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:16.112 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:16.113 DEBUG 7864 --- [http-nio-8085-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:23.837 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:23.839 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/category", parameters={}
+2023-01-16 21:46:23.843 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getAll()
+2023-01-16 21:46:23.861 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:23.861 DEBUG 7864 --- [http-nio-8085-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Category [id=1, name=Soup], Category [id=2, name=Meat], Category [id=3, name=Seafood], Category [id (truncated)...]
+2023-01-16 21:46:23.863 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:24.047 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:24.048 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/food", parameters={}
+2023-01-16 21:46:24.048 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getFoodAll()
+2023-01-16 21:46:24.063 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:46:24.064 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Food [id=1, foodItem=Malar Soup, image=/images/jpg/1673800451_1.jpg, price=0, stock=100, deleteable (truncated)...]
+2023-01-16 21:46:24.067 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:46:24.968 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:24.969 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg", parameters={}
+2023-01-16 21:46:24.970 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:24.973 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:24.974 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:24.980 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:24.981 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800451_1.jpg", parameters={}
+2023-01-16 21:46:24.982 DEBUG 7864 --- [http-nio-8085-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:24.984 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:24.985 DEBUG 7864 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:53.529 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:53.531 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800495_image1.jpg", parameters={}
+2023-01-16 21:46:53.533 DEBUG 7864 --- [http-nio-8085-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:53.536 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:53.537 DEBUG 7864 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:46:53.571 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:53.572 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/images/jpg/1673800516_image2.jpg", parameters={}
+2023-01-16 21:46:53.581 DEBUG 7864 --- [http-nio-8085-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.FoodController#getImage(String, String)
+2023-01-16 21:46:53.584 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'image/avif', given [image/avif, image/webp, */*] and supported [*/*]
+2023-01-16 21:46:53.585 DEBUG 7864 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-16 21:47:00.046 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2023-01-16 21:47:00.047 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
+2023-01-16 21:47:00.048 DEBUG 7864 --- [http-nio-8085-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2023-01-16 21:47:00.300 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:47:00.301 DEBUG 7864 --- [http-nio-8085-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG. (truncated)...]
+2023-01-16 21:47:00.328 DEBUG 7864 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:49:28.080 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
+2023-01-16 21:49:28.127 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/admin/staff/create", parameters={}
+2023-01-16 21:49:28.128 DEBUG 7864 --- [http-nio-8085-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
+2023-01-16 21:49:28.135 DEBUG 7864 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:49:28.175 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
+2023-01-16 21:49:28.177 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/staff/create", parameters={}
+2023-01-16 21:49:28.178 DEBUG 7864 --- [http-nio-8085-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#staffCreate(Staff)
+2023-01-16 21:49:28.421 DEBUG 7864 --- [http-nio-8085-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Staff [id=0, name=test, loginId=test, password=test, phone=06786856754, gender=Female, staffType=Sta (truncated)...]
+2023-01-16 21:49:29.081 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:49:29.081 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Staff [id=6, name=test, loginId=test, password=$2a$10$XyS9aFEyUAR3Dal579HqFuG2cnpngYSiG.uPxpULnnCBMN (truncated)...]
+2023-01-16 21:49:29.087 DEBUG 7864 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-16 21:49:29.102 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2023-01-16 21:49:29.103 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/staff", parameters={}
+2023-01-16 21:49:29.109 DEBUG 7864 --- [http-nio-8085-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.javaclass.restaurant.controller.AdminController#getStaffAll()
+2023-01-16 21:49:29.133 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-16 21:49:29.133 DEBUG 7864 --- [http-nio-8085-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Staff [id=1, name=Admin, loginId=admin, password=$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG. (truncated)...]
+2023-01-16 21:49:29.146 DEBUG 7864 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
