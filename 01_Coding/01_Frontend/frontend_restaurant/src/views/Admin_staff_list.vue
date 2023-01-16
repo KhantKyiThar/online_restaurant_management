@@ -38,9 +38,9 @@
 
             <!-- Delete Btn -->
             <v-btn
-              color="red"
+              :disabled="!item.deleteable"
+              color="error"
               fab
-              dark
               x-small
               elevation="2"
               @click="

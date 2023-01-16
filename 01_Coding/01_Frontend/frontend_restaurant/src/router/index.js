@@ -115,9 +115,9 @@ router.beforeEach((to, from, next) => {
   else if (
     to.meta.requiresAuth == true &&
     to.meta.requiresAdmin == true &&
-    loginUser.staffType == "Admin"
+    loginUser.staffType != "Admin"
   ) {
-    next({ path: "/admin" });
+    next({ path: "/home" });
   }
 
   // If All Okay
