@@ -475,7 +475,7 @@ export default {
           //refresh staff list
           await this.fetchStaff();
         } else {
-          this.errorAlert = true;
+          this.errorCreateAlert = true;
         }
         this.loading = false;
       }

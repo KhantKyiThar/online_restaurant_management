@@ -13,11 +13,13 @@ public interface StaffService {
 	public Staff create(Staff food);
 
 	public Staff update(int id, Staff staff);
-	
+
 	public Staff updateDeleteable(int id, Staff staff);
 
 	public boolean delete(int id);
-	
+
 	public Staff checkLoginStaff(String loginId, String password);
-	
+
+	public void updatePwd(int id, String newPwd);
+
 }

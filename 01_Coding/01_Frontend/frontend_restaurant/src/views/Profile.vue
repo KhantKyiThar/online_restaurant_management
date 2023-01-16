@@ -10,14 +10,17 @@
 
         <p>Data</p>
         <div class="text--primary">
-          <!-- <div v-if="loginUser.role == 'admin'">Admin</div> -->
           <div>{{ loginUser.loginId }}</div>
           <div>Phone Number: {{ loginUser.phone }}</div>
           <div>Gender: {{ loginUser.gender }}</div>
           <div>Joining Date: {{ loginUser.joinedDate }}</div>
-          <!-- <div>Created At: {{ loginUser.createdAt }}</div> -->
         </div>
       </v-card-text>
+
+      <!-- Change Pwd Btn -->
+      <v-btn text color="teal accent-4" @click="changePwd()">
+        Change Password
+      </v-btn>
     </v-card>
   </div>
 </template>
@@ -47,6 +50,12 @@ export default {
         deep: true,
       }
     );
+  },
+
+  methods: {
+    changePwd() {
+      this.$router.push({ path: "/changePwd" });
+    },
   },
 };
 </script>

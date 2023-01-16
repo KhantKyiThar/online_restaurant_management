@@ -7,9 +7,7 @@ import login from "../views/Login.vue";
 import home from "../views/Home.vue";
 import order from "../views/Order.vue";
 import profile from "../views/Profile.vue";
-import checkout from "../views/Checkout.vue";
-import about from "../views/About.vue";
-import contact from "../views/Contact.vue";
+import changePwd from "../views/ChangePassword.vue";
 
 import admin from "../views/Admin.vue";
 import admin_food_create from "../views/Admin_food_create.vue";
@@ -49,22 +47,12 @@ const routes = [
     },
   },
   {
-    path: "/checkout",
-    name: "checkout",
-    component: checkout,
+    path: "/changePwd",
+    name: "changePwd",
+    component: changePwd,
     meta: {
       requiresAuth: true,
-    },
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: about,
-  },
-  {
-    path: "/contact",
-    name: "contact",
-    component: contact,
+    }
   },
 
   // Admin

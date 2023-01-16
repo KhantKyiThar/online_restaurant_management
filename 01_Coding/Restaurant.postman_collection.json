@@ -20,7 +20,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/noodle/image3.jpg"
+									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/seafood/image11.jpg"
 								},
 								{
 									"key": "fileType",
@@ -44,7 +44,107 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/seafood/image11.jpg"
+										},
+										{
+											"key": "fileType",
+											"value": "image/jpg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/file/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"file",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:34:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "/images/jpg/1673876057_image11.jpg"
+						}
+					]
 				},
 				{
 					"name": "Staff Create",
@@ -53,7 +153,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Khant\",\r\n    \"loginId\":\"staff3\",\r\n    \"password\":\"khant123\",\r\n    \"phone\":\"09925235243\",\r\n    \"gender\":\"Male\",\r\n    \"staffType\":\"Staff\",\r\n    \"joinedDate\":\"2018-08-26\"\r\n}",
+							"raw": "{\r\n    \"name\":\"test\",\r\n    \"loginId\":\"staff1\",\r\n    \"password\":\"test\",\r\n    \"phone\":\"09456953799\",\r\n    \"gender\":\"Female\",\r\n    \"staffType\":\"Staff\",\r\n    \"joinedDate\":\"2020-08-21\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -75,7 +175,190 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Aung Aung\",\r\n    \"loginId\":\"staff1\",\r\n    \"password\":\"staff1\",\r\n    \"phone\":\"0998876654\",\r\n    \"gender\":\"Male\",\r\n    \"staffType\":\"Staff\",\r\n    \"joinedDate\":\"2020-08-21\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/staff/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"staff",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 15:17:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Aung Aung\",\n    \"loginId\": \"staff1\",\n    \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n    \"phone\": \"0998876654\",\n    \"gender\": \"Male\",\n    \"staffType\": \"Staff\",\n    \"deleteable\": true,\n    \"joinedDate\": \"2020-08-21\",\n    \"createdAt\": \"2023-01-15T21:47:20.2847427\",\n    \"updatedAt\": null\n}"
+						},
+						{
+							"name": "400 same loginId",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"test\",\r\n    \"loginId\":\"staff1\",\r\n    \"password\":\"test\",\r\n    \"phone\":\"09456953799\",\r\n    \"gender\":\"Female\",\r\n    \"staffType\":\"Staff\",\r\n    \"joinedDate\":\"2020-08-21\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/staff/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"staff",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 15:18:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Staff with same loginId already exists!"
+						}
+					]
 				},
 				{
 					"name": "Food Create",
@@ -84,7 +367,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"foodItem\": \"Chicken Soup\",\r\n    \"image\": \"/images/jpg/1672674264_photo_2022-12-30_20-19-38.jpg\",\r\n    \"price\": 0,\r\n    \"stock\": 99,\r\n    \"category\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Malar Soup\",\r\n    \"image\": \"/images/jpg/1672674934_1.jpg\",\r\n    \"price\": 0,\r\n    \"stock\": 100,\r\n    \"category\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Chicken\",\r\n    \"image\": \"/images/jpg/1672675290_image1.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Black Chicken\",\r\n    \"image\": \"/images/jpg/1672675370_image2.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Beef\",\r\n    \"image\": \"/images/jpg/1672675400_image4.jpg\",\r\n    \"price\": 1500,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Pork\",\r\n    \"image\": \"/images/jpg/1672675434_image6.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 19,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Bacon\",\r\n    \"image\": \"/images/jpg/1672675471_image12.jpg\",\r\n    \"price\": 1200,\r\n    \"stock\": 20,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood1\",\r\n    \"image\": \"/images/jpg/1672675533_image1.jpg\",\r\n    \"price\": 1800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood2\",\r\n    \"image\": \"/images/jpg/1672675586_image2.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood3\",\r\n    \"image\": \"/images/jpg/1672675635_image10.jpg\",\r\n    \"price\": 1800,\r\n    \"stock\": 15,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood4\",\r\n    \"image\": \"/images/jpg/1672675665_image3.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Seafood5\",\r\n    \"image\": \"/images/jpg/1672675705_image5.jpg\",\r\n    \"price\": 2000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable1\",\r\n    \"image\": \"/images/jpg/1672676157_image5.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable2\",\r\n    \"image\": \"/images/jpg/1672676208_image6.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Vegetable3\",\r\n    \"image\": \"/images/jpg/1672676226_image7.jpg\",\r\n    \"price\": 800,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 4\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle1\",\r\n    \"image\": \"/images/jpg/1672676488_image1.jpg\",\r\n    \"price\": 500,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle2\",\r\n    \"image\": \"/images/jpg/1672676536_image2.jpg\",\r\n    \"price\": 500,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}\r\n{\r\n    \"foodItem\": \"Noodle5\",\r\n    \"image\": \"/images/jpg/1672676560_image3.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 30,\r\n    \"category\": {\r\n        \"id\": 5\r\n    }\r\n}",
+							"raw": "{\r\n    \"foodItem\":\"Seafood1\",\r\n    \"image\":\"/images/jpg/1673616387_image6.jpg\",\r\n    \"price\":2000,\r\n    \"stock\":10,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -106,7 +389,190 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foodItem\":\"Seafood1\",\r\n    \"image\":\"/images/jpg/1673536714_image1.jpg\",\r\n    \"price\":2000,\r\n    \"stock\":10,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/food/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"food",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Jan 2023 15:20:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"foodItem\": \"Seafood1\",\n    \"image\": \"/images/jpg/1673536714_image1.jpg\",\n    \"price\": 2000,\n    \"stock\": 10,\n    \"category\": {\n        \"id\": 3,\n        \"name\": null\n    },\n    \"createdAt\": \"2023-01-12T21:50:00.8847262\",\n    \"updatedAt\": null\n}"
+						},
+						{
+							"name": "400 Image is invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foodItem\":\"Seafood1\",\r\n    \"image\":\"/images/jpg/1673536714_image5.jpg\",\r\n    \"price\":2000,\r\n    \"stock\":10,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/food/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"food",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Jan 2023 15:22:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Image is invalid"
+						}
+					]
 				},
 				{
 					"name": "File Update",
@@ -119,7 +585,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/soup/1.jpg"
+									"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/seafood/image10.jpg"
 								},
 								{
 									"key": "fileType",
@@ -128,7 +594,7 @@
 								},
 								{
 									"key": "filePath",
-									"value": "/images/jpg/1672674881_2.jpg",
+									"value": "/images/jpg/1673876057_image11.jpg",
 									"type": "text"
 								}
 							]
@@ -148,7 +614,112 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/HL/Desktop/OJT Project (Restaurant Management)/seafood/image10.jpg"
+										},
+										{
+											"key": "fileType",
+											"value": "image/jpg",
+											"type": "text"
+										},
+										{
+											"key": "filePath",
+											"value": "/images/jpg/1673876057_image11.jpg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/admin/file/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"file",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:35:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "/images/jpg/1673876105_image10.jpg"
+						}
+					]
 				},
 				{
 					"name": "Food List",
@@ -178,7 +749,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"foodItem\":\"Seafood2\",\r\n    \"image\":\"/images/jpg/1672675586_image2.jpg\",\r\n    \"price\":2000,\r\n    \"stock\":10,\r\n    \"category\":{\r\n        \"id\":3\r\n    }\r\n}",
+							"raw": "{\r\n    \"foodItem\":\"Seafood2\",\r\n    \"image\":\"/images/jpg/1672932036_image3.jpg\",\r\n    \"price\":500,\r\n    \"stock\":30,\r\n    \"category\":{\r\n        \"id\":5\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -186,7 +757,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8085/api/admin/food/update/9",
+							"raw": "http://localhost:8085/api/admin/food/update/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -197,7 +768,7 @@
 								"admin",
 								"food",
 								"update",
-								"9"
+								"5"
 							]
 						}
 					},
@@ -262,7 +833,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8085/api/admin/staff/update/20",
+							"raw": "http://localhost:8085/api/admin/staff/update/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -273,7 +844,7 @@
 								"admin",
 								"staff",
 								"update",
-								"20"
+								"1"
 							]
 						}
 					},
@@ -330,7 +901,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Soup\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"name\": \"Meat\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"name\": \"Seafood\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"name\": \"Vegetable\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"name\": \"Noodle\"\r\n}",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Noodle\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -428,7 +999,200 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/admin/order",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:32:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"totalPrice\": 5500,\n        \"staff\": {\n            \"id\": 2,\n            \"name\": \"Aung Aung\",\n            \"loginId\": \"staff1\",\n            \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n            \"phone\": \"0998876654\",\n            \"gender\": \"Male\",\n            \"staffType\": \"Staff\",\n            \"deleteable\": false,\n            \"joinedDate\": \"2020-08-21\",\n            \"createdAt\": \"2023-01-15T21:47:20\",\n            \"updatedAt\": null\n        },\n        \"orderDate\": \"2023-01-16T19:46:19\",\n        \"createdAt\": null,\n        \"updatedAt\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Order Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/admin/order/detail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"admin",
+								"order",
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/admin/order/detail/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"admin",
+										"order",
+										"detail",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:33:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"food\": {\n            \"id\": 2,\n            \"foodItem\": \"Chicken Soup\",\n            \"image\": \"/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg\",\n            \"price\": 0,\n            \"stock\": 100,\n            \"deleteable\": true,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Soup\"\n            },\n            \"createdAt\": \"2023-01-15T23:04:33\",\n            \"updatedAt\": null\n        },\n        \"foodOrder\": {\n            \"id\": 1,\n            \"totalPrice\": 5500,\n            \"staff\": {\n                \"id\": 2,\n                \"name\": \"Aung Aung\",\n                \"loginId\": \"staff1\",\n                \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n                \"phone\": \"0998876654\",\n                \"gender\": \"Male\",\n                \"staffType\": \"Staff\",\n                \"deleteable\": false,\n                \"joinedDate\": \"2020-08-21\",\n                \"createdAt\": \"2023-01-15T21:47:20\",\n                \"updatedAt\": null\n            },\n            \"orderDate\": \"2023-01-16T19:46:19\",\n            \"createdAt\": null,\n            \"updatedAt\": null\n        },\n        \"foodCount\": 3\n    },\n    {\n        \"id\": 2,\n        \"food\": {\n            \"id\": 3,\n            \"foodItem\": \"Chicken\",\n            \"image\": \"/images/jpg/1673800495_image1.jpg\",\n            \"price\": 1500,\n            \"stock\": 10,\n            \"deleteable\": true,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Meat\"\n            },\n            \"createdAt\": \"2023-01-15T23:04:55\",\n            \"updatedAt\": null\n        },\n        \"foodOrder\": {\n            \"id\": 1,\n            \"totalPrice\": 5500,\n            \"staff\": {\n                \"id\": 2,\n                \"name\": \"Aung Aung\",\n                \"loginId\": \"staff1\",\n                \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n                \"phone\": \"0998876654\",\n                \"gender\": \"Male\",\n                \"staffType\": \"Staff\",\n                \"deleteable\": false,\n                \"joinedDate\": \"2020-08-21\",\n                \"createdAt\": \"2023-01-15T21:47:20\",\n                \"updatedAt\": null\n            },\n            \"orderDate\": \"2023-01-16T19:46:19\",\n            \"createdAt\": null,\n            \"updatedAt\": null\n        },\n        \"foodCount\": 3\n    }\n]"
+						}
+					]
 				}
 			]
 		},
@@ -441,7 +1205,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/api/images/jpg/1672674934_1.jpg",
+							"raw": "http://localhost:8085/api/images/jpg/1673616434_image1.jpg",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -451,11 +1215,92 @@
 								"api",
 								"images",
 								"jpg",
-								"1672674934_1.jpg"
+								"1673616434_image1.jpg"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "404 Image not exist in server",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/images/jpg/1672932036_image3.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"images",
+										"jpg",
+										"1672932036_image3.jpg"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:28:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Food All",
@@ -475,7 +1320,90 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/food",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"food"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:29:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"foodItem\": \"Malar Soup\",\n        \"image\": \"/images/jpg/1673800451_1.jpg\",\n        \"price\": 0,\n        \"stock\": 100,\n        \"deleteable\": true,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Soup\"\n        },\n        \"createdAt\": \"2023-01-15T23:04:12\",\n        \"updatedAt\": null\n    },\n    {\n        \"id\": 2,\n        \"foodItem\": \"Chicken Soup\",\n        \"image\": \"/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg\",\n        \"price\": 0,\n        \"stock\": 100,\n        \"deleteable\": true,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Soup\"\n        },\n        \"createdAt\": \"2023-01-15T23:04:33\",\n        \"updatedAt\": null\n    },\n    {\n        \"id\": 3,\n        \"foodItem\": \"Chicken\",\n        \"image\": \"/images/jpg/1673800495_image1.jpg\",\n        \"price\": 1500,\n        \"stock\": 10,\n        \"deleteable\": true,\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Meat\"\n        },\n        \"createdAt\": \"2023-01-15T23:04:55\",\n        \"updatedAt\": null\n    },\n    {\n        \"id\": 4,\n        \"foodItem\": \"Black Chicken\",\n        \"image\": \"/images/jpg/1673800516_image2.jpg\",\n        \"price\": 1800,\n        \"stock\": 10,\n        \"deleteable\": false,\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Meat\"\n        },\n        \"createdAt\": \"2023-01-15T23:05:17\",\n        \"updatedAt\": null\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "Food List By Category",
@@ -483,7 +1411,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/api/food/category/2",
+							"raw": "http://localhost:8085/api/food/category/6",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -493,11 +1421,176 @@
 								"api",
 								"food",
 								"category",
-								"2"
+								"6"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/food/category/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"food",
+										"category",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:30:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"foodItem\": \"Chicken\",\n        \"image\": \"/images/jpg/1673800495_image1.jpg\",\n        \"price\": 1500,\n        \"stock\": 10,\n        \"deleteable\": true,\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Meat\"\n        },\n        \"createdAt\": \"2023-01-15T23:04:55\",\n        \"updatedAt\": null\n    },\n    {\n        \"id\": 4,\n        \"foodItem\": \"Black Chicken\",\n        \"image\": \"/images/jpg/1673800516_image2.jpg\",\n        \"price\": 1800,\n        \"stock\": 10,\n        \"deleteable\": false,\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Meat\"\n        },\n        \"createdAt\": \"2023-01-15T23:05:17\",\n        \"updatedAt\": null\n    }\n]"
+						},
+						{
+							"name": "400 CategoryId not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/food/category/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"food",
+										"category",
+										"6"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:30:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Category ID is invalid"
+						}
+					]
 				}
 			]
 		},
@@ -522,7 +1615,90 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:28:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Soup\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Meat\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Seafood\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Vegetable\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Noodle\"\n    }\n]"
+						}
+					]
 				}
 			]
 		},
@@ -535,7 +1711,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/api/staff/profile?id=20",
+							"raw": "http://localhost:8085/api/staff/profile?id=2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -549,21 +1725,111 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "20"
+									"value": "2"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/staff/profile?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"profile"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 13:39:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Aung Aung\",\n    \"loginId\": \"staff1\",\n    \"password\": \"$2a$10$ADHVpyxsAg2L8n3PGMidFunDENyeRxj2zhwMyWhKlsMEYAghfyfNK\",\n    \"phone\": \"09252342342\",\n    \"gender\": \"Male\",\n    \"staffType\": \"Staff\",\n    \"deleteable\": true,\n    \"joinedDate\": \"2021-05-06\",\n    \"createdAt\": \"2023-01-15T19:41:19\",\n    \"updatedAt\": null\n}"
+						}
+					]
 				},
 				{
-					"name": "Order Add",
+					"name": "Add Order",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"foodCount\":5,\r\n    \"totalPrice\":10000,\r\n    \"price\":500,\r\n    \"stock\":30,\r\n    \"category\":{\r\n        \"id\":5,\r\n        \"name\":\"Noodle\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"totalPrice\":5500,\r\n    \"staff\":{\r\n        \"id\":2\r\n    },\r\n    \"orderDate\":\"2023-01-15T23:04:12\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -571,7 +1837,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8085/api/staff/order",
+							"raw": "http://localhost:8085/api/staff/order/add",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -580,11 +1846,106 @@
 							"path": [
 								"api",
 								"staff",
-								"order"
+								"order",
+								"add"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"totalPrice\":5500,\r\n    \"staff\":{\r\n        \"id\":2\r\n    },\r\n    \"orderDate\":\"2023-01-15T23:04:12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/order/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"order",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:16:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"totalPrice\": 5500,\n    \"staff\": {\n        \"id\": 2,\n        \"name\": null,\n        \"loginId\": null,\n        \"password\": null,\n        \"phone\": null,\n        \"gender\": null,\n        \"staffType\": null,\n        \"deleteable\": true,\n        \"joinedDate\": null,\n        \"createdAt\": null,\n        \"updatedAt\": null\n    },\n    \"orderDate\": \"2023-01-16T19:46:18.8986251\",\n    \"createdAt\": null,\n    \"updatedAt\": null\n}"
+						}
+					]
 				},
 				{
 					"name": "Food Update for Stock",
@@ -616,7 +1977,842 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foodItem\": \"Black Chicken\",\r\n    \"image\": \"/images/jpg/1672675370_image2.jpg\",\r\n    \"price\": 1000,\r\n    \"stock\": 10,\r\n    \"category\": {\r\n        \"id\": 2\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/food/update/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"food",
+										"update",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:27:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"foodItem\": \"Black Chicken\",\n    \"image\": \"/images/jpg/1673800516_image2.jpg\",\n    \"price\": 1800,\n    \"stock\": 10,\n    \"deleteable\": false,\n    \"category\": {\n        \"id\": 2,\n        \"name\": \"Meat\"\n    },\n    \"createdAt\": \"2023-01-15T23:05:17\",\n    \"updatedAt\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"current_pwd\":\"staff3\",\r\n    \"new_pwd\":\"test\",\r\n    \"con_new_pwd\":\"testing\",\r\n    \"ori_id\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/staff/changePwd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"changePwd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"current_pwd\":\"test\",\r\n    \"new_pwd\":\"staff2\",\r\n    \"con_new_pwd\":\"staff2\",\r\n    \"ori_id\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/changePwd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"changePwd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 15:20:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"test\",\n    \"loginId\": \"staff2\",\n    \"password\": \"$2a$10$CtLp0KW1EYjnShrsakg/q.zvx7wRbn1ENjfrCFVts741Mmv7vRduy\",\n    \"phone\": \"09456953799\",\n    \"gender\": \"Female\",\n    \"staffType\": \"Staff\",\n    \"deleteable\": true,\n    \"joinedDate\": \"2020-08-21\",\n    \"createdAt\": \"2023-01-15T21:48:32\",\n    \"updatedAt\": null\n}"
+						},
+						{
+							"name": "409 staff Id not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"current_pwd\":\"test\",\r\n    \"new_pwd\":\"staff2\",\r\n    \"con_new_pwd\":\"staff2\",\r\n    \"ori_id\":5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/changePwd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"changePwd"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 17:07:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cause\": null,\n    \"stackTrace\": [\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"changePassword\",\n            \"fileName\": \"StaffController.java\",\n            \"lineNumber\": 110,\n            \"className\": \"com.javaclass.restaurant.controller.StaffController\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke0\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": -2,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": true\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": 62,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"DelegatingMethodAccessorImpl.java\",\n            \"lineNumber\": 43,\n            \"className\": \"jdk.internal.reflect.DelegatingMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"Method.java\",\n            \"lineNumber\": 566,\n            \"className\": \"java.lang.reflect.Method\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doInvoke\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 205,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeForRequest\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 150,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeAndHandle\",\n            \"fileName\": \"ServletInvocableHandlerMethod.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeHandlerMethod\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 895,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handleInternal\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 808,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handle\",\n            \"fileName\": \"AbstractHandlerMethodAdapter.java\",\n            \"lineNumber\": 87,\n            \"className\": \"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doDispatch\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 1071,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doService\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 964,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"processRequest\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 1006,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doPost\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 909,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 696,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 883,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 779,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 227,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"WsFilter.java\",\n            \"lineNumber\": 53,\n            \"className\": \"org.apache.tomcat.websocket.server.WsFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 337,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 115,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 122,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 116,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 126,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"AnonymousAuthenticationFilter.java\",\n            \"lineNumber\": 109,\n            \"className\": \"org.springframework.security.web.authentication.AnonymousAuthenticationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextHolderAwareRequestFilter.java\",\n            \"lineNumber\": 149,\n            \"className\": \"org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"RequestCacheAwareFilter.java\",\n            \"lineNumber\": 63,\n            \"className\": \"org.springframework.security.web.savedrequest.RequestCacheAwareFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 103,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 89,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doHeadersAfter\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 90,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 75,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 112,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 82,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"WebAsyncManagerIntegrationFilter.java\",\n            \"lineNumber\": 55,\n            \"className\": \"org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"DisableEncodeUrlFilter.java\",\n            \"lineNumber\": 42,\n            \"className\": \"org.springframework.security.web.session.DisableEncodeUrlFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 221,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 186,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeDelegate\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 354,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 267,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"RequestContextFilter.java\",\n            \"lineNumber\": 100,\n            \"className\": \"org.springframework.web.filter.RequestContextFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FormContentFilter.java\",\n            \"lineNumber\": 93,\n            \"className\": \"org.springframework.web.filter.FormContentFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"CharacterEncodingFilter.java\",\n            \"lineNumber\": 201,\n            \"className\": \"org.springframework.web.filter.CharacterEncodingFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardWrapperValve.java\",\n            \"lineNumber\": 177,\n            \"className\": \"org.apache.catalina.core.StandardWrapperValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardContextValve.java\",\n            \"lineNumber\": 97,\n            \"className\": \"org.apache.catalina.core.StandardContextValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"AuthenticatorBase.java\",\n            \"lineNumber\": 541,\n            \"className\": \"org.apache.catalina.authenticator.AuthenticatorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardHostValve.java\",\n            \"lineNumber\": 135,\n            \"className\": \"org.apache.catalina.core.StandardHostValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"ErrorReportValve.java\",\n            \"lineNumber\": 92,\n            \"className\": \"org.apache.catalina.valves.ErrorReportValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardEngineValve.java\",\n            \"lineNumber\": 78,\n            \"className\": \"org.apache.catalina.core.StandardEngineValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"CoyoteAdapter.java\",\n            \"lineNumber\": 360,\n            \"className\": \"org.apache.catalina.connector.CoyoteAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"Http11Processor.java\",\n            \"lineNumber\": 399,\n            \"className\": \"org.apache.coyote.http11.Http11Processor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProcessorLight.java\",\n            \"lineNumber\": 65,\n            \"className\": \"org.apache.coyote.AbstractProcessorLight\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProtocol.java\",\n            \"lineNumber\": 891,\n            \"className\": \"org.apache.coyote.AbstractProtocol$ConnectionHandler\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doRun\",\n            \"fileName\": \"NioEndpoint.java\",\n            \"lineNumber\": 1784,\n            \"className\": \"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"SocketProcessorBase.java\",\n            \"lineNumber\": 49,\n            \"className\": \"org.apache.tomcat.util.net.SocketProcessorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"runWorker\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 1191,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 659,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"TaskThread.java\",\n            \"lineNumber\": 61,\n            \"className\": \"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"run\",\n            \"fileName\": \"Thread.java\",\n            \"lineNumber\": 829,\n            \"className\": \"java.lang.Thread\",\n            \"nativeMethod\": false\n        }\n    ],\n    \"message\": \"Something wrong\",\n    \"suppressed\": [],\n    \"localizedMessage\": \"Something wrong\"\n}"
+						},
+						{
+							"name": "409 current password not match",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"current_pwd\":\"test\",\r\n    \"new_pwd\":\"staff3\",\r\n    \"con_new_pwd\":\"staff3\",\r\n    \"ori_id\":4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/changePwd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"changePwd"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 17:08:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cause\": null,\n    \"stackTrace\": [\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"changePassword\",\n            \"fileName\": \"StaffController.java\",\n            \"lineNumber\": 118,\n            \"className\": \"com.javaclass.restaurant.controller.StaffController\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke0\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": -2,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": true\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": 62,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"DelegatingMethodAccessorImpl.java\",\n            \"lineNumber\": 43,\n            \"className\": \"jdk.internal.reflect.DelegatingMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"Method.java\",\n            \"lineNumber\": 566,\n            \"className\": \"java.lang.reflect.Method\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doInvoke\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 205,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeForRequest\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 150,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeAndHandle\",\n            \"fileName\": \"ServletInvocableHandlerMethod.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeHandlerMethod\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 895,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handleInternal\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 808,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handle\",\n            \"fileName\": \"AbstractHandlerMethodAdapter.java\",\n            \"lineNumber\": 87,\n            \"className\": \"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doDispatch\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 1071,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doService\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 964,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"processRequest\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 1006,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doPost\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 909,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 696,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 883,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 779,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 227,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"WsFilter.java\",\n            \"lineNumber\": 53,\n            \"className\": \"org.apache.tomcat.websocket.server.WsFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 337,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 115,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 122,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 116,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 126,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"AnonymousAuthenticationFilter.java\",\n            \"lineNumber\": 109,\n            \"className\": \"org.springframework.security.web.authentication.AnonymousAuthenticationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextHolderAwareRequestFilter.java\",\n            \"lineNumber\": 149,\n            \"className\": \"org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"RequestCacheAwareFilter.java\",\n            \"lineNumber\": 63,\n            \"className\": \"org.springframework.security.web.savedrequest.RequestCacheAwareFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 103,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 89,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doHeadersAfter\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 90,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 75,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 112,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 82,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"WebAsyncManagerIntegrationFilter.java\",\n            \"lineNumber\": 55,\n            \"className\": \"org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"DisableEncodeUrlFilter.java\",\n            \"lineNumber\": 42,\n            \"className\": \"org.springframework.security.web.session.DisableEncodeUrlFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 221,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 186,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeDelegate\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 354,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 267,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"RequestContextFilter.java\",\n            \"lineNumber\": 100,\n            \"className\": \"org.springframework.web.filter.RequestContextFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FormContentFilter.java\",\n            \"lineNumber\": 93,\n            \"className\": \"org.springframework.web.filter.FormContentFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"CharacterEncodingFilter.java\",\n            \"lineNumber\": 201,\n            \"className\": \"org.springframework.web.filter.CharacterEncodingFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardWrapperValve.java\",\n            \"lineNumber\": 177,\n            \"className\": \"org.apache.catalina.core.StandardWrapperValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardContextValve.java\",\n            \"lineNumber\": 97,\n            \"className\": \"org.apache.catalina.core.StandardContextValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"AuthenticatorBase.java\",\n            \"lineNumber\": 541,\n            \"className\": \"org.apache.catalina.authenticator.AuthenticatorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardHostValve.java\",\n            \"lineNumber\": 135,\n            \"className\": \"org.apache.catalina.core.StandardHostValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"ErrorReportValve.java\",\n            \"lineNumber\": 92,\n            \"className\": \"org.apache.catalina.valves.ErrorReportValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardEngineValve.java\",\n            \"lineNumber\": 78,\n            \"className\": \"org.apache.catalina.core.StandardEngineValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"CoyoteAdapter.java\",\n            \"lineNumber\": 360,\n            \"className\": \"org.apache.catalina.connector.CoyoteAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"Http11Processor.java\",\n            \"lineNumber\": 399,\n            \"className\": \"org.apache.coyote.http11.Http11Processor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProcessorLight.java\",\n            \"lineNumber\": 65,\n            \"className\": \"org.apache.coyote.AbstractProcessorLight\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProtocol.java\",\n            \"lineNumber\": 891,\n            \"className\": \"org.apache.coyote.AbstractProtocol$ConnectionHandler\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doRun\",\n            \"fileName\": \"NioEndpoint.java\",\n            \"lineNumber\": 1784,\n            \"className\": \"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"SocketProcessorBase.java\",\n            \"lineNumber\": 49,\n            \"className\": \"org.apache.tomcat.util.net.SocketProcessorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"runWorker\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 1191,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 659,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"TaskThread.java\",\n            \"lineNumber\": 61,\n            \"className\": \"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"run\",\n            \"fileName\": \"Thread.java\",\n            \"lineNumber\": 829,\n            \"className\": \"java.lang.Thread\",\n            \"nativeMethod\": false\n        }\n    ],\n    \"message\": \"Current Password does not match\",\n    \"suppressed\": [],\n    \"localizedMessage\": \"Current Password does not match\"\n}"
+						},
+						{
+							"name": "409 confirm password not match",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"current_pwd\":\"staff3\",\r\n    \"new_pwd\":\"test\",\r\n    \"con_new_pwd\":\"testing\",\r\n    \"ori_id\":4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/changePwd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"changePwd"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Jan 2023 17:08:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cause\": null,\n    \"stackTrace\": [\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"changePassword\",\n            \"fileName\": \"StaffController.java\",\n            \"lineNumber\": 114,\n            \"className\": \"com.javaclass.restaurant.controller.StaffController\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke0\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": -2,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": true\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"NativeMethodAccessorImpl.java\",\n            \"lineNumber\": 62,\n            \"className\": \"jdk.internal.reflect.NativeMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"DelegatingMethodAccessorImpl.java\",\n            \"lineNumber\": 43,\n            \"className\": \"jdk.internal.reflect.DelegatingMethodAccessorImpl\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"invoke\",\n            \"fileName\": \"Method.java\",\n            \"lineNumber\": 566,\n            \"className\": \"java.lang.reflect.Method\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doInvoke\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 205,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeForRequest\",\n            \"fileName\": \"InvocableHandlerMethod.java\",\n            \"lineNumber\": 150,\n            \"className\": \"org.springframework.web.method.support.InvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeAndHandle\",\n            \"fileName\": \"ServletInvocableHandlerMethod.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeHandlerMethod\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 895,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handleInternal\",\n            \"fileName\": \"RequestMappingHandlerAdapter.java\",\n            \"lineNumber\": 808,\n            \"className\": \"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"handle\",\n            \"fileName\": \"AbstractHandlerMethodAdapter.java\",\n            \"lineNumber\": 87,\n            \"className\": \"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doDispatch\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 1071,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doService\",\n            \"fileName\": \"DispatcherServlet.java\",\n            \"lineNumber\": 964,\n            \"className\": \"org.springframework.web.servlet.DispatcherServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"processRequest\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 1006,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doPost\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 909,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 696,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"FrameworkServlet.java\",\n            \"lineNumber\": 883,\n            \"className\": \"org.springframework.web.servlet.FrameworkServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"HttpServlet.java\",\n            \"lineNumber\": 779,\n            \"className\": \"javax.servlet.http.HttpServlet\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 227,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"WsFilter.java\",\n            \"lineNumber\": 53,\n            \"className\": \"org.apache.tomcat.websocket.server.WsFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 337,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 115,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterSecurityInterceptor.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.access.intercept.FilterSecurityInterceptor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 122,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ExceptionTranslationFilter.java\",\n            \"lineNumber\": 116,\n            \"className\": \"org.springframework.security.web.access.ExceptionTranslationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 126,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SessionManagementFilter.java\",\n            \"lineNumber\": 81,\n            \"className\": \"org.springframework.security.web.session.SessionManagementFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"AnonymousAuthenticationFilter.java\",\n            \"lineNumber\": 109,\n            \"className\": \"org.springframework.security.web.authentication.AnonymousAuthenticationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextHolderAwareRequestFilter.java\",\n            \"lineNumber\": 149,\n            \"className\": \"org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"RequestCacheAwareFilter.java\",\n            \"lineNumber\": 63,\n            \"className\": \"org.springframework.security.web.savedrequest.RequestCacheAwareFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 103,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"LogoutFilter.java\",\n            \"lineNumber\": 89,\n            \"className\": \"org.springframework.security.web.authentication.logout.LogoutFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doHeadersAfter\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 90,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"HeaderWriterFilter.java\",\n            \"lineNumber\": 75,\n            \"className\": \"org.springframework.security.web.header.HeaderWriterFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 112,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"SecurityContextPersistenceFilter.java\",\n            \"lineNumber\": 82,\n            \"className\": \"org.springframework.security.web.context.SecurityContextPersistenceFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"WebAsyncManagerIntegrationFilter.java\",\n            \"lineNumber\": 55,\n            \"className\": \"org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"DisableEncodeUrlFilter.java\",\n            \"lineNumber\": 42,\n            \"className\": \"org.springframework.security.web.session.DisableEncodeUrlFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 346,\n            \"className\": \"org.springframework.security.web.FilterChainProxy$VirtualFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 221,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"FilterChainProxy.java\",\n            \"lineNumber\": 186,\n            \"className\": \"org.springframework.security.web.FilterChainProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invokeDelegate\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 354,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"DelegatingFilterProxy.java\",\n            \"lineNumber\": 267,\n            \"className\": \"org.springframework.web.filter.DelegatingFilterProxy\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"RequestContextFilter.java\",\n            \"lineNumber\": 100,\n            \"className\": \"org.springframework.web.filter.RequestContextFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"FormContentFilter.java\",\n            \"lineNumber\": 93,\n            \"className\": \"org.springframework.web.filter.FormContentFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilterInternal\",\n            \"fileName\": \"CharacterEncodingFilter.java\",\n            \"lineNumber\": 201,\n            \"className\": \"org.springframework.web.filter.CharacterEncodingFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"OncePerRequestFilter.java\",\n            \"lineNumber\": 117,\n            \"className\": \"org.springframework.web.filter.OncePerRequestFilter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"internalDoFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 189,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doFilter\",\n            \"fileName\": \"ApplicationFilterChain.java\",\n            \"lineNumber\": 162,\n            \"className\": \"org.apache.catalina.core.ApplicationFilterChain\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardWrapperValve.java\",\n            \"lineNumber\": 177,\n            \"className\": \"org.apache.catalina.core.StandardWrapperValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardContextValve.java\",\n            \"lineNumber\": 97,\n            \"className\": \"org.apache.catalina.core.StandardContextValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"AuthenticatorBase.java\",\n            \"lineNumber\": 541,\n            \"className\": \"org.apache.catalina.authenticator.AuthenticatorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardHostValve.java\",\n            \"lineNumber\": 135,\n            \"className\": \"org.apache.catalina.core.StandardHostValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"ErrorReportValve.java\",\n            \"lineNumber\": 92,\n            \"className\": \"org.apache.catalina.valves.ErrorReportValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"invoke\",\n            \"fileName\": \"StandardEngineValve.java\",\n            \"lineNumber\": 78,\n            \"className\": \"org.apache.catalina.core.StandardEngineValve\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"CoyoteAdapter.java\",\n            \"lineNumber\": 360,\n            \"className\": \"org.apache.catalina.connector.CoyoteAdapter\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"service\",\n            \"fileName\": \"Http11Processor.java\",\n            \"lineNumber\": 399,\n            \"className\": \"org.apache.coyote.http11.Http11Processor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProcessorLight.java\",\n            \"lineNumber\": 65,\n            \"className\": \"org.apache.coyote.AbstractProcessorLight\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"process\",\n            \"fileName\": \"AbstractProtocol.java\",\n            \"lineNumber\": 891,\n            \"className\": \"org.apache.coyote.AbstractProtocol$ConnectionHandler\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"doRun\",\n            \"fileName\": \"NioEndpoint.java\",\n            \"lineNumber\": 1784,\n            \"className\": \"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"SocketProcessorBase.java\",\n            \"lineNumber\": 49,\n            \"className\": \"org.apache.tomcat.util.net.SocketProcessorBase\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"runWorker\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 1191,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"ThreadPoolExecutor.java\",\n            \"lineNumber\": 659,\n            \"className\": \"org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": \"app\",\n            \"moduleName\": null,\n            \"moduleVersion\": null,\n            \"methodName\": \"run\",\n            \"fileName\": \"TaskThread.java\",\n            \"lineNumber\": 61,\n            \"className\": \"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable\",\n            \"nativeMethod\": false\n        },\n        {\n            \"classLoaderName\": null,\n            \"moduleName\": \"java.base\",\n            \"moduleVersion\": \"11.0.15\",\n            \"methodName\": \"run\",\n            \"fileName\": \"Thread.java\",\n            \"lineNumber\": 829,\n            \"className\": \"java.lang.Thread\",\n            \"nativeMethod\": false\n        }\n    ],\n    \"message\": \"Confirm Password does not match\",\n    \"suppressed\": [],\n    \"localizedMessage\": \"Confirm Password does not match\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Order View By StaffId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/staff/order/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"order",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/staff/order/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"order",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:18:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"totalPrice\": 5500,\n        \"staff\": {\n            \"id\": 2,\n            \"name\": \"Aung Aung\",\n            \"loginId\": \"staff1\",\n            \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n            \"phone\": \"0998876654\",\n            \"gender\": \"Male\",\n            \"staffType\": \"Staff\",\n            \"deleteable\": false,\n            \"joinedDate\": \"2020-08-21\",\n            \"createdAt\": \"2023-01-15T21:47:20\",\n            \"updatedAt\": null\n        },\n        \"orderDate\": \"2023-01-16T19:46:19\",\n        \"createdAt\": null,\n        \"updatedAt\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Order Detail View By OrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/staff/order/detail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"order",
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/api/staff/order/detail/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"order",
+										"detail",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:27:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"food\": {\n            \"id\": 2,\n            \"foodItem\": \"Chicken Soup\",\n            \"image\": \"/images/jpg/1673800472_photo_2022-12-30_20-19-38.jpg\",\n            \"price\": 0,\n            \"stock\": 100,\n            \"deleteable\": true,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Soup\"\n            },\n            \"createdAt\": \"2023-01-15T23:04:33\",\n            \"updatedAt\": null\n        },\n        \"foodOrder\": {\n            \"id\": 1,\n            \"totalPrice\": 5500,\n            \"staff\": {\n                \"id\": 2,\n                \"name\": \"Aung Aung\",\n                \"loginId\": \"staff1\",\n                \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n                \"phone\": \"0998876654\",\n                \"gender\": \"Male\",\n                \"staffType\": \"Staff\",\n                \"deleteable\": false,\n                \"joinedDate\": \"2020-08-21\",\n                \"createdAt\": \"2023-01-15T21:47:20\",\n                \"updatedAt\": null\n            },\n            \"orderDate\": \"2023-01-16T19:46:19\",\n            \"createdAt\": null,\n            \"updatedAt\": null\n        },\n        \"foodCount\": 3\n    },\n    {\n        \"id\": 2,\n        \"food\": {\n            \"id\": 3,\n            \"foodItem\": \"Chicken\",\n            \"image\": \"/images/jpg/1673800495_image1.jpg\",\n            \"price\": 1500,\n            \"stock\": 10,\n            \"deleteable\": true,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Meat\"\n            },\n            \"createdAt\": \"2023-01-15T23:04:55\",\n            \"updatedAt\": null\n        },\n        \"foodOrder\": {\n            \"id\": 1,\n            \"totalPrice\": 5500,\n            \"staff\": {\n                \"id\": 2,\n                \"name\": \"Aung Aung\",\n                \"loginId\": \"staff1\",\n                \"password\": \"$2a$10$A4YiuLYhCUKq.At4Laay8O6WbxfG9E.iN.vMVcb6xMQK4w.ocNUFK\",\n                \"phone\": \"0998876654\",\n                \"gender\": \"Male\",\n                \"staffType\": \"Staff\",\n                \"deleteable\": false,\n                \"joinedDate\": \"2020-08-21\",\n                \"createdAt\": \"2023-01-15T21:47:20\",\n                \"updatedAt\": null\n            },\n            \"orderDate\": \"2023-01-16T19:46:19\",\n            \"createdAt\": null,\n            \"updatedAt\": null\n        },\n        \"foodCount\": 3\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add Order Detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food\":{\r\n        \"id\":2\r\n    },\r\n    \"foodOrder\":{\r\n        \"id\":1\r\n    },\r\n    \"foodCount\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/staff/order/detail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"staff",
+								"order",
+								"detail"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"food\":{\r\n        \"id\":2\r\n    },\r\n    \"foodOrder\":{\r\n        \"id\":1\r\n    },\r\n    \"foodCount\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8085/api/staff/order/detail",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"api",
+										"staff",
+										"order",
+										"detail"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Jan 2023 13:23:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"food\": {\n        \"id\": 2,\n        \"foodItem\": null,\n        \"image\": null,\n        \"price\": 0,\n        \"stock\": 0,\n        \"deleteable\": true,\n        \"category\": null,\n        \"createdAt\": null,\n        \"updatedAt\": null\n    },\n    \"foodOrder\": {\n        \"id\": 1,\n        \"totalPrice\": 0,\n        \"staff\": null,\n        \"orderDate\": null,\n        \"createdAt\": null,\n        \"updatedAt\": null\n    },\n    \"foodCount\": 3\n}"
+						}
+					]
 				}
 			]
 		},
@@ -627,7 +2823,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"loginId\": \"admin2\",\r\n    \"password\": \"ammw123\"\r\n}",
+					"raw": "{\r\n    \"loginId\": \"admin123\",\r\n    \"password\": \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -647,7 +2843,265 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginId\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Jan 2023 13:25:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Admin\",\n    \"loginId\": \"admin\",\n    \"password\": \"$2a$10$zsBSsW1qaKgTW5ZvlgB.YeqmyCLQKfPPpSn71pohpG.GWXn1Z51ii\",\n    \"phone\": \"09423423453\",\n    \"gender\": \"Male\",\n    \"staffType\": \"Admin\",\n    \"deleteable\": true,\n    \"joinedDate\": \"2020-08-21\",\n    \"createdAt\": \"2023-01-15T21:46:21\",\n    \"updatedAt\": null\n}"
+				},
+				{
+					"name": "400 not match password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginId\": \"admin\",\r\n    \"password\": \"admin12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Jan 2023 13:26:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "400 not match LoginId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginId\": \"admin123\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Jan 2023 13:26:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
 		}
 	]
 }
