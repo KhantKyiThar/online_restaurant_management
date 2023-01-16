@@ -126,7 +126,7 @@ public class AdminController {
 	public ResponseEntity<?> staffCreate(@Valid @RequestBody Staff staff) {
 		Staff createdStaff = staffService.create(staff);
 		if (createdStaff == null) {
-			return ResponseEntity.badRequest().body("Staff with same loginId already exists!");
+			return new ResponseEntity<Object>(new Exception("Staff with same loginId already exists!"), HttpStatus.CONFLICT);
 		}
 		return ResponseEntity.ok().body(createdStaff);
 	}

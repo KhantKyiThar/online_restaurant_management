@@ -31,8 +31,8 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff create(Staff staff) {
-		//Check if staff with same loginId exists
-		Staff tempLoginIdCheck=staffRepo.findByLoginId(staff.getLoginId());
+		// Check if staff with same loginId exists
+		Staff tempLoginIdCheck = staffRepo.findByLoginId(staff.getLoginId());
 		if (tempLoginIdCheck != null) {
 			return null;
 		}
@@ -43,8 +43,17 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff update(int id, Staff staff) {
+
 		Staff toUpdateStaff = get(id);
+		// Check if staff with same loginId exists
+
 		if (toUpdateStaff != null) {
+			if (!toUpdateStaff.getLoginId().equals(staff.getLoginId())) {
+				Staff tempLoginIdCheck = staffRepo.findByLoginId(staff.getLoginId());
+				if (tempLoginIdCheck != null) {
+					return null;
+				}
+			}
 			toUpdateStaff.setName(staff.getName());
 			toUpdateStaff.setLoginId(staff.getLoginId());
 			toUpdateStaff.setPassword(pwEncoder.encode(staff.getPassword()));
