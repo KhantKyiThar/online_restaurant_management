@@ -1,11 +1,14 @@
 package com.javaclass.restaurant.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javaclass.restaurant.entity.ChangePassword;
 import com.javaclass.restaurant.entity.Food;
 import com.javaclass.restaurant.entity.FoodOrder;
 import com.javaclass.restaurant.entity.OrderDetail;
@@ -39,6 +43,9 @@ public class StaffController {
 
 	@Autowired
 	OrderDetailService orderDetailService;
+	
+	@Autowired
+	PasswordEncoder pwEncoder;
 
 	@GetMapping("/profile")
 	public ResponseEntity<Staff> getProfile(@RequestParam int id) {
@@ -60,11 +67,11 @@ public class StaffController {
 
 	@PostMapping("/order/add")
 	public FoodOrder createOrder(@Valid @RequestBody FoodOrder foodOrder) {
-		
+
 		Staff updateStaff = foodOrder.getStaff();
 		staffService.updateDeleteable(updateStaff.getId(), updateStaff);
 		return orderService.createOrder(foodOrder);
-		
+
 	}
 
 	@GetMapping("/order/{staff_id}")
@@ -96,4 +103,19 @@ public class StaffController {
 		return orderDetailService.createOrderDetail(orderDetail);
 	}
 
+	@PostMapping("/changePwd")
+	public ResponseEntity<Object> changePassword(@Valid @RequestBody ChangePassword changePwd) throws IOException {
+		Staff staff = staffService.get(changePwd.getOri_id());
+		if (staff == null) {
+			return new ResponseEntity<Object>(new Exception("Something wrong"), HttpStatus.CONFLICT);
+		}
+		if (!changePwd.getCon_new_pwd().equals(changePwd.getNew_pwd())) {
+			return new ResponseEntity<Object>(new Exception("Confirm Password does not match"), HttpStatus.CONFLICT);
+		}
+		if (!pwEncoder.matches(changePwd.getCurrent_pwd(), staff.getPassword())) {
+			return new ResponseEntity<Object>(new Exception("Current Password does not match"), HttpStatus.CONFLICT);
+		}
+		staffService.updatePwd(staff.getId(), changePwd.getNew_pwd());
+		return ResponseEntity.ok().body(staff);
+	}
 }

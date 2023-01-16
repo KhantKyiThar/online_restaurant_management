@@ -375,11 +375,11 @@ export default {
 
           //Update Food Stock
           await utils.http.put("/staff/food/update/" + isInProduct.id, {
-            // foodItem: isInProduct.foodItem,
-            // image: isInProduct.image,
-            // price: isInProduct.price,
+            foodItem: isInProduct.foodItem,
+            image: isInProduct.image,
+            price: isInProduct.price,
             stock: isInProduct.stock,
-            // category: isInProduct.category,
+            category: isInProduct.category,
           });
 
           //Create Order Detail

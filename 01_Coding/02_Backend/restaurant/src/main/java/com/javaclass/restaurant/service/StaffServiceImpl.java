@@ -31,6 +31,11 @@ public class StaffServiceImpl implements StaffService {
 
 	@Override
 	public Staff create(Staff staff) {
+		//Check if staff with same loginId exists
+		Staff tempLoginIdCheck=staffRepo.findByLoginId(staff.getLoginId());
+		if (tempLoginIdCheck != null) {
+			return null;
+		}
 		staff.setPassword(pwEncoder.encode(staff.getPassword()));
 		staff.setCreatedAt(LocalDateTime.now());
 		return staffRepo.save(staff);
@@ -83,6 +88,16 @@ public class StaffServiceImpl implements StaffService {
 			return null;
 		}
 		return staffRepo.save(staff);
+	}
+
+	@Override
+	public void updatePwd(int id, String newPwd) {
+		Staff toUpdateStaffPwd = get(id);
+		if (toUpdateStaffPwd != null) {
+			toUpdateStaffPwd.setPassword(pwEncoder.encode(newPwd));
+			staffRepo.save(toUpdateStaffPwd);
+			System.out.println("pwd updated");
+		}
 	}
 
 }

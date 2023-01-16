@@ -38,9 +38,9 @@
 
             <!-- Delete Btn -->
             <v-btn
-              :disabled="!item.deleteable"
-              color="error"
+              color="red"
               fab
+              dark
               x-small
               elevation="2"
               @click="
@@ -475,7 +475,7 @@ export default {
           //refresh staff list
           await this.fetchStaff();
         } else {
-          this.errorAlert = true;
+          this.errorCreateAlert = true;
         }
         this.loading = false;
       }

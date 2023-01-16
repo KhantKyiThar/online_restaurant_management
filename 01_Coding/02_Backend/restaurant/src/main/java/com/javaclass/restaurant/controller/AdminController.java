@@ -31,7 +31,6 @@ import com.javaclass.restaurant.service.StaffService;
 
 import com.javaclass.restaurant.service.StorageService;
 
-
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {
@@ -39,55 +38,52 @@ public class AdminController {
 	@Autowired
 	FoodService foodService;
 
-	
 	@Autowired
 	StorageService storageService;
 
-
 	@Autowired
 	StaffService staffService;
-	
+
 	@Autowired
 	CategoryService categoryService;
 
-	
 	@Autowired
 	OrderService orderService;
-	 
+
 	@Autowired
 	OrderDetailService orderDetailService;
-
 
 	@GetMapping("/food")
 	List<Food> getFoodAll() {
 		return foodService.getAll();
 	}
 
-	@PostMapping("/food/create") 
+	@PostMapping("/food/create")
 //	public Food foodCreate(@Valid @RequestBody Food food) {
 //	return foodService.create(food);
 //	}
-	public ResponseEntity<?> createFood(@Valid @RequestBody Food food){
-		if(!storageService.check(food.getImage())) {
+	public ResponseEntity<?> createFood(@Valid @RequestBody Food food) {
+		if (!storageService.check(food.getImage())) {
 			return ResponseEntity.badRequest().body("Image is invalid");
 		}
 		return ResponseEntity.ok(foodService.create(food));
 	}
-	
-	
+
 	@PostMapping("/file/create")
-	public ResponseEntity<String> createFile(@RequestParam("file") MultipartFile file,@RequestParam("fileType") String fileType){
-		String filePath=storageService.create(file, fileType);
-		if(filePath==null) {
+	public ResponseEntity<String> createFile(@RequestParam("file") MultipartFile file,
+			@RequestParam("fileType") String fileType) {
+		String filePath = storageService.create(file, fileType);
+		if (filePath == null) {
 			return ResponseEntity.internalServerError().build();
 		}
 		return ResponseEntity.ok(filePath);
 	}
-	
+
 	@PutMapping("/file/update")
-	public ResponseEntity<String> updateFile(@RequestParam("file") MultipartFile file,@RequestParam("fileType") String fileType,@RequestParam("filePath")String filePath){
-		String newFilePath=storageService.update(file, fileType, filePath);
-		if(newFilePath==null) {
+	public ResponseEntity<String> updateFile(@RequestParam("file") MultipartFile file,
+			@RequestParam("fileType") String fileType, @RequestParam("filePath") String filePath) {
+		String newFilePath = storageService.update(file, fileType, filePath);
+		if (newFilePath == null) {
 			return ResponseEntity.internalServerError().build();
 		}
 		return ResponseEntity.ok(newFilePath);
@@ -115,8 +111,8 @@ public class AdminController {
 		if (!isDeleted) {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
-		
-		//Delete image
+
+		// Delete image
 		storageService.delete(food.getImage());
 		return ResponseEntity.ok().build();
 	}
@@ -127,8 +123,12 @@ public class AdminController {
 	}
 
 	@PostMapping("/staff/create")
-	public Staff staffCreate(@Valid @RequestBody Staff staff) {
-		return staffService.create(staff);
+	public ResponseEntity<?> staffCreate(@Valid @RequestBody Staff staff) {
+		Staff createdStaff = staffService.create(staff);
+		if (createdStaff == null) {
+			return ResponseEntity.badRequest().body("Staff with same loginId already exists!");
+		}
+		return ResponseEntity.ok().body(createdStaff);
 	}
 
 	@PutMapping("/staff/update/{id}")
@@ -153,53 +153,52 @@ public class AdminController {
 
 		return ResponseEntity.ok().build();
 	}
-	
 
-	@GetMapping("/order")	
+	@GetMapping("/order")
 	List<FoodOrder> getFoodOrderList() {
 		return orderService.getAllFoodOrders();
 	}
-	
+
 	@GetMapping("/order/detail/{order_id}")
-	public ResponseEntity<?> getOrderDetailByOrderId(@PathVariable("order_id") int orderId){
-		FoodOrder foodOrder=orderService.get(orderId);
-		if(foodOrder==null) {
+	public ResponseEntity<?> getOrderDetailByOrderId(@PathVariable("order_id") int orderId) {
+		FoodOrder foodOrder = orderService.get(orderId);
+		if (foodOrder == null) {
 			return ResponseEntity.badRequest().body("Order Id is invalid");
 		}
-		List<OrderDetail> orderDetailList=orderDetailService.getAllByFoodOrder(foodOrder);
+		List<OrderDetail> orderDetailList = orderDetailService.getAllByFoodOrder(foodOrder);
 		return ResponseEntity.ok().body(orderDetailList);
 	}
-	
-	//Category
+
+	// Category
 	@GetMapping("/category")
 	List<Category> getAll() {
-		return categoryService.getAll(); 
+		return categoryService.getAll();
 	}
 
 	@PostMapping("/category/create")
 	public Category create(@Valid @RequestBody Category category) {
 		return categoryService.create(category);
 	}
-			
+
 	@PutMapping("/category/update/{id}")
 	public ResponseEntity<Category> update(@PathVariable int id, @Valid @RequestBody Category category) {
-	Category updateCategory = categoryService.update(id, category);
-	if(updateCategory == null) {
-		return ResponseEntity.notFound().build();
-	}
+		Category updateCategory = categoryService.update(id, category);
+		if (updateCategory == null) {
+			return ResponseEntity.notFound().build();
+		}
 		return ResponseEntity.ok().body(updateCategory);
 	}
-			
-	@DeleteMapping(value ="/category/delete/{id}")
+
+	@DeleteMapping(value = "/category/delete/{id}")
 	public ResponseEntity<?> delete(@PathVariable int id) {
-	Category delCategory = categoryService.get(id);
-	if(delCategory == null) {
-		return ResponseEntity.notFound().build();
-	}
-	boolean isDeleted = categoryService.delete(id);
-	if (!isDeleted) {
-		return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
-	}
+		Category delCategory = categoryService.get(id);
+		if (delCategory == null) {
+			return ResponseEntity.notFound().build();
+		}
+		boolean isDeleted = categoryService.delete(id);
+		if (!isDeleted) {
+			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+		}
 		return ResponseEntity.ok().build();
 	}
 }
