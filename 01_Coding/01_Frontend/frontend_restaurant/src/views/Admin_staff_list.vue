@@ -149,7 +149,7 @@
               <template v-slot:activator="{ on, attrs }">
                 <v-text-field
                   v-model="date"
-                  label="Picker in menu"
+                  label="Staff Joined Date"
                   prepend-icon="mdi-calendar"
                   readonly
                   v-bind="attrs"
@@ -183,7 +183,7 @@
             </v-btn>
             <!-- Error Alert For Staff Create -->
             <v-alert class="mt-3" v-show="errorCreateAlert" dense type="error">
-              Create Staff Failed!
+              {{ errMsg }}
             </v-alert>
           </v-form>
         </v-card-text>
@@ -347,7 +347,6 @@ export default {
     date: new Date(Date.now() - new Date(Date.now).getTimezoneOffset() * 60000)
       .toISOString()
       .substr(0, 10),
-    menu: false,
   }),
   name: "Admin_Staff_list",
 
@@ -405,7 +404,8 @@ export default {
       },
       errorAlert: false,
       loading: false,
-
+      errMsg: "",
+      menu: false,
       secret: "123#$%",
       //   staffType: " ",
       //   staffTypeList: [],
@@ -471,11 +471,17 @@ export default {
           joinedDate: this.date,
         });
         if (respStaff && respStaff.status === 200) {
+          //clear form inputs
+          this.$refs.staffCreateForm.reset();
           this.createDialog = false;
+          this.errorCreateAlert = false;
+          this.errMsg = "";
           //refresh staff list
           await this.fetchStaff();
         } else {
           this.errorCreateAlert = true;
+          const data = await respStaff.json();
+          this.errMsg = data.message;
         }
         this.loading = false;
       }
