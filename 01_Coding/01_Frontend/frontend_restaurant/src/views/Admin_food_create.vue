@@ -156,7 +156,7 @@ export default {
 
   methods: {
     async fetchFoodCategories() {
-      const resp = await utils.http.get("/admin/category");
+      const resp = await utils.http.get("/category");
       if (resp && resp.status === 200) {
         const data = await resp.json();
         if (data) {
@@ -194,7 +194,9 @@ export default {
               foodItem: this.foodItem,
               price: this.price,
               stock: this.stock,
-              category: { id: this.category },
+              category: {
+                id: this.category,
+              },
               image: respImageData,
             });
             if (respFood && respFood.status === 200) {
@@ -210,7 +212,7 @@ export default {
     },
 
     onChangeImage(imageCreate) {
-      this.posterPreviewPath = URL.createObjectURL(imageCreate);
+      this.imagePreviewPath = URL.createObjectURL(imageCreate);
     },
   },
 };

@@ -260,20 +260,6 @@
               required
             ></v-text-field>
 
-            <!-- Update Staff Password -->
-            <!-- <v-text-field
-              v-model="toUpdateStaff.password"
-              :counter="100"
-              :rules="[
-                (v) => !!v || 'Required',
-                (v) =>
-                  (v && v.length <= 100) ||
-                  'Password must be less than 100 characters',
-              ]"
-              label="Password"
-              required
-            ></v-text-field> -->
-
             <!-- Update Staff Phone -->
             <v-text-field
               v-model="toUpdateStaff.phone"
@@ -427,16 +413,6 @@ export default {
       }
     },
 
-    // async fetchStaffType() {
-    //     const resp = await utils.http.get("/admin/staff");
-    //     if (resp && resp.status === 200) {
-    //         const data = await resp.json();
-    //         if (data) {
-    //         this.staffTypeList = data;
-    //         }
-    //     }
-    // },
-
     async deleteStaff() {
       const resp = await utils.http.del(
         "/admin/staff/delete/" + this.toDeleteStaff.id
@@ -492,7 +468,6 @@ export default {
       //use Object.assign({}, item) instead of item
       //directly not to update in food list during fill the data in update form
       this.toUpdateStaff = Object.assign({}, item);
-      // this.staffType = this.toUpdateStaff.staffType;
     },
 
     async updateStaff() {
@@ -507,7 +482,6 @@ export default {
           {
             name: this.toUpdateStaff.name,
             loginId: this.toUpdateStaff.loginId,
-            password: this.toUpdateStaff.password,
             // password: CryptoJS.AES.decrypt(
             //   this.toUpdateStaff.password,
             //   this.secret

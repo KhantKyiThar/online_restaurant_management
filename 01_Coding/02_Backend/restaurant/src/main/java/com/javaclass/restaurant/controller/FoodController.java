@@ -22,44 +22,50 @@ import com.javaclass.restaurant.service.StorageService;
 public class FoodController {
 	@Autowired
 	FoodService foodService;
-	
+
 	@Autowired
 	StorageService storageService;
-	
+
 	@Autowired
 	CategoryService categoryService;
-	
-	//Get
+
+	// Get
 	@GetMapping("/food")
-	public List<Food> getAll() {
+	public List<Food> getAllFood() {
 		return foodService.getAll();
 	}
-		
+
+	@GetMapping("/category")
+	List<Category> getAllCat() {
+		return categoryService.getAll();
+	}
+
 	@GetMapping("/food/category/{category_id}")
-	public ResponseEntity<?> getFoodByCategory(@PathVariable("category_id") int categoryID){
-		Category category=categoryService.get(categoryID);
-		if(category==null) {
+	public ResponseEntity<?> getFoodByCategory(@PathVariable("category_id") int categoryID) {
+		Category category = categoryService.get(categoryID);
+		if (category == null) {
 			return ResponseEntity.badRequest().body("Category ID is invalid");
 		}
-		List<Food> foodList=foodService.getAllByCategory(category);
+		List<Food> foodList = foodService.getAllByCategory(category);
 		return ResponseEntity.ok().body(foodList);
 	}
-	
+
 	@GetMapping("/images/{fileType}/{fileName}")
-	public ResponseEntity<?> getImage(@PathVariable("fileType") String fileType,@PathVariable("fileName") String fileName)throws IOException{
-		MediaType contentType=MediaType.IMAGE_PNG;
-		switch(fileType) {
+	public ResponseEntity<?> getImage(@PathVariable("fileType") String fileType,
+			@PathVariable("fileName") String fileName) throws IOException {
+		MediaType contentType = MediaType.IMAGE_PNG;
+		switch (fileType) {
 		case "jpg":
-			contentType=MediaType.IMAGE_JPEG;
+			contentType = MediaType.IMAGE_JPEG;
 			break;
 		case "png":
-			contentType=MediaType.IMAGE_PNG;
+			contentType = MediaType.IMAGE_PNG;
 			break;
 		default:
 			return ResponseEntity.badRequest().body("Unsupported File Type");
 		}
-		byte[] fileBytes=storageService.load(fileName);
-		if(fileBytes==null) {
+		byte[] fileBytes = storageService.load(fileName);
+		if (fileBytes == null) {
 			return ResponseEntity.notFound().build();
 		}
 		return ResponseEntity.ok().contentType(contentType).body(fileBytes);

@@ -56,11 +56,9 @@ public class StaffServiceImpl implements StaffService {
 			}
 			toUpdateStaff.setName(staff.getName());
 			toUpdateStaff.setLoginId(staff.getLoginId());
-			toUpdateStaff.setPassword(pwEncoder.encode(staff.getPassword()));
 			toUpdateStaff.setPhone(staff.getPhone());
 			toUpdateStaff.setGender(staff.getGender());
 			toUpdateStaff.setStaffType(staff.getStaffType());
-			toUpdateStaff.setDeleteable(staff.isDeleteable());
 			toUpdateStaff.setUpdatedAt(LocalDateTime.now());
 			staffRepo.save(toUpdateStaff);
 		}
