@@ -349,13 +349,10 @@ export default {
         { text: "ID", value: "id", sortable: true },
         { text: "Name", value: "name", sortable: true },
         { text: "LoginId", value: "loginId", sortable: true },
-        // { text: "Password", value: "password", sortable: true },
         { text: "Phone", value: "phone", sortable: true },
         { text: "Gender", value: "gender", sortable: true },
         { text: "Staff Type", value: "staffType", sortable: true },
         { text: "Joined Date", value: "joinedDate", sortable: true },
-        // { text: "CreatedAt", value: "createdAt", sortable: true },
-        // { text: "UpdatedAt", value: "updatedAt", sortable: false },
         { text: "Actions", value: "actions", sortable: false },
       ],
       staffList: [],
@@ -372,7 +369,6 @@ export default {
       phone: "",
       gender: "",
       staffType: "",
-      // joinedDate: "",
       date: "",
 
       items: ["Admin", "Staff"],
@@ -392,13 +388,9 @@ export default {
       loading: false,
       errMsg: "",
       menu: false,
-      secret: "123#$%",
-      //   staffType: " ",
-      //   staffTypeList: [],
     };
   },
   async created() {
-    // await this.fetchStaffType();
     await this.fetchStaff();
   },
 
@@ -443,7 +435,6 @@ export default {
           gender: this.gender,
           phone: this.phone,
           staffType: this.staffType,
-          // joinedDate: this.joinedDate,
           joinedDate: this.date,
         });
         if (respStaff && respStaff.status === 200) {
@@ -482,10 +473,6 @@ export default {
           {
             name: this.toUpdateStaff.name,
             loginId: this.toUpdateStaff.loginId,
-            // password: CryptoJS.AES.decrypt(
-            //   this.toUpdateStaff.password,
-            //   this.secret
-            // ).toString(CryptoJS.enc.Utf8),
             gender: this.toUpdateStaff.gender,
             phone: this.toUpdateStaff.phone,
             staffType: this.toUpdateStaff.staffType,
