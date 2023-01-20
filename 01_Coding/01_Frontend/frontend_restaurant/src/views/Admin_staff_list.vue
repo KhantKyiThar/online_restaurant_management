@@ -260,20 +260,6 @@
               required
             ></v-text-field>
 
-            <!-- Update Staff Password -->
-            <!-- <v-text-field
-              v-model="toUpdateStaff.password"
-              :counter="100"
-              :rules="[
-                (v) => !!v || 'Required',
-                (v) =>
-                  (v && v.length <= 100) ||
-                  'Password must be less than 100 characters',
-              ]"
-              label="Password"
-              required
-            ></v-text-field> -->
-
             <!-- Update Staff Phone -->
             <v-text-field
               v-model="toUpdateStaff.phone"
@@ -363,13 +349,10 @@ export default {
         { text: "ID", value: "id", sortable: true },
         { text: "Name", value: "name", sortable: true },
         { text: "LoginId", value: "loginId", sortable: true },
-        // { text: "Password", value: "password", sortable: true },
         { text: "Phone", value: "phone", sortable: true },
         { text: "Gender", value: "gender", sortable: true },
         { text: "Staff Type", value: "staffType", sortable: true },
         { text: "Joined Date", value: "joinedDate", sortable: true },
-        // { text: "CreatedAt", value: "createdAt", sortable: true },
-        // { text: "UpdatedAt", value: "updatedAt", sortable: false },
         { text: "Actions", value: "actions", sortable: false },
       ],
       staffList: [],
@@ -386,7 +369,6 @@ export default {
       phone: "",
       gender: "",
       staffType: "",
-      // joinedDate: "",
       date: "",
 
       items: ["Admin", "Staff"],
@@ -406,13 +388,9 @@ export default {
       loading: false,
       errMsg: "",
       menu: false,
-      secret: "123#$%",
-      //   staffType: " ",
-      //   staffTypeList: [],
     };
   },
   async created() {
-    // await this.fetchStaffType();
     await this.fetchStaff();
   },
 
@@ -426,16 +404,6 @@ export default {
         }
       }
     },
-
-    // async fetchStaffType() {
-    //     const resp = await utils.http.get("/admin/staff");
-    //     if (resp && resp.status === 200) {
-    //         const data = await resp.json();
-    //         if (data) {
-    //         this.staffTypeList = data;
-    //         }
-    //     }
-    // },
 
     async deleteStaff() {
       const resp = await utils.http.del(
@@ -467,7 +435,6 @@ export default {
           gender: this.gender,
           phone: this.phone,
           staffType: this.staffType,
-          // joinedDate: this.joinedDate,
           joinedDate: this.date,
         });
         if (respStaff && respStaff.status === 200) {
@@ -492,7 +459,6 @@ export default {
       //use Object.assign({}, item) instead of item
       //directly not to update in food list during fill the data in update form
       this.toUpdateStaff = Object.assign({}, item);
-      // this.staffType = this.toUpdateStaff.staffType;
     },
 
     async updateStaff() {
@@ -507,11 +473,6 @@ export default {
           {
             name: this.toUpdateStaff.name,
             loginId: this.toUpdateStaff.loginId,
-            password: this.toUpdateStaff.password,
-            // password: CryptoJS.AES.decrypt(
-            //   this.toUpdateStaff.password,
-            //   this.secret
-            // ).toString(CryptoJS.enc.Utf8),
             gender: this.toUpdateStaff.gender,
             phone: this.toUpdateStaff.phone,
             staffType: this.toUpdateStaff.staffType,

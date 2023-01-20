@@ -53,15 +53,7 @@ public class AdminController {
 	@Autowired
 	OrderDetailService orderDetailService;
 
-	@GetMapping("/food")
-	List<Food> getFoodAll() {
-		return foodService.getAll();
-	}
-
 	@PostMapping("/food/create")
-//	public Food foodCreate(@Valid @RequestBody Food food) {
-//	return foodService.create(food);
-//	}
 	public ResponseEntity<?> createFood(@Valid @RequestBody Food food) {
 		if (!storageService.check(food.getImage())) {
 			return ResponseEntity.badRequest().body("Image is invalid");
@@ -126,7 +118,8 @@ public class AdminController {
 	public ResponseEntity<?> staffCreate(@Valid @RequestBody Staff staff) {
 		Staff createdStaff = staffService.create(staff);
 		if (createdStaff == null) {
-			return new ResponseEntity<Object>(new Exception("Staff with same loginId already exists!"), HttpStatus.CONFLICT);
+			return new ResponseEntity<Object>(new Exception("Staff with same loginId already exists!"),
+					HttpStatus.CONFLICT);
 		}
 		return ResponseEntity.ok().body(createdStaff);
 	}
@@ -170,10 +163,6 @@ public class AdminController {
 	}
 
 	// Category
-	@GetMapping("/category")
-	List<Category> getAll() {
-		return categoryService.getAll();
-	}
 
 	@PostMapping("/category/create")
 	public Category create(@Valid @RequestBody Category category) {

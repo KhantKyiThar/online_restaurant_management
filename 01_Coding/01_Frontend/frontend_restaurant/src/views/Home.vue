@@ -6,21 +6,6 @@
         <v-card class="mx-auto">
           <v-navigation-drawer permanent>
             <v-list dense nav>
-              <!-- <v-list-item>
-                <v-list-item-content>
-                  Category
-                  <v-list-item-title class="cat" @click="showAllFood()">
-                    All
-                  </v-list-item-title>
-                  <v-list-item-title
-                    class="cat"
-                    v-for="(c, i) in category"
-                    :key="i"
-                    @click="showByCat(c)"
-                    >{{ c.name }}
-                  </v-list-item-title>
-                </v-list-item-content>
-              </v-list-item> -->
               <v-list-item-title> Category </v-list-item-title>
               <v-list-item>
                 <v-list-item-content>
@@ -375,11 +360,7 @@ export default {
 
           //Update Food Stock
           await utils.http.put("/staff/food/update/" + isInProduct.id, {
-            // foodItem: isInProduct.foodItem,
-            // image: isInProduct.image,
-            // price: isInProduct.price,
             stock: isInProduct.stock,
-            // category: isInProduct.category,
           });
 
           //Create Order Detail
@@ -399,9 +380,6 @@ export default {
   },
   computed: {
     calBill: function () {
-      //   return this.cart.reduce((bill, item) => {
-      //     return bill + item.total;
-      //   }, 0);
       var bill = 0;
       for (var i = 0; i < this.cart.length; i++) {
         bill = bill + this.cart[i].total;

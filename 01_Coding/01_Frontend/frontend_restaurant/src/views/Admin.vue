@@ -9,13 +9,6 @@
       <!-- Food Table -->
       <v-col cols="10">
         <h1 class="mb-3">Food List</h1>
-        <!-- <v-row class="ma-0">
-          <h1 class="mb-3">Food List</h1>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="onClickCreateFood()">
-            <v-icon size="30">mdi-plus-box</v-icon>
-          </v-btn>
-        </v-row> -->
         <v-data-table
           :headers="headers"
           :items="foodList"
@@ -154,7 +147,7 @@
 
             <!-- Update Food Category -->
             <v-select
-              v-model="toUpdateFood.category"
+              v-model="toUpdateFood.category.id"
               :items="foodCategoryList"
               item-text="name"
               item-value="id"
@@ -259,7 +252,7 @@ export default {
         foodItem: "",
         price: "",
         stock: "",
-        category: 1,
+        category: { id: "" },
         image: "",
         imageEdit: null,
       },
@@ -279,7 +272,7 @@ export default {
 
   methods: {
     async fetchFoods() {
-      const resp = await utils.http.get("/admin/food");
+      const resp = await utils.http.get("/food");
       if (resp && resp.status === 200) {
         const data = await resp.json();
         if (data) {
@@ -289,7 +282,7 @@ export default {
     },
 
     async fetchFoodCategories() {
-      const resp = await utils.http.get("/admin/category");
+      const resp = await utils.http.get("/category");
       if (resp && resp.status === 200) {
         const data = await resp.json();
         if (data) {
@@ -353,7 +346,7 @@ export default {
             price: this.toUpdateFood.price,
             stock: this.toUpdateFood.stock,
             category: {
-              id: this.toUpdateFood.category,
+              id: this.toUpdateFood.category.id,
             },
             image: imagePath,
           }
